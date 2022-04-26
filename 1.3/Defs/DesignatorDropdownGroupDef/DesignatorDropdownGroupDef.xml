@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <DesignatorDropdownGroupDef>
+    <defName>ESCP_Floor_ChitinTile</defName>
+  </DesignatorDropdownGroupDef>
+  
+  <DesignatorDropdownGroupDef>
+    <defName>ESCP_Floor_PolishedChitinTile</defName>
+  </DesignatorDropdownGroupDef>
+
+</Defs>

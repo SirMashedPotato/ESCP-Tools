@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+	<!-- General -->
+
+	<ESCP_Tools_BoneChitinFat_ModName>ESCP - Tools (Bone, Chitin, Fat)</ESCP_Tools_BoneChitinFat_ModName>
+	<ESCP_Reset>Reset all settings</ESCP_Reset>
+
+	<ESCP_Tools_BoneChitinFat_EnableLoggingOnGameStart>Enable logging of patches on game start.</ESCP_Tools_BoneChitinFat_EnableLoggingOnGameStart>
+	<ESCP_Tools_BoneBoneFat_BoneMultiplier>Percentage based multiplier for the amount of ESCP bone obtained from butchering.</ESCP_Tools_BoneBoneFat_BoneMultiplier>
+	<ESCP_Tools_BoneChitinFat_ChitinMultiplier>Percentage based multiplier for the amount of ESCP chitin obtained from butchering.</ESCP_Tools_BoneChitinFat_ChitinMultiplier>
+	<ESCP_Tools_BoneFatFat_FatMultiplier>Percentage based multiplier for the amount of ESCP fat obtained from butchering.</ESCP_Tools_BoneFatFat_FatMultiplier>
+	
+</LanguageData>

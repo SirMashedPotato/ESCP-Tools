@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- Generic -->
+	
+	<ESCP_ThingCatching.CatchableOutputDef>
+		<defName>ESCP_CatchableDef_Failiure</defName>
+		<!--<outputThingDef></outputThingDef>-->
+		<outputRange>0~0</outputRange>
+		<chance>1</chance>
+		<isSpecial>false</isSpecial>
+		<!-- Biomes blank so it can appear everywhere
+			Just has to match biome defNames
+		<biomes>
+			<li></li>
+		</biomes>
+		
+		-->
+		<!-- Tags blank so any recipe can have it
+		<catchTags>
+			<li></li>
+		</catchTags>
+		-->
+	</ESCP_ThingCatching.CatchableOutputDef>
+
+	<!-- Bug catching -->
+
+	<ESCP_ThingCatching.CatchableOutputDef>
+		<defName>ESCP_CatchableDef_InsectMeat</defName>
+		<outputThingDef>Meat_Megaspider</outputThingDef>
+		<outputRange>3~5</outputRange>
+		<chance>1</chance>
+		<isSpecial>false</isSpecial>
+		<catchTags>
+			<li>ESCP_CatchTagBug</li>
+		</catchTags>
+	</ESCP_ThingCatching.CatchableOutputDef>
+	
+	<!-- Fish catching -->
+	
+	<ESCP_ThingCatching.CatchableOutputDef>
+		<defName>ESCP_CatchableDef_WoodLog</defName>
+		<outputThingDef>WoodLog</outputThingDef>
+		<outputRange>1~3</outputRange>
+		<chance>1</chance>
+		<isSpecial>false</isSpecial>
+		<catchTags>
+			<li>ESCP_CatchTagFish</li>
+		</catchTags>
+	</ESCP_ThingCatching.CatchableOutputDef>
+
+</Defs>

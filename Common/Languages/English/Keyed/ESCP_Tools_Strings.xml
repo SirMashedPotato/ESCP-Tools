@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+	<!-- General -->
+
+	<ESCP_Tools_Catching_Failed>{0} failed to catch anything.</ESCP_Tools_Catching_Failed>
+	<ESCP_Tools_Catching_Special>{0} caught {1}!</ESCP_Tools_Catching_Special>
+
+	<ESCP_Tools_Crushing_Failed>{0} didn't find anything.</ESCP_Tools_Crushing_Failed>
+	<ESCP_Tools_Crushing_Special>{0} obtained {1}!</ESCP_Tools_Crushing_Special>
+	
+</LanguageData>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Alpha Memes</li>
+		</mods> 
+				
+		<match Class="PatchOperationSequence">
+			<operations>
+			
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs</xpath>
+					<value>
+
+						<TerrainDef ParentName="AM_JewishTileStoneBase">
+							<defName>ESCP_JewishTileTileBonemoldBlock</defName>
+							<label>jewish bonemold block tile</label>
+							<color>(137,116,75)</color>
+							<costList>
+								<ESCP_BlocksBonemold>4</ESCP_BlocksBonemold>
+							</costList>
+						</TerrainDef>
+						
+						<TerrainDef ParentName="AM_JewishFineStoneTiles">
+							<defName>ESCP_JewishFineTileTileBonemoldBlock</defName>
+							<label>jewish fine bonemold block tile</label>
+							
+							<costList>
+								<ESCP_BlocksBonemold>20</ESCP_BlocksBonemold>
+							</costList>
+						</TerrainDef>
+						
+						<!-- -->
+						
+						<TerrainDef ParentName="AM_KemeticTileStoneBase">
+							<defName>ESCP_KemeticTileTileBonemoldBlock</defName>
+							<label>kemetic bonemold block tile</label>
+							<color>(137,116,75)</color>
+							<costList>
+								<ESCP_BlocksBonemold>4</ESCP_BlocksBonemold>
+							</costList>
+						</TerrainDef>
+						
+						<TerrainDef ParentName="AM_KemeticFineStoneTiles">
+							<defName>ESCP_KemeticFineTileTileBonemoldBlock</defName>
+							<label>kemetic fine bonemold block tile</label>
+							<color>(137,116,75)</color>
+							<costList>
+								<ESCP_BlocksBonemold>20</ESCP_BlocksBonemold>
+							</costList>
+						</TerrainDef>
+						
+						<!-- -->
+						
+						<TerrainDef ParentName="AM_SteampunkTileStoneBase">
+							<defName>ESCP_SteampunkTileTileBonemoldBlock</defName>
+							<label>steampunk bonemold block tile</label>
+							<color>(137,116,75)</color>
+							<costList>
+								<ESCP_BlocksBonemold>4</ESCP_BlocksBonemold>
+							</costList>
+						</TerrainDef>
+
+					</value>
+				</li>
+				
+			</operations>
+		</match>
+	</Operation>
+	
+</Patch>
+

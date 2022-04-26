@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Defs>
+	
+ <!--__________ Leatherworking __________-->
+ 
+	<!-- <WorkGiverDef>
+		<defName>FOTR_DoBillsLeatherworking_Bench</defName>
+		<label>make apparel</label>
+		<giverClass>WorkGiver_DoBill</giverClass>
+		<workType>Tailoring</workType>
+		<priorityInType>110</priorityInType>
+		<fixedBillGiverDefs>
+			<li>FOTR_Leatherworking_Bench</li>
+		</fixedBillGiverDefs>
+		<verb>tailor</verb>
+		<gerund>tailoring at</gerund>
+		<requiredCapacities>
+			<li>Manipulation</li>
+		</requiredCapacities>
+		<prioritizeSustains>true</prioritizeSustains>
+	</WorkGiverDef> -->
+	
+	 <!--__________ Smithing __________-->
+ 
+	<!-- Smelter -->
+
+	<WorkGiverDef>
+		<defName>ESCP_Do_Bills_Smelter</defName>
+		<label>Smelt Things</label>
+		<giverClass>WorkGiver_DoBill</giverClass>
+		<workType>Smithing</workType>
+		<priorityInType>115</priorityInType>
+		<fixedBillGiverDefs>
+			<li>ESCP_Production_Smelter</li>
+		</fixedBillGiverDefs>
+		<verb>smith</verb>
+		<gerund>Smelting at</gerund>
+		<requiredCapacities>
+			<li>Manipulation</li>
+		</requiredCapacities>
+		<prioritizeSustains>true</prioritizeSustains>
+	</WorkGiverDef>
+	
+	<!-- Forge -->
+
+	<WorkGiverDef>
+		<defName>ESCP_Do_Bills_Forge</defName>
+		<label>Make Weapons</label>
+		<giverClass>WorkGiver_DoBill</giverClass>
+		<workType>Smithing</workType>
+		<priorityInType>115</priorityInType>
+		<fixedBillGiverDefs>
+			<li>ESCP_Prodution_Forge</li>
+		</fixedBillGiverDefs>
+		<verb>smith</verb>
+		<gerund>smithing at</gerund>
+		<requiredCapacities>
+			<li>Manipulation</li>
+		</requiredCapacities>
+		<prioritizeSustains>true</prioritizeSustains>
+	</WorkGiverDef>
+
+	<!-- Wood Chopping Block -->
+
+	<WorkGiverDef>
+		<defName>ESCP_Do_Bills_Wood_Chopping_Block</defName>
+		<label>Make Firewood</label>
+		<giverClass>WorkGiver_DoBill</giverClass>
+		<workType>PlantCutting</workType>
+		<priorityInType>115</priorityInType>
+		<fixedBillGiverDefs>
+			<li>ESCP_Production_Wood_Chopping_Block</li>
+		</fixedBillGiverDefs>
+		<verb>chop</verb>
+		<gerund>chopping firewood at</gerund>
+		<requiredCapacities>
+			<li>Manipulation</li>
+		</requiredCapacities>
+		<prioritizeSustains>true</prioritizeSustains>
+	</WorkGiverDef>
+
+</Defs>
+	

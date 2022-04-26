@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <!-- Designations -->
+
+  <DesignationCategoryDef>
+    <defName>ESCP_Designation_Production</defName>
+    <label>ESCP Production</label>
+    <order>600</order>
+    <specialDesignatorClasses>
+      <li>Designator_Cancel</li>
+      <li>Designator_Deconstruct</li>
+    </specialDesignatorClasses>
+  </DesignationCategoryDef>
+
+</Defs>

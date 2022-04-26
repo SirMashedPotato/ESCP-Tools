@@ -1,0 +1,1500 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <!--__________ Smelting ore to ingots __________-->
+
+    <!-- Adamantite -->
+
+  <RecipeDef>
+    <defName>ESCP_Smelt_Adamantite</defName>
+    <label>smelt admantite from ore</label>
+    <description>Use heat and strong force to extract the purist of material from raw ore.</description>
+    <jobString>Smelting ingots from ore.</jobString>
+    <workAmount>30</workAmount>
+    <workSpeedStat>SmeltingSpeed</workSpeedStat>
+    <effectWorking>Smelt</effectWorking>
+    <soundWorking>Recipe_Smelt</soundWorking>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ESCP_Raw_Adamantite_Ore</li>
+          </thingDefs>
+        </filter>
+        <count>3</count>
+      </li>
+    </ingredients>
+    <products>
+      <ESCP_Resource_Adamantite_Ingot>1</ESCP_Resource_Adamantite_Ingot>
+    </products>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>ESCP_Raw_Adamantite_Ore</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+  </RecipeDef>
+
+  <RecipeDef>
+    <defName>ESCP_Smelt_Adamantite_Bulk</defName>
+    <label>Smelt adamantite from ore in bulk</label>
+    <description>Use heat and strong force to extract the purist of material from raw ore.</description>
+    <jobString>Smelting ingots from ore.</jobString>
+    <workAmount>150</workAmount>
+    <workSpeedStat>SmeltingSpeed</workSpeedStat>
+    <effectWorking>Smelt</effectWorking>
+    <soundWorking>Recipe_Smelt</soundWorking>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ESCP_Raw_Adamantite_Ore</li>
+          </thingDefs>
+        </filter>
+        <count>15</count>
+      </li>
+    </ingredients>
+    <products>
+      <ESCP_Resource_Adamantite_Ingot>5</ESCP_Resource_Adamantite_Ingot>
+    </products>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>ESCP_Raw_Adamantite_Ore</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+  </RecipeDef>
+
+    <!-- Adamantium -->
+
+  <RecipeDef>
+    <defName>ESCP_Smelt_Adamantium</defName>
+    <label>smelt adamantium from ore</label>
+    <description>Use heat and strong force to extract the purist of material from raw ore.</description>
+    <jobString>Smelting ingots from ore.</jobString>
+    <workAmount>30</workAmount>
+    <workSpeedStat>SmeltingSpeed</workSpeedStat>
+    <effectWorking>Smelt</effectWorking>
+    <soundWorking>Recipe_Smelt</soundWorking>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ESCP_Raw_Adamantium_Ore</li>
+          </thingDefs>
+        </filter>
+        <count>3</count>
+      </li>
+    </ingredients>
+    <products>
+      <ESCP_Resource_Adamantium_Ingot>1</ESCP_Resource_Adamantium_Ingot>
+    </products>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>ESCP_Raw_Adamantium_Ore</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+  </RecipeDef>
+
+  <RecipeDef>
+    <defName>ESCP_Smelt_Adamantium_Bulk</defName>
+    <label>Smelt adamantium from ore in bulk</label>
+    <description>Use heat and strong force to extract the purist of material from raw ore.</description>
+    <jobString>Smelting ingots from ore.</jobString>
+    <workAmount>150</workAmount>
+    <workSpeedStat>SmeltingSpeed</workSpeedStat>
+    <effectWorking>Smelt</effectWorking>
+    <soundWorking>Recipe_Smelt</soundWorking>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ESCP_Raw_Adamantium_Ore</li>
+          </thingDefs>
+        </filter>
+        <count>15</count>
+      </li>
+    </ingredients>
+    <products>
+      <ESCP_Resource_Adamantium_Ingot>5</ESCP_Resource_Adamantium_Ingot>
+    </products>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>ESCP_Raw_Adamantium_Ore</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+  </RecipeDef>
+
+    <!-- Brass -->
+
+  <RecipeDef>
+    <defName>ESCP_Smelt_Brass</defName>
+    <label>Smelt brass from ore</label>
+    <description>Use heat and strong force to extract the purist of material from raw ore.</description>
+    <jobString>Smelting ingots from ore.</jobString>
+    <workAmount>30</workAmount>
+    <workSpeedStat>SmeltingSpeed</workSpeedStat>
+    <effectWorking>Smelt</effectWorking>
+    <soundWorking>Recipe_Smelt</soundWorking>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ESCP_Raw_Copper_Ore</li>
+          </thingDefs>
+        </filter>
+        <count>3</count>
+      </li>
+     <li>
+        <filter>
+          <thingDefs>
+            <li>ESCP_Raw_Tin_Ore</li>
+          </thingDefs>
+        </filter>
+        <count>3</count>
+      </li>
+    </ingredients>
+    <products>
+      <ESCP_Resource_Brass_Ingot>1</ESCP_Resource_Brass_Ingot>
+    </products>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>ESCP_Raw_Copper_Ore</li>
+        <li>ESCP_Raw_Tin_Ore</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+  </RecipeDef>
+
+  <RecipeDef>
+    <defName>ESCP_Smelt_Brass_Bulk</defName>
+    <label>Smelt brass from ore in bulk</label>
+    <description>Use heat and strong force to extract the purist of material from raw ore.</description>
+    <jobString>Smelting ingots from ore.</jobString>
+    <workAmount>150</workAmount>
+    <workSpeedStat>SmeltingSpeed</workSpeedStat>
+    <effectWorking>Smelt</effectWorking>
+    <soundWorking>Recipe_Smelt</soundWorking>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ESCP_Raw_Copper_Ore</li>
+          </thingDefs>
+        </filter>
+        <count>15</count>
+      </li>
+     <li>
+        <filter>
+          <thingDefs>
+            <li>ESCP_Raw_Tin_Ore</li>
+          </thingDefs>
+        </filter>
+        <count>15</count>
+      </li>
+    </ingredients>
+    <products>
+      <ESCP_Resource_Brass_Ingot>5</ESCP_Resource_Brass_Ingot>
+    </products>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>ESCP_Raw_Copper_Ore</li>
+        <li>ESCP_Raw_Tin_Ore</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+  </RecipeDef>
+
+    <!-- Bronze -->
+
+  <RecipeDef>
+    <defName>ESCP_Smelt_Bronze</defName>
+    <label>Smelt bronze from ore</label>
+    <description>Use heat and strong force to extract the purist of material from raw ore.</description>
+    <jobString>Smelting ingots from ore.</jobString>
+    <workAmount>30</workAmount>
+    <workSpeedStat>SmeltingSpeed</workSpeedStat>
+    <effectWorking>Smelt</effectWorking>
+    <soundWorking>Recipe_Smelt</soundWorking>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ESCP_Raw_Copper_Ore</li>
+          </thingDefs>
+        </filter>
+        <count>3</count>
+      </li>
+     <li>
+        <filter>
+          <thingDefs>
+            <li>ESCP_Raw_Zinc_Ore</li>
+          </thingDefs>
+        </filter>
+        <count>3</count>
+      </li>
+    </ingredients>
+    <products>
+      <ESCP_Resource_Bronze_Ingot>1</ESCP_Resource_Bronze_Ingot>
+    </products>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>ESCP_Raw_Copper_Ore</li>
+        <li>ESCP_Raw_Zinc_Ore</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+  </RecipeDef>
+
+  <RecipeDef>
+    <defName>ESCP_Smelt_Bronze_Bulk</defName>
+    <label>Smelt bronze from ore in bulk</label>
+    <description>Use heat and strong force to extract the purist of material from raw ore.</description>
+    <jobString>Smelting ingots from ore.</jobString>
+    <workAmount>150</workAmount>
+    <workSpeedStat>SmeltingSpeed</workSpeedStat>
+    <effectWorking>Smelt</effectWorking>
+    <soundWorking>Recipe_Smelt</soundWorking>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ESCP_Raw_Copper_Ore</li>
+          </thingDefs>
+        </filter>
+        <count>15</count>
+      </li>
+     <li>
+        <filter>
+          <thingDefs>
+            <li>ESCP_Raw_Zinc_Ore</li>
+          </thingDefs>
+        </filter>
+        <count>15</count>
+      </li>
+    </ingredients>
+    <products>
+      <ESCP_Resource_Bronze_Ingot>5</ESCP_Resource_Bronze_Ingot>
+    </products>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>ESCP_Raw_Copper_Ore</li>
+        <li>ESCP_Raw_Zinc_Ore</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+  </RecipeDef>
+
+    <!-- Buoyant Steel -->
+
+  <!-- <RecipeDef>
+    <defName>ESCP_Smelt_Buoyant_Steel</defName>
+    <label>smelt buoyant steel from ore.</label>
+    <description>Use heat and strong force to extract the purist of material from raw ore.</description>
+    <jobString>Smelting ingots from ore.</jobString>
+    <workAmount>30</workAmount>
+    <workSpeedStat>SmeltingSpeed</workSpeedStat>
+    <effectWorking>Smelt</effectWorking>
+    <soundWorking>Recipe_Smelt</soundWorking>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ESCP_Raw_Buoyant_Steel_Scraps</li>
+          </thingDefs>
+        </filter>
+        <count>3</count>
+      </li>
+    </ingredients>
+    <products>
+      <ESCP_Buoyant_Steel_Ingot>1</ESCP_Buoyant_Steel_Ingot>
+    </products>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>ESCP_Raw_Buoyant_Steel_Scraps</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+  </RecipeDef> -->
+
+  <!-- <RecipeDef>
+    <defName>ESCP_Smelt_Buoyant_Steel_Bulk</defName>
+    <label>Smelt buoyant steel from ore in bulk.</label>
+    <description>Use heat and strong force to extract the purist of material from raw ore.</description>
+    <jobString>Smelting ingots from ore.</jobString>
+    <workAmount>150</workAmount>
+    <workSpeedStat>SmeltingSpeed</workSpeedStat>
+    <effectWorking>Smelt</effectWorking>
+    <soundWorking>Recipe_Smelt</soundWorking>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ESCP_Raw_Buoyant_Steel_Scraps</li>
+          </thingDefs>
+        </filter>
+        <count>15</count>
+      </li>
+    </ingredients>
+    <products>
+      <ESCP_Buoyant_Steel_Ingot>5</ESCP_Buoyant_Steel_Ingot>
+    </products>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>ESCP_Raw_Buoyant_Steel_Scraps</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+  </RecipeDef> -->
+
+    <!-- Cobalt -->
+
+  <RecipeDef>
+    <defName>ESCP_Smelt_Cobalt</defName>
+    <label>Smelt cobalt from ore</label>
+    <description>Use heat and strong force to extract the purist of material from raw ore.</description>
+    <jobString>Smelting ingots from ore.</jobString>
+    <workAmount>30</workAmount>
+    <workSpeedStat>SmeltingSpeed</workSpeedStat>
+    <effectWorking>Smelt</effectWorking>
+    <soundWorking>Recipe_Smelt</soundWorking>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ESCP_Raw_Cobalt_Ore</li>
+          </thingDefs>
+        </filter>
+        <count>3</count>
+      </li>
+    </ingredients>
+    <products>
+      <ESCP_Resource_Cobalt_Ingot>1</ESCP_Resource_Cobalt_Ingot>
+    </products>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>ESCP_Raw_Cobalt_Ore</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+  </RecipeDef>
+
+  <RecipeDef>
+    <defName>ESCP_Smelt_Cobalt_Bulk</defName>
+    <label>Smelt cobalt from ore in bulk</label>
+    <description>Use heat and strong force to extract the purist of material from raw ore.</description>
+    <jobString>Smelting ingots from ore.</jobString>
+    <workAmount>150</workAmount>
+    <workSpeedStat>SmeltingSpeed</workSpeedStat>
+    <effectWorking>Smelt</effectWorking>
+    <soundWorking>Recipe_Smelt</soundWorking>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ESCP_Raw_Cobalt_Ore</li>
+          </thingDefs>
+        </filter>
+        <count>15</count>
+      </li>
+    </ingredients>
+    <products>
+      <ESCP_Resource_Cobalt_Ingot>5</ESCP_Resource_Cobalt_Ingot>
+    </products>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>ESCP_Raw_Cobalt_Ore</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+  </RecipeDef>
+
+    <!-- Copper -->
+
+  <RecipeDef>
+    <defName>ESCP_Smelt_Copper</defName>
+    <label>Smelt copper from ore</label>
+    <description>Use heat and strong force to extract the purist of material from raw ore.</description>
+    <jobString>Smelting ingots from ore.</jobString>
+    <workAmount>30</workAmount>
+    <workSpeedStat>SmeltingSpeed</workSpeedStat>
+    <effectWorking>Smelt</effectWorking>
+    <soundWorking>Recipe_Smelt</soundWorking>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ESCP_Raw_Copper_Ore</li>
+          </thingDefs>
+        </filter>
+        <count>3</count>
+      </li>
+    </ingredients>
+    <products>
+      <ESCP_Resource_Copper_Ingot>1</ESCP_Resource_Copper_Ingot>
+    </products>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>ESCP_Raw_Copper_Ore</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+  </RecipeDef>
+
+  <RecipeDef>
+    <defName>ESCP_Smelt_Copper_Bulk</defName>
+    <label>Smelt copper from ore in bulk</label>
+    <description>Use heat and strong force to extract the purist of material from raw ore.</description>
+    <jobString>Smelting ingots from ore.</jobString>
+    <workAmount>150</workAmount>
+    <workSpeedStat>SmeltingSpeed</workSpeedStat>
+    <effectWorking>Smelt</effectWorking>
+    <soundWorking>Recipe_Smelt</soundWorking>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ESCP_Raw_Copper_Ore</li>
+          </thingDefs>
+        </filter>
+        <count>15</count>
+      </li>
+    </ingredients>
+    <products>
+      <ESCP_Resource_Copper_Ingot>5</ESCP_Resource_Copper_Ingot>
+    </products>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>ESCP_Raw_Copper_Ore</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+  </RecipeDef>
+
+    <!-- Corundum -->
+
+  <RecipeDef>
+    <defName>ESCP_Smelt_Corundum</defName>
+    <label>Smelt corundum from ore</label>
+    <description>Use heat and strong force to extract the purist of material from raw ore.</description>
+    <jobString>Smelting ingots from ore.</jobString>
+    <workAmount>30</workAmount>
+    <workSpeedStat>SmeltingSpeed</workSpeedStat>
+    <effectWorking>Smelt</effectWorking>
+    <soundWorking>Recipe_Smelt</soundWorking>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ESCP_Raw_Corundum_Ore</li>
+          </thingDefs>
+        </filter>
+        <count>3</count>
+      </li>
+    </ingredients>
+    <products>
+      <ESCP_Resource_Corundum_Ingot>1</ESCP_Resource_Corundum_Ingot>
+    </products>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>ESCP_Raw_Corundum_Ore</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+  </RecipeDef>
+
+  <RecipeDef>
+    <defName>ESCP_Smelt_Corundum_Bulk</defName>
+    <label>Smelt corundum from ore in bulk</label>
+    <description>Use heat and strong force to extract the purist of material from raw ore.</description>
+    <jobString>Smelting ingots from ore</jobString>
+    <workAmount>150</workAmount>
+    <workSpeedStat>SmeltingSpeed</workSpeedStat>
+    <effectWorking>Smelt</effectWorking>
+    <soundWorking>Recipe_Smelt</soundWorking>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ESCP_Raw_Corundum_Ore</li>
+          </thingDefs>
+        </filter>
+        <count>15</count>
+      </li>
+    </ingredients>
+    <products>
+      <ESCP_Resource_Corundum_Ingot>5</ESCP_Resource_Corundum_Ingot>
+    </products>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>ESCP_Raw_Corundum_Ore</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+  </RecipeDef>
+
+    <!-- Ebony -->
+
+  <RecipeDef>
+    <defName>ESCP_Smelt_Ebony</defName>
+    <label>Smelt ebony from ore</label>
+    <description>Use heat and strong force to extract the purist of material from raw ore.</description>
+    <jobString>Smelting ingots from ore.</jobString>
+    <workAmount>30</workAmount>
+    <workSpeedStat>SmeltingSpeed</workSpeedStat>
+    <effectWorking>Smelt</effectWorking>
+    <soundWorking>Recipe_Smelt</soundWorking>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ESCP_Raw_Ebony_Ore</li>
+          </thingDefs>
+        </filter>
+        <count>3</count>
+      </li>
+    </ingredients>
+    <products>
+      <ESCP_Resource_Ebony_Ingot>1</ESCP_Resource_Ebony_Ingot>
+    </products>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>ESCP_Raw_Ebony_Ore</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+  </RecipeDef>
+
+  <RecipeDef>
+    <defName>ESCP_Smelt_Ebony_Bulk</defName>
+    <label>Smelt ebony from ore in bulk</label>
+    <description>Use heat and strong force to extract the purist of material from raw ore.</description>
+    <jobString>Smelting ingots from ore.</jobString>
+    <workAmount>150</workAmount>
+    <workSpeedStat>SmeltingSpeed</workSpeedStat>
+    <effectWorking>Smelt</effectWorking>
+    <soundWorking>Recipe_Smelt</soundWorking>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ESCP_Raw_Ebony_Ore</li>
+          </thingDefs>
+        </filter>
+        <count>15</count>
+      </li>
+    </ingredients>
+    <products>
+      <ESCP_Resource_Ebony_Ingot>5</ESCP_Resource_Ebony_Ingot>
+    </products>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>ESCP_Raw_Ebony_Ore</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+  </RecipeDef>
+
+    <!-- Volcanic Glass -->
+
+  <RecipeDef>
+    <defName>ESCP_Smelt_Volcanic_Glass</defName>
+    <label>Smelt volcanic glass from ore</label>
+    <description>Use heat and strong force to extract the purist of material from raw ore.</description>
+    <jobString>Smelting ingots from ore.</jobString>
+    <workAmount>30</workAmount>
+    <workSpeedStat>SmeltingSpeed</workSpeedStat>
+    <effectWorking>Smelt</effectWorking>
+    <soundWorking>Recipe_Smelt</soundWorking>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ESCP_Raw_Volcanic_Glass_Ore</li>
+          </thingDefs>
+        </filter>
+        <count>3</count>
+      </li>
+    </ingredients>
+    <products>
+      <ESCP_Resource_Volcanic_Glass_Ingot>1</ESCP_Resource_Volcanic_Glass_Ingot>
+    </products>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>ESCP_Raw_Volcanic_Glass_Ore</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+  </RecipeDef>
+
+  <RecipeDef>
+    <defName>ESCP_Smelt_Volcanic_Glass_Bulk</defName>
+    <label>Smelt volcanic glass from ore in bulk</label>
+    <description>Use heat and strong force to extract the purist of material from raw ore.</description>
+    <jobString>Smelting ingots from ore.</jobString>
+    <workAmount>150</workAmount>
+    <workSpeedStat>SmeltingSpeed</workSpeedStat>
+    <effectWorking>Smelt</effectWorking>
+    <soundWorking>Recipe_Smelt</soundWorking>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ESCP_Raw_Volcanic_Glass_Ore</li>
+          </thingDefs>
+        </filter>
+        <count>15</count>
+      </li>
+    </ingredients>
+    <products>
+      <ESCP_Resource_Volcanic_Glass_Ingot>5</ESCP_Resource_Volcanic_Glass_Ingot>
+    </products>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>ESCP_Raw_Volcanic_Glass_Ore</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+  </RecipeDef>
+
+    <!-- Gold -->
+
+  <RecipeDef>
+    <defName>ESCP_Smelt_Gold</defName>
+    <label>Smelt gold from ore</label>
+    <description>Use heat and strong force to extract the purist of material from raw ore.</description>
+    <jobString>Smelting ingots from ore.</jobString>
+    <workAmount>30</workAmount>
+    <workSpeedStat>SmeltingSpeed</workSpeedStat>
+    <effectWorking>Smelt</effectWorking>
+    <soundWorking>Recipe_Smelt</soundWorking>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ESCP_Raw_Gold_Ore</li>
+          </thingDefs>
+        </filter>
+        <count>3</count>
+      </li>
+    </ingredients>
+    <products>
+      <ESCP_Resource_Gold_Ingot>1</ESCP_Resource_Gold_Ingot>
+    </products>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>ESCP_Raw_Gold_Ore</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+  </RecipeDef>
+
+  <RecipeDef>
+    <defName>ESCP_Smelt_Gold_Bulk</defName>
+    <label>Smelt gold from ore in bulk</label>
+    <description>Use heat and strong force to extract the purist of material from raw ore.</description>
+    <jobString>Smelting ingots from ore.</jobString>
+    <workAmount>150</workAmount>
+    <workSpeedStat>SmeltingSpeed</workSpeedStat>
+    <effectWorking>Smelt</effectWorking>
+    <soundWorking>Recipe_Smelt</soundWorking>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ESCP_Raw_Gold_Ore</li>
+          </thingDefs>
+        </filter>
+        <count>15</count>
+      </li>
+    </ingredients>
+    <products>
+      <ESCP_Resource_Gold_Ingot>5</ESCP_Resource_Gold_Ingot>
+    </products>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>ESCP_Raw_Gold_Ore</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+  </RecipeDef>
+
+    <!-- Iron -->
+
+  <RecipeDef>
+    <defName>ESCP_Smelt_Iron</defName>
+    <label>Smelt iron from ore</label>
+    <description>Use heat and strong force to extract the purist of material from raw ore.</description>
+    <jobString>Smelting ingots from ore.</jobString>
+    <workAmount>30</workAmount>
+    <workSpeedStat>SmeltingSpeed</workSpeedStat>
+    <effectWorking>Smelt</effectWorking>
+    <soundWorking>Recipe_Smelt</soundWorking>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ESCP_Raw_Iron_Ore</li>
+          </thingDefs>
+        </filter>
+        <count>3</count>
+      </li>
+    </ingredients>
+    <products>
+      <ESCP_Resource_Iron_Ingot>1</ESCP_Resource_Iron_Ingot>
+    </products>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>ESCP_Raw_Iron_Ore</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+  </RecipeDef>
+
+  <RecipeDef>
+    <defName>ESCP_Smelt_Iron_Bulk</defName>
+    <label>Smelt iron from ore in bulk</label>
+    <description>Use heat and strong force to extract the purist of material from raw ore.</description>
+    <jobString>Smelting ingots from ore.</jobString>
+    <workAmount>150</workAmount>
+    <workSpeedStat>SmeltingSpeed</workSpeedStat>
+    <effectWorking>Smelt</effectWorking>
+    <soundWorking>Recipe_Smelt</soundWorking>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ESCP_Raw_Iron_Ore</li>
+          </thingDefs>
+        </filter>
+        <count>15</count>
+      </li>
+    </ingredients>
+    <products>
+      <ESCP_Resource_Iron_Ingot>5</ESCP_Resource_Iron_Ingot>
+    </products>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>ESCP_Raw_Iron_Ore</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+  </RecipeDef>
+
+    <!-- Meteoric Iron -->
+
+  <RecipeDef>
+    <defName>ESCP_Smelt_Meteoric_Iron</defName>
+    <label>Smelt meteoric iron from ore</label>
+    <description>Use heat and strong force to extract the purist of material from raw ore.</description>
+    <jobString>Smelting ingots from ore.</jobString>
+    <workAmount>30</workAmount>
+    <workSpeedStat>SmeltingSpeed</workSpeedStat>
+    <effectWorking>Smelt</effectWorking>
+    <soundWorking>Recipe_Smelt</soundWorking>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ESCP_Raw_Meteoric_Iron_Ore</li>
+          </thingDefs>
+        </filter>
+        <count>3</count>
+      </li>
+    </ingredients>
+    <products>
+      <ESCP_Resource_Meteoric_Iron_Ingot>1</ESCP_Resource_Meteoric_Iron_Ingot>
+    </products>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>ESCP_Raw_Meteoric_Iron_Ore</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+  </RecipeDef>
+
+  <RecipeDef>
+    <defName>ESCP_Smelt_Meteoric_Iron_Bulk</defName>
+    <label>Smelt meteoric iron from ore in bulk</label>
+    <description>Use heat and strong force to extract the purist of material from raw ore.</description>
+    <jobString>Smelting ingots from ore.</jobString>
+    <workAmount>150</workAmount>
+    <workSpeedStat>SmeltingSpeed</workSpeedStat>
+    <effectWorking>Smelt</effectWorking>
+    <soundWorking>Recipe_Smelt</soundWorking>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ESCP_Raw_Meteoric_Iron_Ore</li>
+          </thingDefs>
+        </filter>
+        <count>15</count>
+      </li>
+    </ingredients>
+    <products>
+      <ESCP_Resource_Meteoric_Iron_Ingot>5</ESCP_Resource_Meteoric_Iron_Ingot>
+    </products>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>ESCP_Raw_Meteoric_Iron_Ore</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+  </RecipeDef>
+
+    <!-- Mithril -->
+
+  <RecipeDef>
+    <defName>ESCP_Smelt_Mithril</defName>
+    <label>Smelt mithril from ore</label>
+    <description>Use heat and strong force to extract the purist of material from raw ore.</description>
+    <jobString>Smelting ingots from ore.</jobString>
+    <workAmount>30</workAmount>
+    <workSpeedStat>SmeltingSpeed</workSpeedStat>
+    <effectWorking>Smelt</effectWorking>
+    <soundWorking>Recipe_Smelt</soundWorking>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ESCP_Raw_Mithril_Ore</li>
+          </thingDefs>
+        </filter>
+        <count>3</count>
+      </li>
+    </ingredients>
+    <products>
+      <ESCP_Resource_Mithril_Ingot>1</ESCP_Resource_Mithril_Ingot>
+    </products>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>ESCP_Raw_Mithril_Ore</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+  </RecipeDef>
+
+  <RecipeDef>
+    <defName>ESCP_Smelt_Mithril_Bulk</defName>
+    <label>Smelt mithril from ore in bulk</label>
+    <description>Use heat and strong force to extract the purist of material from raw ore.</description>
+    <jobString>Smelting ingots from ore.</jobString>
+    <workAmount>150</workAmount>
+    <workSpeedStat>SmeltingSpeed</workSpeedStat>
+    <effectWorking>Smelt</effectWorking>
+    <soundWorking>Recipe_Smelt</soundWorking>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ESCP_Raw_Mithril_Ore</li>
+          </thingDefs>
+        </filter>
+        <count>15</count>
+      </li>
+    </ingredients>
+    <products>
+      <ESCP_Resource_Mithril_Ingot>5</ESCP_Resource_Mithril_Ingot>
+    </products>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>ESCP_Raw_Mithril_Ore</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+  </RecipeDef>
+
+    <!-- Moonstone -->
+
+  <RecipeDef>
+    <defName>ESCP_Smelt_Moonstone</defName>
+    <label>Smelt moonstone from ore</label>
+    <description>Use heat and strong force to extract the purist of material from raw ore.</description>
+    <jobString>Smelting ingots from ore.</jobString>
+    <workAmount>30</workAmount>
+    <workSpeedStat>SmeltingSpeed</workSpeedStat>
+    <effectWorking>Smelt</effectWorking>
+    <soundWorking>Recipe_Smelt</soundWorking>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ESCP_Raw_Moonstone_Ore</li>
+          </thingDefs>
+        </filter>
+        <count>3</count>
+      </li>
+    </ingredients>
+    <products>
+      <ESCP_Resource_Moonstone_Ingot>1</ESCP_Resource_Moonstone_Ingot>
+    </products>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>ESCP_Raw_Moonstone_Ore</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+  </RecipeDef>
+
+  <RecipeDef>
+    <defName>ESCP_Smelt_Moonstone_Bulk</defName>
+    <label>Smelt moonstone from ore in bulk</label>
+    <description>Use heat and strong force to extract the purist of material from raw ore.</description>
+    <jobString>Smelting ingots from ore.</jobString>
+    <workAmount>150</workAmount>
+    <workSpeedStat>SmeltingSpeed</workSpeedStat>
+    <effectWorking>Smelt</effectWorking>
+    <soundWorking>Recipe_Smelt</soundWorking>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ESCP_Raw_Moonstone_Ore</li>
+          </thingDefs>
+        </filter>
+        <count>15</count>
+      </li>
+    </ingredients>
+    <products>
+      <ESCP_Resource_Moonstone_Ingot>5</ESCP_Resource_Moonstone_Ingot>
+    </products>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>ESCP_Raw_Moonstone_Ore</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+  </RecipeDef>
+
+    <!-- Nickel -->
+
+  <RecipeDef>
+    <defName>ESCP_Smelt_Nickel</defName>
+    <label>Smelt nickel from ore</label>
+    <description>Use heat and strong force to extract the purist of material from raw ore.</description>
+    <jobString>Smelting ingots from ore.</jobString>
+    <workAmount>30</workAmount>
+    <workSpeedStat>SmeltingSpeed</workSpeedStat>
+    <effectWorking>Smelt</effectWorking>
+    <soundWorking>Recipe_Smelt</soundWorking>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ESCP_Raw_Nickel_Ore</li>
+          </thingDefs>
+        </filter>
+        <count>3</count>
+      </li>
+    </ingredients>
+    <products>
+      <ESCP_Resource_Nickel_Ingot>1</ESCP_Resource_Nickel_Ingot>
+    </products>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>ESCP_Raw_Nickel_Ore</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+  </RecipeDef>
+
+  <RecipeDef>
+    <defName>ESCP_Smelt_Nickel_Bulk</defName>
+    <label>Smelt nickel from ore in bulk</label>
+    <description>Use heat and strong force to extract the purist of material from raw ore.</description>
+    <jobString>Smelting ingots from ore.</jobString>
+    <workAmount>150</workAmount>
+    <workSpeedStat>SmeltingSpeed</workSpeedStat>
+    <effectWorking>Smelt</effectWorking>
+    <soundWorking>Recipe_Smelt</soundWorking>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ESCP_Raw_Nickel_Ore</li>
+          </thingDefs>
+        </filter>
+        <count>15</count>
+      </li>
+    </ingredients>
+    <products>
+      <ESCP_Resource_Nickel_Ingot>5</ESCP_Resource_Nickel_Ingot>
+    </products>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>ESCP_Raw_Nickel_Ore</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+  </RecipeDef>
+
+    <!-- Orgnium -->
+
+  <RecipeDef>
+    <defName>ESCP_Smelt_Orgnium</defName>
+    <label>Smelt orgnium from ore</label>
+    <description>Use heat and strong force to extract the purist of material from raw ore.</description>
+    <jobString>Smelting ingots from ore.</jobString>
+    <workAmount>30</workAmount>
+    <workSpeedStat>SmeltingSpeed</workSpeedStat>
+    <effectWorking>Smelt</effectWorking>
+    <soundWorking>Recipe_Smelt</soundWorking>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ESCP_Raw_Orgnium_Ore</li>
+          </thingDefs>
+        </filter>
+        <count>3</count>
+      </li>
+    </ingredients>
+    <products>
+      <ESCP_Resource_Orgnium_Ingot>1</ESCP_Resource_Orgnium_Ingot>
+    </products>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>ESCP_Raw_Orgnium_Ore</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+  </RecipeDef>
+
+  <RecipeDef>
+    <defName>ESCP_Smelt_Orgnium_Bulk</defName>
+    <label>Smelt orgnium from ore in bulk</label>
+    <description>Use heat and strong force to extract the purist of material from raw ore.</description>
+    <jobString>Smelting ingots from ore.</jobString>
+    <workAmount>150</workAmount>
+    <workSpeedStat>SmeltingSpeed</workSpeedStat>
+    <effectWorking>Smelt</effectWorking>
+    <soundWorking>Recipe_Smelt</soundWorking>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ESCP_Raw_Orgnium_Ore</li>
+          </thingDefs>
+        </filter>
+        <count>15</count>
+      </li>
+    </ingredients>
+    <products>
+      <ESCP_Resource_Orgnium_Ingot>5</ESCP_Resource_Orgnium_Ingot>
+    </products>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>ESCP_Raw_Orgnium_Ore</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+  </RecipeDef>
+
+    <!-- Orichalcum -->
+
+  <RecipeDef>
+    <defName>ESCP_Smelt_Orichalcum</defName>
+    <label>Smelt orichalcum from ore</label>
+    <description>Use heat and strong force to extract the purist of material from raw ore.</description>
+    <jobString>Smelting ingots from ore.</jobString>
+    <workAmount>30</workAmount>
+    <workSpeedStat>SmeltingSpeed</workSpeedStat>
+    <effectWorking>Smelt</effectWorking>
+    <soundWorking>Recipe_Smelt</soundWorking>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ESCP_Raw_Orichalcum_Ore</li>
+          </thingDefs>
+        </filter>
+        <count>3</count>
+      </li>
+    </ingredients>
+    <products>
+      <ESCP_Resource_Orichalcum_Ingot>1</ESCP_Resource_Orichalcum_Ingot>
+    </products>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>ESCP_Raw_Orichalcum_Ore</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+  </RecipeDef>
+
+  <RecipeDef>
+    <defName>ESCP_Smelt_Orichalcum_Bulk</defName>
+    <label>Smelt orichalcum from ore in bulk</label>
+    <description>Use heat and strong force to extract the purist of material from raw ore.</description>
+    <jobString>Smelting ingots from ore.</jobString>
+    <workAmount>150</workAmount>
+    <workSpeedStat>SmeltingSpeed</workSpeedStat>
+    <effectWorking>Smelt</effectWorking>
+    <soundWorking>Recipe_Smelt</soundWorking>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ESCP_Raw_Orichalcum_Ore</li>
+          </thingDefs>
+        </filter>
+        <count>15</count>
+      </li>
+    </ingredients>
+    <products>
+      <ESCP_Resource_Orichalcum_Ingot>5</ESCP_Resource_Orichalcum_Ingot>
+    </products>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>ESCP_Raw_Orichalcum_Ore</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+  </RecipeDef>
+
+    <!-- Palladium -->
+
+  <RecipeDef>
+    <defName>ESCP_Smelt_Palladium</defName>
+    <label>Smelt palladium from ore</label>
+    <description>Use heat and strong force to extract the purist of material from raw ore.</description>
+    <jobString>Smelting ingots from ore.</jobString>
+    <workAmount>30</workAmount>
+    <workSpeedStat>SmeltingSpeed</workSpeedStat>
+    <effectWorking>Smelt</effectWorking>
+    <soundWorking>Recipe_Smelt</soundWorking>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ESCP_Raw_Palladium_Ore</li>
+          </thingDefs>
+        </filter>
+        <count>3</count>
+      </li>
+    </ingredients>
+    <products>
+      <ESCP_Resource_Palladium_Ingot>1</ESCP_Resource_Palladium_Ingot>
+    </products>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>ESCP_Raw_Palladium_Ore</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+  </RecipeDef>
+
+  <RecipeDef>
+    <defName>ESCP_Smelt_Palladium_Bulk</defName>
+    <label>Smelt palladium from ore in bulk</label>
+    <description>Use heat and strong force to extract the purist of material from raw ore.</description>
+    <jobString>Smelting ingots from ore.</jobString>
+    <workAmount>150</workAmount>
+    <workSpeedStat>SmeltingSpeed</workSpeedStat>
+    <effectWorking>Smelt</effectWorking>
+    <soundWorking>Recipe_Smelt</soundWorking>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ESCP_Raw_Palladium_Ore</li>
+          </thingDefs>
+        </filter>
+        <count>15</count>
+      </li>
+    </ingredients>
+    <products>
+      <ESCP_Resource_Palladium_Ingot>5</ESCP_Resource_Palladium_Ingot>
+    </products>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>ESCP_Raw_Palladium_Ore</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+  </RecipeDef>
+
+    <!-- Quicksilver -->
+
+  <RecipeDef>
+    <defName>ESCP_Smelt_Quicksilver</defName>
+    <label>Smelt quicksilver from ore</label>
+    <description>Use heat and strong force to extract the purist of material from raw ore.</description>
+    <jobString>Smelting ingots from ore.</jobString>
+    <workAmount>30</workAmount>
+    <workSpeedStat>SmeltingSpeed</workSpeedStat>
+    <effectWorking>Smelt</effectWorking>
+    <soundWorking>Recipe_Smelt</soundWorking>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ESCP_Raw_Quicksilver_Ore</li>
+          </thingDefs>
+        </filter>
+        <count>3</count>
+      </li>
+    </ingredients>
+    <products>
+      <ESCP_Resource_Quicksilver_Ingot>1</ESCP_Resource_Quicksilver_Ingot>
+    </products>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>ESCP_Raw_Quicksilver_Ore</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+  </RecipeDef>
+
+  <RecipeDef>
+    <defName>ESCP_Smelt_Quicksilver_Bulk</defName>
+    <label>Smelt quicksilver from ore in bulk</label>
+    <description>Use heat and strong force to extract the purist of material from raw ore.</description>
+    <jobString>Smelting ingots from ore.</jobString>
+    <workAmount>150</workAmount>
+    <workSpeedStat>SmeltingSpeed</workSpeedStat>
+    <effectWorking>Smelt</effectWorking>
+    <soundWorking>Recipe_Smelt</soundWorking>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ESCP_Raw_Quicksilver_Ore</li>
+          </thingDefs>
+        </filter>
+        <count>15</count>
+      </li>
+    </ingredients>
+    <products>
+      <ESCP_Resource_Quicksilver_Ingot>5</ESCP_Resource_Quicksilver_Ingot>
+    </products>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>ESCP_Raw_Quicksilver_Ore</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+  </RecipeDef>
+
+    <!-- Silver -->
+
+  <RecipeDef>
+    <defName>ESCP_Smelt_Silver</defName>
+    <label>Smelt silver from ore</label>
+    <description>Use heat and strong force to extract the purist of material from raw ore.</description>
+    <jobString>Smelting ingots from ore.</jobString>
+    <workAmount>30</workAmount>
+    <workSpeedStat>SmeltingSpeed</workSpeedStat>
+    <effectWorking>Smelt</effectWorking>
+    <soundWorking>Recipe_Smelt</soundWorking>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ESCP_Raw_Silver_Ore</li>
+          </thingDefs>
+        </filter>
+        <count>3</count>
+      </li>
+    </ingredients>
+    <products>
+      <ESCP_Resource_Silver_Ingot>1</ESCP_Resource_Silver_Ingot>
+    </products>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>ESCP_Raw_Silver_Ore</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+  </RecipeDef>
+
+  <RecipeDef>
+    <defName>ESCP_Smelt_Silver_Bulk</defName>
+    <label>Smelt silver from ore in bulk</label>
+    <description>Use heat and strong force to extract the purist of material from raw ore.</description>
+    <jobString>Smelting ingots from ore.</jobString>
+    <workAmount>150</workAmount>
+    <workSpeedStat>SmeltingSpeed</workSpeedStat>
+    <effectWorking>Smelt</effectWorking>
+    <soundWorking>Recipe_Smelt</soundWorking>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ESCP_Raw_Silver_Ore</li>
+          </thingDefs>
+        </filter>
+        <count>15</count>
+      </li>
+    </ingredients>
+    <products>
+      <ESCP_Resource_Silver_Ingot>5</ESCP_Resource_Silver_Ingot>
+    </products>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>ESCP_Raw_Silver_Ore</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+  </RecipeDef>
+
+    <!-- Steel -->
+
+  <RecipeDef>
+    <defName>ESCP_Smelt_Steel</defName>
+    <label>Smelt steel from ore</label>
+    <description>Use heat and strong force to extract the purist of material from raw ore.</description>
+    <jobString>Smelting ingots from ore.</jobString>
+    <workAmount>30</workAmount>
+    <workSpeedStat>SmeltingSpeed</workSpeedStat>
+    <effectWorking>Smelt</effectWorking>
+    <soundWorking>Recipe_Smelt</soundWorking>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ESCP_Raw_Iron_Ore</li>
+          </thingDefs>
+        </filter>
+        <count>3</count>
+      </li>
+     <li>
+        <filter>
+          <thingDefs>
+            <li>ESCP_Raw_Corundum_Ore</li>
+          </thingDefs>
+        </filter>
+        <count>3</count>
+      </li>
+    </ingredients>
+    <products>
+      <ESCP_Resource_Steel_Ingot>1</ESCP_Resource_Steel_Ingot>
+    </products>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>ESCP_Raw_Corundum_Ore</li>
+        <li>ESCP_Raw_Iron_Ore</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+  </RecipeDef>
+
+  <RecipeDef>
+    <defName>ESCP_Smelt_Steel_Bulk</defName>
+    <label>Smelt steel from ore in bulk</label>
+    <description>Use heat and strong force to extract the purist of material from raw ore.</description>
+    <jobString>Smelting ingots from ore.</jobString>
+    <workAmount>150</workAmount>
+    <workSpeedStat>SmeltingSpeed</workSpeedStat>
+    <effectWorking>Smelt</effectWorking>
+    <soundWorking>Recipe_Smelt</soundWorking>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ESCP_Raw_Iron_Ore</li>
+          </thingDefs>
+        </filter>
+        <count>15</count>
+      </li>
+     <li>
+        <filter>
+          <thingDefs>
+            <li>ESCP_Raw_Corundum_Ore</li>
+          </thingDefs>
+        </filter>
+        <count>15</count>
+      </li>
+    </ingredients>
+    <products>
+      <ESCP_Resource_Steel_Ingot>5</ESCP_Resource_Steel_Ingot>
+    </products>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>ESCP_Raw_Corundum_Ore</li>
+        <li>ESCP_Raw_Iron_Ore</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+  </RecipeDef>
+
+    <!-- Tin -->
+
+  <RecipeDef>
+    <defName>ESCP_Smelt_Tin</defName>
+    <label>Smelt tin from ore</label>
+    <description>Use heat and strong force to extract the purist of material from raw ore.</description>
+    <jobString>Smelting ingots from ore.</jobString>
+    <workAmount>30</workAmount>
+    <workSpeedStat>SmeltingSpeed</workSpeedStat>
+    <effectWorking>Smelt</effectWorking>
+    <soundWorking>Recipe_Smelt</soundWorking>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ESCP_Raw_Tin_Ore</li>
+          </thingDefs>
+        </filter>
+        <count>3</count>
+      </li>
+    </ingredients>
+    <products>
+      <ESCP_Resource_Tin_Ingot>1</ESCP_Resource_Tin_Ingot>
+    </products>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>ESCP_Raw_Tin_Ore</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+  </RecipeDef>
+
+  <RecipeDef>
+    <defName>ESCP_Smelt_Tin_Bulk</defName>
+    <label>Smelt tin from ore in bulk</label>
+    <description>Use heat and strong force to extract the purist of material from raw ore.</description>
+    <jobString>Smelting ingots from ore.</jobString>
+    <workAmount>150</workAmount>
+    <workSpeedStat>SmeltingSpeed</workSpeedStat>
+    <effectWorking>Smelt</effectWorking>
+    <soundWorking>Recipe_Smelt</soundWorking>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ESCP_Raw_Tin_Ore</li>
+          </thingDefs>
+        </filter>
+        <count>15</count>
+      </li>
+    </ingredients>
+    <products>
+      <ESCP_Resource_Tin_Ingot>5</ESCP_Resource_Tin_Ingot>
+    </products>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>ESCP_Raw_Tin_Ore</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+  </RecipeDef>
+
+    <!-- Zinc -->
+
+  <RecipeDef>
+    <defName>ESCP_Smelt_Zinc</defName>
+    <label>Smelt zinc from ore</label>
+    <description>Use heat and strong force to extract the purist of material from raw ore.</description>
+    <jobString>Smelting ingots from ore.</jobString>
+    <workAmount>30</workAmount>
+    <workSpeedStat>SmeltingSpeed</workSpeedStat>
+    <effectWorking>Smelt</effectWorking>
+    <soundWorking>Recipe_Smelt</soundWorking>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ESCP_Raw_Zinc_Ore</li>
+          </thingDefs>
+        </filter>
+        <count>3</count>
+      </li>
+    </ingredients>
+    <products>
+      <ESCP_Resource_Zinc_Ingot>1</ESCP_Resource_Zinc_Ingot>
+    </products>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>ESCP_Raw_Zinc_Ore</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+  </RecipeDef>
+
+  <RecipeDef>
+    <defName>ESCP_Smelt_Zinc_Bulk</defName>
+    <label>Smelt zinc from ore in bulk</label>
+    <description>Use heat and strong force to extract the purist of material from raw ore.</description>
+    <jobString>Smelting ingots from ore.</jobString>
+    <workAmount>150</workAmount>
+    <workSpeedStat>SmeltingSpeed</workSpeedStat>
+    <effectWorking>Smelt</effectWorking>
+    <soundWorking>Recipe_Smelt</soundWorking>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ESCP_Raw_Zinc_Ore</li>
+          </thingDefs>
+        </filter>
+        <count>15</count>
+      </li>
+    </ingredients>
+    <products>
+      <ESCP_Resource_Zinc_Ingot>5</ESCP_Resource_Zinc_Ingot>
+    </products>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>ESCP_Raw_Zinc_Ore</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+  </RecipeDef>
+
+</Defs>

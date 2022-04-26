@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>MorrowRim</li>
+		</mods> 
+				
+		<match Class="PatchOperationSequence">
+			<operations>
+			
+				<li Class="PatchOperationAddModExtension">
+					<xpath>/Defs/ThingDef[@Name="MorrowRim_BaseInsect" or @Name="MorrowRim_BaseKwama"]</xpath>
+					<value>
+						<li Class="ESCP_BoneChitinFat.ExtraButcherProperties">
+							<hasBone>false</hasBone>
+							<hasChitin>true</hasChitin>
+							<hasFat>true</hasFat>
+						</li>
+					</value>
+				</li>	
+				
+				<li Class="PatchOperationAddModExtension">
+					<xpath>/Defs/ThingDef[defName="MorrowRim_Netch" or defName="MorrowRim_RetchingNetch"]</xpath>
+					<value>
+						<li Class="ESCP_BoneChitinFat.ExtraButcherProperties">
+							<hasBone>false</hasBone>
+							<hasChitin>false</hasChitin>
+							<hasFat>false</hasFat>
+						</li>
+					</value>
+				</li>	
+
+				<li Class="PatchOperationAddModExtension">
+					<xpath>/Defs/ThingDef[defName="MorrowRim_SiltStrider" or defName="MorrowRim_NixHound"]</xpath>
+					<value>
+						<li Class="ESCP_BoneChitinFat.ExtraButcherProperties">
+							<hasBone>false</hasBone>
+							<hasChitin>false</hasChitin>
+							<hasFat>true</hasFat>
+						</li>
+					</value>
+				</li>	
+
+			</operations>
+		</match>
+	</Operation>
+	
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>MorrowRim - Ashlands Swamp</li>
+		</mods> 
+				
+		<match Class="PatchOperationSequence">
+			<operations>
+			
+				<li Class="PatchOperationAddModExtension">
+					<xpath>/Defs/ThingDef[defName="MorrowRim_SwampJelly"]</xpath>
+					<value>
+						<li Class="ESCP_BoneChitinFat.ExtraButcherProperties">
+							<hasBone>false</hasBone>
+							<hasChitin>false</hasChitin>
+							<hasFat>false</hasFat>
+						</li>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAddModExtension">
+					<xpath>/Defs/ThingDef[defName="MorrowRim_SwampStrider"]</xpath>
+					<value>
+						<li Class="ESCP_BoneChitinFat.ExtraButcherProperties">
+							<hasBone>false</hasBone>
+							<hasChitin>false</hasChitin>
+							<hasFat>true</hasFat>
+						</li>
+					</value>
+				</li>				
+
+			</operations>
+		</match>
+	</Operation>
+	
+</Patch>
+

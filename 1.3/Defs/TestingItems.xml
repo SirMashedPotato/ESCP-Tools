@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="WoolBase">
+    <defName>ESCP_Item_Bone</defName>
+    <label>testing bone</label>
+    <description>Sheep's wool. It provides good insulation.</description>
+    <statBases>
+      <StuffPower_Insulation_Cold>26</StuffPower_Insulation_Cold>
+      <StuffPower_Insulation_Heat>10</StuffPower_Insulation_Heat>
+    </statBases>
+    <stuffProps>
+      <color>(219,0,0)</color>
+      <commonality>0.24</commonality>
+    </stuffProps>
+    <graphicData>
+      <color>(219,214,209)</color>
+    </graphicData>
+  </ThingDef>
+
+  <ThingDef ParentName="WoolBase">
+    <defName>ESCP_Item_Fat</defName>
+    <label>testing fat</label>
+    <description>Sheep's wool. It provides good insulation.</description>
+    <statBases>
+      <StuffPower_Insulation_Cold>26</StuffPower_Insulation_Cold>
+      <StuffPower_Insulation_Heat>10</StuffPower_Insulation_Heat>
+    </statBases>
+    <stuffProps>
+      <color>(0,0,209)</color>
+      <commonality>0.24</commonality>
+    </stuffProps>
+    <graphicData>
+      <color>(219,214,209)</color>
+    </graphicData>
+  </ThingDef>
+
+</Defs>

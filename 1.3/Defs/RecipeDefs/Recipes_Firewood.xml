@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <!-- Chopping Logs to Firewood -->
+
+  <RecipeDef>
+    <defName>ESCP_Chop_Firewood</defName>
+    <label>chop firewood from logs</label>
+    <description>Chop firewood from logs for a better fuel source.</description>
+    <jobString>Choping firewood from logs.</jobString>
+    <workAmount>30</workAmount>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <effectWorking>CutStone</effectWorking>
+    <soundWorking>Recipe_MakeStoneBlocks</soundWorking>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>WoodLog</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <products>
+      <ESCP_Fuel_Firewood>3</ESCP_Fuel_Firewood>
+    </products>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>WoodLog</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+  </RecipeDef>
+
+  <RecipeDef>
+    <defName>ESCP_Chop_Firewood_Bulk</defName>
+    <label>chop firewood from logs in bulk</label>
+    <description>Chop firewood from logs for a better fuel source.</description>
+    <jobString>Choping firewood from logs.</jobString>
+    <workAmount>150</workAmount>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <effectWorking>CutStone</effectWorking>
+    <soundWorking>Recipe_MakeStoneBlocks</soundWorking>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>WoodLog</li>
+          </thingDefs>
+        </filter>
+        <count>3</count>
+      </li>
+    </ingredients>
+    <products>
+      <ESCP_Fuel_Firewood>9</ESCP_Fuel_Firewood>
+    </products>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>WoodLog</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+  </RecipeDef>
+
+</Defs>

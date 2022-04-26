@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Achievements Expanded</li>
+		</mods>
+
+		<match Class="PatchOperationSequence">
+			<operations>
+
+
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs</xpath>
+					<value>
+
+						<AchievementsExpanded.AchievementTabDef>
+							<defName>ESCP_AchievementsTab</defName>
+							<label>ESCP</label>
+						</AchievementsExpanded.AchievementTabDef>
+
+						<!-- Building -->
+						
+						<AchievementsExpanded.AchievementDef>
+							<defName>ESCP_AchievementBonemoldBuilder</defName>
+							<label>Working With What You Have</label>
+							<description>Build something out of bonemold five times</description>
+							<bgtexPath>Achievements/ESCP_AchievementBackgroundDunmer_Bonemold</bgtexPath>
+							<tab>ESCP_AchievementsTab</tab>
+							<tracker Class="AchievementsExpanded.BuildingTracker">
+								<madeFrom>ESCP_BonemoldItem</madeFrom>
+								<count>5</count>
+							</tracker>
+
+							<texPath>Achievements/ESCP_AchievementBonemoldBuilder</texPath>
+							<points>10</points>
+						</AchievementsExpanded.AchievementDef>
+
+						<!-- Crafting -->
+										
+						<AchievementsExpanded.AchievementDef>
+							<defName>ESCP_AchievementBonemoldCrafter</defName>
+							<label>Bonemold Crafter</label>
+							<description>Craft bonemold 50 times</description>
+							<bgtexPath>Achievements/ESCP_AchievementBackgroundDunmer_Bonemold</bgtexPath>
+							<tab>ESCP_AchievementsTab</tab>
+							<tracker Class="AchievementsExpanded.ItemCraftTracker">
+								<def>ESCP_BonemoldItem</def>
+								<count>50</count>
+							</tracker>
+
+							<texPath>Achievements/ESCP_AchievementBonemoldCrafter</texPath>
+							<points>10</points>
+						</AchievementsExpanded.AchievementDef>
+
+						<!-- Colonist -->
+					
+						<!-- Items -->
+						
+						<AchievementsExpanded.AchievementDef>
+							<defName>ESCP_AchievementBonemoldCollector</defName>
+							<label>Bonemold Collector</label>
+							<description>Obtain 500 vessels of bonemold</description>
+							<bgtexPath>Achievements/ESCP_AchievementBackgroundDunmer_Bonemold</bgtexPath>
+							<tab>ESCP_AchievementsTab</tab>
+							<tracker Class="AchievementsExpanded.ItemTracker">
+								<def>ESCP_BonemoldItem</def>
+								<count>500</count>
+							</tracker>
+
+							<texPath>Achievements/ESCP_AchievementBonemoldCollector</texPath>
+							<points>10</points>
+						</AchievementsExpanded.AchievementDef>
+	
+						<!-- Kills -->
+
+						<!-- Research -->
+						
+						<AchievementsExpanded.AchievementDef>
+							<defName>ESCP_AchievementBonemoldResearcher</defName>
+							<label>Bonemold For Dummies</label>
+							<description>Research bonemold creation</description>
+							<bgtexPath>Achievements/ESCP_AchievementBackgroundDunmer_Bonemold</bgtexPath>
+							<tab>ESCP_AchievementsTab</tab>
+							<tracker Class="AchievementsExpanded.ResearchTracker">
+								<def>ESCP_DunmerBonemoldCreation</def>
+							</tracker>
+
+							<texPath>Achievements/ESCP_AchievementBonemoldResearcher</texPath>
+							<points>5</points>
+						</AchievementsExpanded.AchievementDef>
+
+						<!-- Trade -->
+						
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+
+
+</Patch>
+

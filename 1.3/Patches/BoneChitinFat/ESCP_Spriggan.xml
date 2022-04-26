@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>ESCP - Spriggan</li>
+		</mods> 
+				
+		<match Class="PatchOperationSequence">
+			<operations>
+			
+				<li Class="PatchOperationAddModExtension">
+					<xpath>/Defs/ThingDef[@Name="ESCP_SprigganThingBase"]</xpath>
+					<value>
+						<li Class="ESCP_BoneChitinFat.ExtraButcherProperties">
+							<hasBone>false</hasBone>
+							<hasChitin>false</hasChitin>
+							<hasFat>false</hasFat>
+						</li>
+					</value>
+				</li>	
+			
+			</operations>
+		</match>
+	</Operation>
+	
+</Patch>
+

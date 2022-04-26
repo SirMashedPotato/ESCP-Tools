@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ResearchProjectDef>
+		<defName>ESCP_DunmerBonemoldCreation</defName>
+		<label>bonemold creation</label>
+		<description>Allows the creation of bonemold at a Dunmeri forge, or butchers table.\n\nBonemold armor provides reasonable protection, and is comparatively faster to make and lighter than steel plate, though is also less durable. Bonemold is also better at dispersing heat than steel.</description>
+		<baseCost>300</baseCost>
+		<techLevel>Medieval</techLevel>
+		<researchViewX>1.00</researchViewX>
+		<researchViewY>1.00</researchViewY>
+		<tab>ESCP_DunmerTab</tab>
+		<tags>
+		  <li>ESCP_DunmerStart_Medieval</li>
+		</tags>
+	</ResearchProjectDef>
+
+</Defs>

@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <RecipeDef>
+    <defName>ESCP_CrushStoneChunk</defName>
+    <label>crush stone chunk</label>
+    <description>Crush a stone chunk, receiving the ore found inside.</description>
+    <workerClass>ESCP_ChunkCrushing.Recipe_CrushChunk</workerClass>
+    <jobString>Crushing stone chunk.</jobString>
+    <workAmount>1000</workAmount>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <effectWorking>CutStone</effectWorking>
+    <soundWorking>Recipe_MakeStoneBlocks</soundWorking>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>StoneChunks</li>
+          </categories>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <categories>
+        <li>StoneChunks</li>
+      </categories>
+    </fixedIngredientFilter>
+	<recipeUsers>
+		<li>TableStonecutter</li>
+	</recipeUsers>
+	<!--<researchPrerequisite>MorrowRim_DunmerArmory</researchPrerequisite>-->
+  </RecipeDef>
+  
+  <!-- Catching -->
+  
+  <RecipeDef>
+    <defName>ESCP_CatchBug</defName>
+    <label>catch bug</label>
+    <description>Try to catch a nearby bug.</description>
+    <workerClass>ESCP_ThingCatching.Recipe_CatchThing</workerClass>
+    <jobString>Attempting to catch bug.</jobString>
+    <workAmount>1000</workAmount>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <effectWorking>ButcherFlesh</effectWorking>
+    <soundWorking>Recipe_MakeStoneBlocks</soundWorking>
+
+	<recipeUsers>
+		<li>ESCP_Bug_Catching_Spot</li>
+	</recipeUsers>
+	<!--<researchPrerequisite>MorrowRim_DunmerArmory</researchPrerequisite>-->
+	<modExtensions>
+		<li Class="ESCP_ThingCatching.RecipeProperties">
+			<catchTags>
+				<li>ESCP_CatchTagBug</li>	<!-- Just a string -->
+			</catchTags>
+			<effeciencyMult>1.5</effeciencyMult>	<!-- Multiplier for catch amount -->
+        </li>
+	</modExtensions>
+  </RecipeDef>
+  
+  <RecipeDef>
+    <defName>ESCP_CatchFish</defName>
+    <label>catch fish</label>
+    <description>Try to catch a nearby fish.</description>
+    <workerClass>ESCP_ThingCatching.Recipe_CatchThing</workerClass>
+    <jobString>Attempting to catch fish.</jobString>
+    <workAmount>1000</workAmount>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <effectWorking>ButcherFlesh</effectWorking>
+    <soundWorking>Recipe_MakeStoneBlocks</soundWorking>
+
+	<recipeUsers>
+		<li>ESCP_Fishing_Spot</li>
+	</recipeUsers>
+	<!--<researchPrerequisite>MorrowRim_DunmerArmory</researchPrerequisite>-->
+	<modExtensions>
+		<li Class="ESCP_ThingCatching.RecipeProperties">
+			<catchTags>
+				<li>ESCP_CatchTagFish</li>	<!-- Just a string -->
+			</catchTags>
+			<effeciencyMult>1.5</effeciencyMult>	<!-- Multiplier for catch amount -->
+        </li>
+	</modExtensions>
+  </RecipeDef>
+
+</Defs>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ESCP_ChunkCrushing.CrushableOutputDef>
+		<defName>ESCP_CrushableDef_Failiure</defName>
+		<!--<outputThingDef></outputThingDef>-->
+		<outputRange>0~0</outputRange>
+		<chance>0.5</chance>
+		<isSpecial>false</isSpecial>
+	</ESCP_ChunkCrushing.CrushableOutputDef>
+
+	<ESCP_ChunkCrushing.CrushableOutputDef>
+		<defName>ESCP_CrushableDef_Steel</defName>
+		<outputThingDef>Steel</outputThingDef>
+		<outputRange>10~25</outputRange>
+		<chance>1</chance>
+		<isSpecial>false</isSpecial>
+	</ESCP_ChunkCrushing.CrushableOutputDef>
+	
+	<ESCP_ChunkCrushing.CrushableOutputDef>
+		<defName>ESCP_CrushableDef_Silver</defName>
+		<outputThingDef>Silver</outputThingDef>
+		<outputRange>5~15</outputRange>
+		<chance>0.5</chance>
+		<isSpecial>false</isSpecial>
+	</ESCP_ChunkCrushing.CrushableOutputDef>
+	
+	<ESCP_ChunkCrushing.CrushableOutputDef>
+		<defName>ESCP_CrushableDef_Gold</defName>
+		<outputThingDef>Gold</outputThingDef>
+		<outputRange>5~10</outputRange>
+		<chance>0.25</chance>
+		<isSpecial>true</isSpecial>
+	</ESCP_ChunkCrushing.CrushableOutputDef>
+	
+	<ESCP_ChunkCrushing.CrushableOutputDef>
+		<defName>ESCP_CrushableDef_Jade</defName>
+		<outputThingDef>Jade</outputThingDef>
+		<outputRange>5~10</outputRange>
+		<chance>0.25</chance>
+		<isSpecial>false</isSpecial>
+	</ESCP_ChunkCrushing.CrushableOutputDef>
+
+</Defs>

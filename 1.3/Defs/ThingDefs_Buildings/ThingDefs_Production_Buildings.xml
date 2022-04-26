@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <!--__________ Production Buildings __________-->
+
+    <!-- Forge -->
+
+  <ThingDef ParentName="BenchBase">
+    <defName>ESCP_Prodution_Forge</defName>
+    <label>Forge</label>
+    <description>A hand fueled station for smithing weapons and tools.</description>
+    <thingClass>Building_WorkTable</thingClass>
+    <drawerType>MapMeshAndRealTime</drawerType>
+    <graphicData>
+      <texPath>Things/Buildings/Forge/ESCP_Forge</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(5.5,3.5)</drawSize>
+      <shadowData>
+        <volume>(2.8, 0.35, 0.59)</volume>
+        <offset>(0, 0, 0.08)</offset>
+      </shadowData>
+      <damageData>
+        <cornerTL>Damage/Corner</cornerTL>
+        <cornerTR>Damage/Corner</cornerTR>
+        <cornerBL>Damage/Corner</cornerBL>
+        <cornerBR>Damage/Corner</cornerBR>
+      </damageData>
+    </graphicData>
+    <stuffCategories>
+      <li>Stony</li>
+    </stuffCategories>
+    <costStuffCount>200</costStuffCount>
+    <costList>
+        <WoodLog>10</WoodLog>
+        <!-- <ESCP_Resource_Iron_Ingot>20</ESCP_Resource_Iron_Ingot> -->
+    </costList>
+    <altitudeLayer>Building</altitudeLayer>
+    <fillPercent>0.5</fillPercent>
+    <useHitPoints>True</useHitPoints>
+    <statBases>
+      <WorkToBuild>3000</WorkToBuild>
+      <MaxHitPoints>180</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+      <Cleanliness>-3</Cleanliness>
+    </statBases>
+    <size>(5,3)</size>
+    <designationCategory>ESCP_Designation_Production</designationCategory>
+    <passability>Impassable</passability>
+    <hasInteractionCell>True</hasInteractionCell>
+    <interactionCellOffset>(0,0,-1)</interactionCellOffset>
+    <surfaceType>Item</surfaceType>
+    <constructionSkillPrerequisite>3</constructionSkillPrerequisite>
+    <inspectorTabs>
+      <li>ITab_Bills</li>
+    </inspectorTabs>
+    <building>
+      <spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+      <buildingTags>
+        <li>ESCP_Production</li>
+      </buildingTags>
+    </building>
+    <tickerType>Normal</tickerType>
+    <recipes>
+    </recipes>
+    <comps>
+      <li Class="CompProperties_Refuelable">
+        <fuelConsumptionRate>60.0</fuelConsumptionRate>
+        <fuelCapacity>50.0</fuelCapacity>
+        <fuelFilter>
+          <thingDefs>
+            <!-- <li>ESCP_Fuel_Firewood</li> -->
+            <!-- <li>ESCP_Fuel_Charcoal</li> -->
+            <li>MorrowRim_FireSalts</li>
+            <li>WoodLog</li>
+          </thingDefs>
+        </fuelFilter>
+        <consumeFuelOnlyWhenUsed>false</consumeFuelOnlyWhenUsed>
+        <showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
+      </li>
+      <li Class="CompProperties_AffectedByFacilities">
+        <linkableFacilities>
+          <!-- <li>ESCP_Anvil</li>
+          <li>ESCP_Anvil</li> -->
+        </linkableFacilities>
+      </li>
+      <li Class="CompProperties_Glower">
+        <glowRadius>6</glowRadius>
+        <glowColor>(217,112,33,0)</glowColor>
+      </li>
+    </comps>
+    <placeWorkers>
+      <li>PlaceWorker_ShowFacilitiesConnections</li>
+      <li>PlaceWorker_PreventInteractionSpotOverlap</li>
+    </placeWorkers>
+    <researchPrerequisites>
+      <li>Smithing</li>
+    </researchPrerequisites>
+  </ThingDef>
+
+  <!-- Smelter -->
+
+  <ThingDef ParentName="BenchBase">
+    <defName>ESCP_Production_Smelter</defName>
+    <label>Smelter</label>
+    <description>Extracts usable metal from ore chunks and turns them into ingots.</description>
+    <thingClass>Building_WorkTable_HeatPush</thingClass>
+    <graphicData>
+      <texPath>Things/Buildings/Smelter/ESCP_Smelter</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(4,4)</drawSize>
+      <damageData>
+        <cornerTL>Damage/Corner</cornerTL>
+        <cornerTR>Damage/Corner</cornerTR>
+        <cornerBL>Damage/Corner</cornerBL>
+        <cornerBR>Damage/Corner</cornerBR>
+      </damageData>
+    </graphicData>
+    <stuffCategories>
+      <li>Stony</li>
+    </stuffCategories>
+    <castEdgeShadows>false</castEdgeShadows>
+    <costStuffCount>200</costStuffCount>
+    <altitudeLayer>Building</altitudeLayer>
+    <fillPercent>0.5</fillPercent>
+    <useHitPoints>True</useHitPoints>
+    <statBases>
+      <WorkToBuild>3500</WorkToBuild>
+      <MaxHitPoints>200</MaxHitPoints>
+      <Flammability>0</Flammability>
+    </statBases>
+    <size>(3,3)</size>
+    <designationCategory>ESCP_Designation_Production</designationCategory>
+    <passability>Impassable</passability>
+    <hasInteractionCell>True</hasInteractionCell>
+    <interactionCellOffset>(0,0,-1)</interactionCellOffset>
+    <surfaceType>Item</surfaceType>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+    <constructionSkillPrerequisite>4</constructionSkillPrerequisite>
+    <recipes>
+      <li>ESCP_Smelt_Adamantite</li>
+      <li>ESCP_Smelt_Adamantite_Bulk</li>
+      <li>ESCP_Smelt_Adamantium</li>
+      <li>ESCP_Smelt_Adamantium_Bulk</li>   
+      <li>ESCP_Smelt_Brass</li>
+      <li>ESCP_Smelt_Brass_Bulk</li> 
+      <li>ESCP_Smelt_Bronze</li>
+      <li>ESCP_Smelt_Bronze_Bulk</li> 
+      <li>ESCP_Smelt_Buoyant_Steel</li>
+      <li>ESCP_Smelt_Buoyant_Steel_Bulk</li> 
+      <li>ESCP_Smelt_Cobalt</li>
+      <li>ESCP_Smelt_Cobalt_Bulk</li> 
+      <li>ESCP_Smelt_Copper</li>
+      <li>ESCP_Smelt_Copper_Bulk</li> 
+      <li>ESCP_Smelt_Corundum</li>
+      <li>ESCP_Smelt_Corundum_Bulk</li> 
+      <li>ESCP_Smelt_Ebony</li>
+      <li>ESCP_Smelt_Ebony_Bulk</li> 
+      <li>ESCP_Smelt_Volcanic_Glass</li>
+      <li>ESCP_Smelt_Volcanic_Glass_Bulk</li>
+      <li>ESCP_Smelt_Gold</li>
+      <li>ESCP_Smelt_Gold_Bulk</li> 
+      <li>ESCP_Smelt_Iron</li>
+      <li>ESCP_Smelt_Iron_Bulk</li> 
+      <li>ESCP_Smelt_Meteoric_Iron</li>    
+      <li>ESCP_Smelt_Meteoric_Iron_Bulk</li>
+      <li>ESCP_Smelt_Mithril</li>
+      <li>ESCP_Smelt_Mithril_Bulk</li> 
+      <li>ESCP_Smelt_Moonstone</li>
+      <li>ESCP_Smelt_Moonstone_Bulk</li>
+      <li>ESCP_Smelt_Nickel</li>
+      <li>ESCP_Smelt_Nickel_Bulk</li> 
+      <li>ESCP_Smelt_Orgnium</li>
+      <li>ESCP_Smelt_Orgnium_Bulk</li>
+      <li>ESCP_Smelt_Orichalcum</li>
+      <li>ESCP_Smelt_Orichalcum_Bulk</li> 
+      <li>ESCP_Smelt_Palladium</li>
+      <li>ESCP_Smelt_Palladium_Bulk</li>
+      <li>ESCP_Smelt_Quicksilver</li>
+      <li>ESCP_Smelt_Quicksilver_Bulk</li> 
+      <li>ESCP_Smelt_Silver</li>
+      <li>ESCP_Smelt_Silver_Bulk</li>
+      <li>ESCP_Smelt_Steel</li>
+      <li>ESCP_Smelt_Steel_Bulk</li> 
+      <li>ESCP_Smelt_Tin</li>
+      <li>ESCP_Smelt_Tin_Bulk</li>
+      <li>ESCP_Smelt_Zinc</li>
+      <li>ESCP_Smelt_Zinc_Bulk</li>
+    </recipes>
+    <inspectorTabs>
+      <li>ITab_Bills</li>
+    </inspectorTabs>
+    <comps>
+      <li Class="CompProperties_Refuelable">
+        <fuelConsumptionRate>55.0</fuelConsumptionRate>
+        <fuelCapacity>70.0</fuelCapacity>
+        <fuelFilter>
+          <thingDefs>
+            <!-- <li>ESCP_Fuel_Firewood</li> -->
+            <!-- <li>ESCP_Fuel_Charcoal</li> -->
+            <!-- <li>ESCP_Item_Fire_Salts</li> -->
+            <li>WoodLog</li>
+          </thingDefs>
+        </fuelFilter>
+        <consumeFuelOnlyWhenUsed>false</consumeFuelOnlyWhenUsed>
+        <showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
+      </li>
+      <li Class="CompProperties_Glower">
+        <glowRadius>6</glowRadius>
+        <glowColor>(217,112,33,0)</glowColor>
+      </li>
+      <li Class="CompProperties_HeatPusher">
+        <compClass>CompHeatPusherPowered</compClass>
+        <heatPerSecond>10</heatPerSecond>
+      </li>
+    </comps>
+    <building>
+      <spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+      <heatPerTickWhileWorking>0.32</heatPerTickWhileWorking>
+    </building>
+    <tickerType>Normal</tickerType>
+    <designationHotKey>Misc10</designationHotKey>
+    <placeWorkers>
+      <li>PlaceWorker_PreventInteractionSpotOverlap</li>
+    </placeWorkers>
+    <researchPrerequisites>
+      <li>Smithing</li>
+    </researchPrerequisites>
+  </ThingDef>
+
+  <!-- Wood Chopping Block -->
+
+  <ThingDef ParentName="BenchBase">
+    <defName>ESCP_Production_Wood_Chopping_Block</defName>
+    <label>Wood Chopping Block</label>
+    <description>Used to chop logs into firewood.</description>
+    <thingClass>Building_WorkTable</thingClass>
+    <graphicData>
+      <texPath>Things/Buildings/Wood_Chopping_Block/ESCP_Wood_Chopping_Block</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(1,1)</drawSize>
+    </graphicData>
+    <castEdgeShadows>false</castEdgeShadows>
+    <costList>
+      <WoodLog>10</WoodLog>
+      <ESCP_Tool_Woodcutters_Axe>1</ESCP_Tool_Woodcutters_Axe>
+    </costList>
+    <altitudeLayer>Building</altitudeLayer>
+    <fillPercent>0.5</fillPercent>
+    <useHitPoints>True</useHitPoints>
+    <statBases>
+      <WorkToBuild>100</WorkToBuild>
+      <MaxHitPoints>50</MaxHitPoints>
+      <Flammability>10</Flammability>
+    </statBases>
+    <size>(1,1)</size>
+    <designationCategory>ESCP_Designation_Production</designationCategory>
+    <passability>PassThroughOnly</passability>
+    <hasInteractionCell>True</hasInteractionCell>
+    <interactionCellOffset>(0,0,-1)</interactionCellOffset>
+    <surfaceType>Item</surfaceType>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    <constructionSkillPrerequisite>1</constructionSkillPrerequisite>
+    <recipes>
+      <li>ESCP_Chop_Firewood</li>
+      <li>ESCP_Chop_Firewood_Bulk</li>
+    </recipes>
+    <inspectorTabs>
+      <li>ITab_Bills</li>
+    </inspectorTabs>
+    <building>
+      <spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+      <heatPerTickWhileWorking>0.32</heatPerTickWhileWorking>
+    </building>
+    <tickerType>Normal</tickerType>
+    <designationHotKey>Misc10</designationHotKey>
+    <placeWorkers>
+      <li>PlaceWorker_PreventInteractionSpotOverlap</li>
+    </placeWorkers>
+    <researchPrerequisites>
+      <!-- <li>ESCP_Wood_Chopping</li> -->
+    </researchPrerequisites>
+  </ThingDef>
+
+  <!--__________ Gathering Spots __________-->
+
+  <!-- Stone Gathering Spot -->
+
+  <!-- <ThingDef ParentName="BuildingBase">
+    <defName>ESCP_Production_Stone_Gathering_Spot</defName>
+    <label>Stone Gathering Spot</label>
+    <description>A place to gather stone chunks, requires stonet terrain.</description>
+    <thingClass>Building_WorkTable</thingClass>
+    <graphicData>
+      <texPath>Things/Buildings/ESCP_Stone_Gathering_Spot</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(1,1)</drawSize>
+    </graphicData>
+    <altitudeLayer>FloorEmplacement</altitudeLayer>
+    <costList>
+        <ESCP_Melee_Weapon_Pickaxe>1</ESCP_Melee_Weapon_Pickaxe>
+    </costList>
+    <statBases>
+      <WorkToBuild>100</WorkToBuild>
+      <WorkTableWorkSpeedFactor>0.5</WorkTableWorkSpeedFactor>
+    </statBases>
+    <scatterableOnMapGen>false</scatterableOnMapGen>
+    <useHitPoints>false</useHitPoints>
+    <size>(1,1)</size>
+    <designationCategory>ESCP_Designation_Production</designationCategory>
+    <passability>Standable</passability>
+    <hasInteractionCell>True</hasInteractionCell>
+    <interactionCellOffset>(0,0,-1)</interactionCellOffset>
+    <surfaceType>Item</surfaceType>
+    <recipes>
+      <li></li>
+    </recipes>
+    <inspectorTabs>
+      <li>ITab_Bills</li>
+    </inspectorTabs>
+    <building>
+      <spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+      <sowTag>SupportPlantsOnly</sowTag>
+      <canPlaceOverImpassablePlant>false</canPlaceOverImpassablePlant>
+      <ai_chillDestination>false</ai_chillDestination>
+      <artificialForMeditationPurposes>false</artificialForMeditationPurposes>
+      <buildingTags>
+        <li>ESCP_Production</li>
+      </buildingTags>
+    </building>
+		<terrainAffordanceNeeded>Gravel</terrainAffordanceNeeded>
+    <designationHotKey>Misc1</designationHotKey>
+    <placeWorkers>
+      <li>PlaceWorker_PreventInteractionSpotOverlap</li>
+    </placeWorkers>
+  </ThingDef> -->
+
+  <!-- Fishing Spot -->
+
+  <!-- <ThingDef ParentName="BuildingBase">
+    <defName>ESCP_Production_Fishing_Spot</defName>
+    <label>Fishing Spot</label>
+    <description>A place to try and gather fish, requires shallow water.</description>
+    <thingClass>Building_WorkTable</thingClass>
+    <graphicData>
+      <texPath>Things/Buildings/ESCP_Fishing_Spot</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(1,1)</drawSize>
+    </graphicData>
+    <altitudeLayer>FloorEmplacement</altitudeLayer>
+    <costList>
+        <ESCP_Melee_Weapon_Pickaxe>1</ESCP_Melee_Weapon_Pickaxe>
+    </costList>
+    <statBases>
+      <WorkToBuild>100</WorkToBuild>
+      <WorkTableWorkSpeedFactor>0.5</WorkTableWorkSpeedFactor>
+    </statBases>
+    <scatterableOnMapGen>false</scatterableOnMapGen>
+    <useHitPoints>false</useHitPoints>
+    <size>(1,1)</size>
+    <designationCategory>ESCP_Designation_Production</designationCategory>
+    <passability>Standable</passability>
+    <hasInteractionCell>True</hasInteractionCell>
+    <interactionCellOffset>(0,0,-1)</interactionCellOffset>
+    <surfaceType>Item</surfaceType>
+    <recipes>
+      <li></li>
+    </recipes>
+    <inspectorTabs>
+      <li>ITab_Bills</li>
+    </inspectorTabs>
+    <building>
+      <spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+      <sowTag>SupportPlantsOnly</sowTag>
+      <canPlaceOverImpassablePlant>false</canPlaceOverImpassablePlant>
+      <ai_chillDestination>false</ai_chillDestination>
+      <artificialForMeditationPurposes>false</artificialForMeditationPurposes>
+      <buildingTags>
+        <li>ESCP_Production</li>
+      </buildingTags>
+    </building>
+		<terrainAffordanceNeeded>WaterShallowBase</terrainAffordanceNeeded>
+    <designationHotKey>Misc1</designationHotKey>
+    <placeWorkers>
+      <li>PlaceWorker_PreventInteractionSpotOverlap</li>
+    </placeWorkers>
+  </ThingDef> -->
+
+</Defs>

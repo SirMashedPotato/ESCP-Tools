@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <!--__________ Tools __________-->
+
+    <!-- Pickaxe -->
+
+  <ThingDef ParentName="BaseMeleeWeapon_Blunt_Quality">
+    <defName>ESCP_Tool_Pickaxe</defName>
+    <label>Pickaxe</label>
+    <description>A tool primarily used to break apart stone to find precious minerals inside.</description>
+    <graphicData>
+      <texPath>Things/Item/Weapons/Tools/Pickaxe/ESCP_Tool_Pickaxe</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <uiIconScale>1.2</uiIconScale>
+    <techLevel>Medieval</techLevel>
+    <costList>
+        <ESCP_Resource_Iron_Ingot>5</ESCP_Resource_Iron_Ingot>
+        <WoodLog>10</WoodLog>
+    </costList>
+	<equippedStatOffsets>
+      <MiningSpeed>0.15</MiningSpeed>
+      <MiningYield>0.6</MiningYield>
+    </equippedStatOffsets>
+    <statBases>
+      <WorkToMake>6200</WorkToMake>
+      <Mass>1.5</Mass>
+    </statBases>
+    <recipeMaker>
+      <!-- <researchPrerequisite>ESCP_Stone_Gathering</researchPrerequisite> -->
+      <skillRequirements>
+        <Crafting>3</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <weaponTags>
+      <li>MedievalMeleeDecent</li>
+    </weaponTags>
+    <tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>head</label>
+        <labelUsedInLogging>false</labelUsedInLogging>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>15.7</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+
+    <!-- Woodcutter's Axe -->
+
+  <ThingDef ParentName="BaseMeleeWeapon_Blunt_Quality">
+    <defName>ESCP_Tool_Woodcutters_Axe</defName>
+    <label>Woodcutter's Axe</label>
+    <description>A tool primarily used to chop wood logs into firewood.</description>
+    <graphicData>
+      <texPath>Things/Item/Weapons/Tools/Woodcutters_Axe/ESCP_Tool_Woodcutters_Axe</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <uiIconScale>1.2</uiIconScale>
+    <techLevel>Medieval</techLevel>
+    <costList>
+        <ESCP_Resource_Iron_Ingot>5</ESCP_Resource_Iron_Ingot>
+        <WoodLog>15</WoodLog>
+    </costList>
+	<equippedStatOffsets>
+      <PlantWorkSpeed>0.15</PlantWorkSpeed>
+    </equippedStatOffsets>
+    <statBases>
+      <WorkToMake>6000</WorkToMake>
+      <Mass>1.5</Mass>
+    </statBases>
+    <recipeMaker>
+      <!-- <researchPrerequisite>ESCP_Wood_Chopping</researchPrerequisite> -->
+      <skillRequirements>
+        <Crafting>3</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <weaponTags>
+      <li>MedievalMeleeDecent</li>
+    </weaponTags>
+    <tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>head</label>
+        <labelUsedInLogging>false</labelUsedInLogging>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>15.7</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+
+</Defs>

@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<TerrainDef ParentName="FloorBase">
+		<defName>ESCP_BonemoldPaved</defName>
+		<label>rough bonemold</label>
+		<description>Rough bonemold. It is cheap and quick to build, but is also quite ugly.</description>
+		<texturePath>Things/Terrain/Surfaces/ESCP_BonemoldConcrete</texturePath>
+		<edgeType>Hard</edgeType>
+		<renderPrecedence>70</renderPrecedence>
+		<statBases>
+		  <Beauty>-1</Beauty>
+		  <WorkToBuild>100</WorkToBuild>
+		</statBases>
+		<costList>
+		  <ESCP_BonemoldItem>3</ESCP_BonemoldItem>
+		</costList>
+		<researchPrerequisites>
+		  <li>ESCP_DunmerBonemoldCreation</li>
+		</researchPrerequisites>
+	</TerrainDef>
+	
+	<TerrainDef ParentName="FloorBase">
+		<defName>ESCP_BonemoldPavedTile</defName>
+		<label>bonemold paved tile</label>
+		<renderPrecedence>230</renderPrecedence>
+		<description>Bonemold tiles. Cheap, but neutral in terms of looks and slow to build.</description>
+		<texturePath>Things/Terrain/Surfaces/ESCP_BonemoldPavedTile</texturePath>
+		<statBases>
+		  <WorkToBuild>300</WorkToBuild>
+		</statBases>
+		<costList>
+		  <ESCP_BonemoldItem>6</ESCP_BonemoldItem>
+		</costList>
+		<researchPrerequisites>
+		  <li>ESCP_DunmerBonemoldCreation</li>
+		</researchPrerequisites>
+	</TerrainDef>
+	
+	<TerrainDef ParentName="FloorBase">
+		<defName>ESCP_BonemoldSmooth</defName>
+		<label>smooth bonemold</label>
+		<renderPrecedence>230</renderPrecedence>
+		<description>Bonemold flooring, carefully smoothed to perfection. Very nice to look at, but extremely time consuming to build.</description>
+		<texturePath>Terrain/Surfaces/SmoothStone</texturePath>
+		<color>(137,116,75)</color>
+		<statBases>
+		  <Beauty>1</Beauty>
+		  <WorkToBuild>2000</WorkToBuild>
+		</statBases>
+		<costList>
+		  <ESCP_BonemoldItem>20</ESCP_BonemoldItem>
+		</costList>
+		<researchPrerequisites>
+		  <li>ESCP_DunmerBonemoldCreation</li>
+		</researchPrerequisites>
+	</TerrainDef>
+	
+	<!-- Blocks -->
+
+	<TerrainDef ParentName="TileStoneBase">
+		<defName>ESCP_TileBonemoldBlock</defName>
+		<label>bonemold block tile</label>
+		<color>(137,116,75)</color>
+		<costList>
+		  <ESCP_BlocksBonemold>4</ESCP_BlocksBonemold>
+		</costList>
+	</TerrainDef>
+
+	<TerrainDef ParentName="FlagstoneBase">
+		<defName>ESCP_FlagstoneBonemoldBlock</defName>
+		<label>bonemold block flagstone</label>
+		<color>(137,116,75)</color>
+		<costList>
+		  <ESCP_BlocksBonemold>4</ESCP_BlocksBonemold>
+		</costList>
+	</TerrainDef>
+
+</Defs>

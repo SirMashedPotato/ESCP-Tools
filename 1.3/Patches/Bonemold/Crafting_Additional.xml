@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>MorrowRim</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs</xpath>
+					<value>
+						<RecipeDef>
+							<defName>ESCP_CraftBonemold_Additional</defName>
+							<label>make bonemold efficiently</label>
+							<description>Make 50 bonemold from 20 bone or chitin, and 20 resin.</description>
+							<jobString>Making bonemold.</jobString>
+							<workAmount>800</workAmount>
+							<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+							<workSkill>Crafting</workSkill>
+							<effectWorking>Cremate</effectWorking>
+							<soundWorking>Recipe_Cremate</soundWorking>
+							<ingredients>
+								<li>
+									<filter>
+										<thingDefs>
+											<li>ESCP_Item_Bone</li>
+											<li>ESCP_Item_Chitin</li>
+										</thingDefs>
+									</filter>
+									<count>20</count>
+								</li>
+								<li>
+									<filter>
+										<thingDefs>
+											<li>MorrowRim_ShalkResin</li>
+											<li>MorrowRim_PlantResin</li>
+										</thingDefs>
+									</filter>
+									<count>20</count>
+								</li>
+							</ingredients>
+							<fixedIngredientFilter>
+								<thingDefs>
+									<li>ESCP_Item_Bone</li>
+									<li>ESCP_Item_Chitin</li>
+									<li>MorrowRim_ShalkResin</li>
+									<li>MorrowRim_PlantResin</li>
+								</thingDefs>
+							</fixedIngredientFilter>
+							<products>
+								<ESCP_BonemoldItem>50</ESCP_BonemoldItem>
+							</products>
+							<recipeUsers>
+								<li>TableButcher</li>
+								<li MayRequire="DankPyon.Medieval.Overhaul">DankPyon_Workbench</li>
+							</recipeUsers>
+							<researchPrerequisite>ESCP_DunmerBonemoldCreation</researchPrerequisite>
+						</RecipeDef>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+</Patch>

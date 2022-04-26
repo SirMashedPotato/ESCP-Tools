@@ -1,0 +1,2282 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+	<!--__________ Adamantite __________-->
+
+	<!-- Adamantite Ore -->
+
+	<ThingDef ParentName="ResourceBase">
+		<defName>ESCP_Raw_Adamantite_Ore</defName>
+		<label>Adamantite Ore</label>
+		<description>An ore that comes common in Tamreil.  Must be smelted down in order to create useful ingots.</description>
+		<graphicData>
+		  <texPath>Things/Item/Resource/Ores/Adamantite</texPath>
+		  <graphicClass>Graphic_StackCount</graphicClass>
+		  <drawSize>0.70</drawSize>
+		</graphicData>
+		<resourceReadoutPriority>Middle</resourceReadoutPriority>
+		<soundInteract>Metal_Drop</soundInteract>
+		<soundDrop>Metal_Drop</soundDrop>
+		<stackLimit>150</stackLimit>
+		<useHitPoints>true</useHitPoints>
+		<statBases>
+		  <MarketValue>0.2</MarketValue>
+		  <Mass>.3</Mass>
+		  <Flammability>0</Flammability>
+		</statBases>
+		<thingCategories>
+		  <li>Items</li>
+		</thingCategories>
+		<techLevel>Medieval</techLevel>
+		<tradeTags>
+		  <!-- <li>ESCP_Resources_Raw</li> -->
+		</tradeTags>
+	</ThingDef>
+
+	<!-- Adamantite Ingots -->
+
+  <ThingDef ParentName="ResourceBase">
+    <defName>ESCP_Resource_Adamantite_Ingot</defName>
+    <label>Adamantite Ingot</label>
+    <description>An Ingot made from Adamantite ore.</description>
+    <graphicData>
+      <texPath>Things/Item/Resource/Ingots/Copper</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <soundInteract>Metal_Drop</soundInteract>
+    <soundDrop>Metal_Drop</soundDrop>
+    <statBases>
+      <MarketValue>0.6</MarketValue>
+      <Mass>0.65</Mass>
+      <StuffPower_Armor_Sharp>1.2</StuffPower_Armor_Sharp>
+      <StuffPower_Armor_Blunt>0.95</StuffPower_Armor_Blunt>
+      <StuffPower_Armor_Heat>0.65</StuffPower_Armor_Heat>
+      <StuffPower_Insulation_Cold>3</StuffPower_Insulation_Cold>
+      <StuffPower_Insulation_Heat>0</StuffPower_Insulation_Heat>
+      <SharpDamageMultiplier>1.2</SharpDamageMultiplier>
+      <BluntDamageMultiplier>1</BluntDamageMultiplier>
+    </statBases>
+    <useHitPoints>false</useHitPoints>
+    <healthAffectsPrice>false</healthAffectsPrice>
+    <thingCategories>
+      <!-- <li>ESCP_Resources_Raw</li> -->
+    </thingCategories>
+    <burnableByRecipe>false</burnableByRecipe>
+    <smeltable>true</smeltable>
+    <stuffProps>
+      <color>(171,178,126)</color>
+      <categories>
+        <li>Metallic</li>
+      </categories>
+      <appearance>Metal</appearance>
+      <constructEffect>ConstructMetal</constructEffect>
+      <soundImpactStuff>BulletImpact_Metal</soundImpactStuff>
+      <soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
+      <soundMeleeHitBlunt>MeleeHit_Metal_Blunt</soundMeleeHitBlunt>
+      <statFactors>
+        <MaxHitPoints>0.8</MaxHitPoints>
+        <Beauty>1</Beauty>
+        <Flammability>0</Flammability>
+      </statFactors>
+      <canSuggestUseDefaultStuff>false</canSuggestUseDefaultStuff>
+    </stuffProps>
+    <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+    <allowedArchonexusCount>80</allowedArchonexusCount>
+  </ThingDef>
+
+	<!--__________ Adamantium __________-->
+
+	<!-- Adamantium Ore -->
+
+	<ThingDef ParentName="ResourceBase">
+		<defName>ESCP_Raw_Adamantium_Ore</defName>
+		<label>Adamantium Ore</label>
+		<description>An ore that comes common in Tamreil. Must be smelted down in order to create useful ingots.</description>
+		<graphicData>
+		  <texPath>Things/Item/Resource/Ores/Adamantium</texPath>
+		  <graphicClass>Graphic_StackCount</graphicClass>
+		  <drawSize>0.70</drawSize>
+		</graphicData>
+		<resourceReadoutPriority>Middle</resourceReadoutPriority>
+		<soundInteract>Metal_Drop</soundInteract>
+		<soundDrop>Metal_Drop</soundDrop>
+		<stackLimit>150</stackLimit>
+		<useHitPoints>true</useHitPoints>
+		<statBases>
+		  <MarketValue>2</MarketValue>
+		  <Mass>.3</Mass>
+		  <Flammability>0</Flammability>
+		</statBases>
+		<thingCategories>
+		  <li>Items</li>
+		</thingCategories>
+		<techLevel>Medieval</techLevel>
+		<tradeTags>
+		  <!-- <li>ESCP_Resources_Raw</li> -->
+		</tradeTags>
+	</ThingDef>
+
+	<!-- Adamantium Ingots -->
+
+  <ThingDef ParentName="ResourceBase">
+    <defName>ESCP_Resource_Adamantium_Ingot</defName>
+    <label>Copper Ingot</label>
+    <description>An Ingot made from Adamantium ore.</description>
+    <graphicData>
+      <texPath>Things/Item/Resource/Ingots/Adamantium</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <soundInteract>Metal_Drop</soundInteract>
+    <soundDrop>Metal_Drop</soundDrop>
+    <statBases>
+      <MarketValue>6</MarketValue>
+      <Mass>0.65</Mass>
+      <StuffPower_Armor_Sharp>1.2</StuffPower_Armor_Sharp>
+      <StuffPower_Armor_Blunt>1</StuffPower_Armor_Blunt>
+      <StuffPower_Armor_Heat>0.75</StuffPower_Armor_Heat>
+      <StuffPower_Insulation_Cold>3</StuffPower_Insulation_Cold>
+      <StuffPower_Insulation_Heat>0</StuffPower_Insulation_Heat>
+      <SharpDamageMultiplier>1.25</SharpDamageMultiplier>
+      <BluntDamageMultiplier>1.2</BluntDamageMultiplier>
+    </statBases>
+    <useHitPoints>false</useHitPoints>
+    <healthAffectsPrice>false</healthAffectsPrice>
+    <thingCategories>
+      <!-- <li>ESCP_Resources_Raw</li> -->
+    </thingCategories>
+    <burnableByRecipe>false</burnableByRecipe>
+    <smeltable>true</smeltable>
+    <stuffProps>
+      <color>(172,174,183)</color>
+      <categories>
+        <li>Metallic</li>
+      </categories>
+      <appearance>Metal</appearance>
+      <constructEffect>ConstructMetal</constructEffect>
+      <soundImpactStuff>BulletImpact_Metal</soundImpactStuff>
+      <soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
+      <soundMeleeHitBlunt>MeleeHit_Metal_Blunt</soundMeleeHitBlunt>
+      <statFactors>
+        <MaxHitPoints>2</MaxHitPoints>
+        <Beauty>5</Beauty>
+        <Flammability>0</Flammability>
+      </statFactors>
+      <canSuggestUseDefaultStuff>false</canSuggestUseDefaultStuff>
+    </stuffProps>
+    <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+    <allowedArchonexusCount>80</allowedArchonexusCount>
+  </ThingDef>
+
+	<!--__________ Buoyant Steel __________-->
+
+	<!-- Buoyant Steel Scraps -->
+
+	<ThingDef ParentName="ResourceBase">
+		<defName>ESCP_Raw_Buoyant_Steel_Scraps</defName>
+		<label>Buoyant Steel Scraps</label>
+		<description>Scraps fished from the ocean, must be smelted down to create useable ingots.</description>
+		<graphicData>
+		  <texPath>Things/Item/Resource/Misc/Buoyant_Steel_Scraps</texPath>
+		  <graphicClass>Graphic_StackCount</graphicClass>
+		  <drawSize>0.70</drawSize>
+		</graphicData>
+		<resourceReadoutPriority>Middle</resourceReadoutPriority>
+		<soundInteract>Metal_Drop</soundInteract>
+		<soundDrop>Metal_Drop</soundDrop>
+		<stackLimit>150</stackLimit>
+		<useHitPoints>true</useHitPoints>
+		<statBases>
+		  <MarketValue>0.2</MarketValue>
+		  <Mass>.3</Mass>
+		  <Flammability>0</Flammability>
+		</statBases>
+		<thingCategories>
+		  <li>Items</li>
+		</thingCategories>
+		<techLevel>Medieval</techLevel>
+		<tradeTags>
+		  <li>ESCP_Resources_Raw</li>
+		</tradeTags>
+	</ThingDef>
+
+	<!-- Buoyant Steel Ingots -->
+
+  <ThingDef ParentName="ResourceBase">
+    <defName>ESCP_Resource_Buoyant_Steel_Ingot</defName>
+    <label>Buoyant Steel Ingot</label>
+    <description>An Ingot made from buoyant steel scraps.</description>
+    <graphicData>
+      <texPath>Things/Item/Resource/Ingots/Buoyant_Steel</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <soundInteract>Metal_Drop</soundInteract>
+    <soundDrop>Metal_Drop</soundDrop>
+    <statBases>
+      <MarketValue>15</MarketValue>
+      <Mass>0.65</Mass>
+      <StuffPower_Armor_Sharp>1</StuffPower_Armor_Sharp>
+      <StuffPower_Armor_Blunt>0.8</StuffPower_Armor_Blunt>
+      <StuffPower_Armor_Heat>0.7</StuffPower_Armor_Heat>
+      <StuffPower_Insulation_Cold>3</StuffPower_Insulation_Cold>
+      <StuffPower_Insulation_Heat>0</StuffPower_Insulation_Heat>
+      <SharpDamageMultiplier>0.75</SharpDamageMultiplier>
+      <BluntDamageMultiplier>0.75</BluntDamageMultiplier>
+    </statBases>
+    <useHitPoints>false</useHitPoints>
+    <healthAffectsPrice>false</healthAffectsPrice>
+    <thingCategories>
+       <li>ESCP_Resources_Raw</li> 
+    </thingCategories>
+    <burnableByRecipe>false</burnableByRecipe>
+    <smeltable>true</smeltable>
+    <stuffProps>
+      <categories>
+        <li>Metallic</li>
+      </categories>
+      <appearance>Metal</appearance>
+      <constructEffect>ConstructMetal</constructEffect>
+      <soundImpactStuff>BulletImpact_Metal</soundImpactStuff>
+      <soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
+      <soundMeleeHitBlunt>MeleeHit_Metal_Blunt</soundMeleeHitBlunt>
+      <statFactors>
+        <MaxHitPoints>1</MaxHitPoints>
+        <Beauty>1</Beauty>
+        <Flammability>0</Flammability>
+      </statFactors>
+      <canSuggestUseDefaultStuff>false</canSuggestUseDefaultStuff>
+    </stuffProps>
+    <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+    <allowedArchonexusCount>80</allowedArchonexusCount>
+  </ThingDef>
+
+	<!--__________ Brass __________-->
+
+    <!-- Brass Ingots -->
+
+  <ThingDef ParentName="ResourceBase">
+    <defName>ESCP_Resource_Brass_Ingot</defName>
+    <label>Brass Ingot</label>
+    <description>An Ingot made from copper and zinc. Smelt copper and zinc in order to make useful ingots.</description>
+    <graphicData>
+      <texPath>Things/Item/Resource/Ingots/Brass</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <soundInteract>Metal_Drop</soundInteract>
+    <soundDrop>Metal_Drop</soundDrop>
+    <statBases>
+      <MarketValue>15</MarketValue>
+      <Mass>0.65</Mass>
+      <StuffPower_Armor_Sharp>0.38</StuffPower_Armor_Sharp>
+      <StuffPower_Armor_Blunt>0.45</StuffPower_Armor_Blunt>
+      <StuffPower_Armor_Heat>0.42</StuffPower_Armor_Heat>
+      <StuffPower_Insulation_Cold>3</StuffPower_Insulation_Cold>
+      <StuffPower_Insulation_Heat>0</StuffPower_Insulation_Heat>
+      <SharpDamageMultiplier>0.38</SharpDamageMultiplier>
+      <BluntDamageMultiplier>0.60</BluntDamageMultiplier>
+    </statBases>
+    <useHitPoints>false</useHitPoints>
+    <healthAffectsPrice>false</healthAffectsPrice>
+    <thingCategories>
+      <!-- <li>ESCP_Resources_Raw</li> -->
+    </thingCategories>
+    <burnableByRecipe>false</burnableByRecipe>
+    <smeltable>true</smeltable>
+    <stuffProps>
+      <color>(222,189,129)</color>
+      <categories>
+        <li>Metallic</li>
+      </categories>
+      <appearance>Metal</appearance>
+      <constructEffect>ConstructMetal</constructEffect>
+      <soundImpactStuff>BulletImpact_Metal</soundImpactStuff>
+      <soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
+      <soundMeleeHitBlunt>MeleeHit_Metal_Blunt</soundMeleeHitBlunt>
+      <statFactors>
+        <MaxHitPoints>0.7</MaxHitPoints>
+        <Beauty>1</Beauty>
+        <Flammability>0</Flammability>
+      </statFactors>
+      <canSuggestUseDefaultStuff>false</canSuggestUseDefaultStuff>
+    </stuffProps>
+    <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+    <allowedArchonexusCount>80</allowedArchonexusCount>
+  </ThingDef>
+
+	<!--__________ Bronze __________-->
+
+    <!-- Bronze Ingots -->
+
+  <ThingDef ParentName="ResourceBase">
+    <defName>ESCP_Resource_Bronze_Ingot</defName>
+    <label>Bronze Ingot</label>
+    <description>An Ingot made from copper and tin. Smelt copper and zinc in order to make useful ingots.</description>
+    <graphicData>
+      <texPath>Things/Item/Resource/Ingots/Bronze</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <soundInteract>Metal_Drop</soundInteract>
+    <soundDrop>Metal_Drop</soundDrop>
+    <statBases>
+      <MarketValue>15</MarketValue>
+      <Mass>0.65</Mass>
+      <StuffPower_Armor_Sharp>0.40</StuffPower_Armor_Sharp>
+      <StuffPower_Armor_Blunt>0.36</StuffPower_Armor_Blunt>
+      <StuffPower_Armor_Heat>0.5</StuffPower_Armor_Heat>
+      <StuffPower_Insulation_Cold>3</StuffPower_Insulation_Cold>
+      <StuffPower_Insulation_Heat>0</StuffPower_Insulation_Heat>
+      <SharpDamageMultiplier>0.45</SharpDamageMultiplier>
+      <BluntDamageMultiplier>0.55</BluntDamageMultiplier>
+    </statBases>
+    <useHitPoints>false</useHitPoints>
+    <healthAffectsPrice>false</healthAffectsPrice>
+    <thingCategories>
+      <!-- <li>ESCP_Resources_Raw</li> -->
+    </thingCategories>
+    <burnableByRecipe>false</burnableByRecipe>
+    <smeltable>true</smeltable>
+    <stuffProps>
+      <color>(229,166,132)</color>
+      <categories>
+        <li>Metallic</li>
+      </categories>
+      <appearance>Metal</appearance>
+      <constructEffect>ConstructMetal</constructEffect>
+      <soundImpactStuff>BulletImpact_Metal</soundImpactStuff>
+      <soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
+      <soundMeleeHitBlunt>MeleeHit_Metal_Blunt</soundMeleeHitBlunt>
+      <statFactors>
+        <MaxHitPoints>0.9</MaxHitPoints>
+        <Beauty>1</Beauty>
+        <Flammability>0</Flammability>
+      </statFactors>
+      <canSuggestUseDefaultStuff>false</canSuggestUseDefaultStuff>
+    </stuffProps>
+    <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+    <allowedArchonexusCount>80</allowedArchonexusCount>
+  </ThingDef>
+
+	<!--__________ Cobalt __________-->
+
+	<!-- Cobalt Ore -->
+
+	<ThingDef ParentName="ResourceBase">
+		<defName>ESCP_Raw_Cobalt_Ore</defName>
+		<label>Coblat Ore</label>
+		<description>An ore that comes common in Tamreil. Must be smelted down in order to create useful ingots.</description>
+		<graphicData>
+		  <texPath>Things/Item/Resource/Ores/Cobalt</texPath>
+		  <graphicClass>Graphic_StackCount</graphicClass>
+		  <drawSize>0.70</drawSize>
+		</graphicData>
+		<resourceReadoutPriority>Middle</resourceReadoutPriority>
+		<soundInteract>Metal_Drop</soundInteract>
+		<soundDrop>Metal_Drop</soundDrop>
+		<stackLimit>150</stackLimit>
+		<useHitPoints>true</useHitPoints>
+		<statBases>
+		  <MarketValue>0.2</MarketValue>
+		  <Mass>.3</Mass>
+		  <Flammability>0</Flammability>
+		</statBases>
+		<thingCategories>
+		  <li>Items</li>
+		</thingCategories>
+		<techLevel>Medieval</techLevel>
+		<tradeTags>
+		  <!-- <li>ESCP_Resources_Raw</li> -->
+		</tradeTags>
+	</ThingDef>
+
+	<!-- Cobalt Ingots -->
+
+  <ThingDef ParentName="ResourceBase">
+    <defName>ESCP_Resource_Cobalt_Ingot</defName>
+    <label>Cobalt Ingot</label>
+    <description>An Ingot made from cobalt ore.</description>
+    <graphicData>
+      <texPath>Things/Item/Resource/Ingots/Cobalt</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <soundInteract>Metal_Drop</soundInteract>
+    <soundDrop>Metal_Drop</soundDrop>
+    <statBases>
+      <MarketValue>0.6</MarketValue>
+      <Mass>0.65</Mass>
+      <StuffPower_Armor_Sharp>0.70</StuffPower_Armor_Sharp>
+      <StuffPower_Armor_Blunt>0.85</StuffPower_Armor_Blunt>
+      <StuffPower_Armor_Heat>0.75</StuffPower_Armor_Heat>
+      <StuffPower_Insulation_Cold>3</StuffPower_Insulation_Cold>
+      <StuffPower_Insulation_Heat>0</StuffPower_Insulation_Heat>
+      <SharpDamageMultiplier>0.75</SharpDamageMultiplier>
+      <BluntDamageMultiplier>0.8</BluntDamageMultiplier>
+    </statBases>
+    <useHitPoints>false</useHitPoints>
+    <healthAffectsPrice>false</healthAffectsPrice>
+    <thingCategories>
+      <!-- <li>ESCP_Resources_Raw</li> -->
+    </thingCategories>
+    <burnableByRecipe>false</burnableByRecipe>
+    <smeltable>true</smeltable>
+    <stuffProps>
+      <color>(61,150,197)</color>
+      <categories>
+        <li>Metallic</li>
+      </categories>
+      <appearance>Metal</appearance>
+      <constructEffect>ConstructMetal</constructEffect>
+      <soundImpactStuff>BulletImpact_Metal</soundImpactStuff>
+      <soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
+      <soundMeleeHitBlunt>MeleeHit_Metal_Blunt</soundMeleeHitBlunt>
+      <statFactors>
+        <MaxHitPoints>0.8</MaxHitPoints>
+        <Beauty>2</Beauty>
+        <Flammability>0</Flammability>
+      </statFactors>
+      <canSuggestUseDefaultStuff>false</canSuggestUseDefaultStuff>
+    </stuffProps>
+    <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+    <allowedArchonexusCount>80</allowedArchonexusCount>
+  </ThingDef>
+
+	<!--__________ Copper __________-->
+
+	<!-- Copper Ore -->
+
+	<ThingDef ParentName="ResourceBase">
+		<defName>ESCP_Raw_Copper_Ore</defName>
+		<label>Copper Ore</label>
+		<description>An ore that comes common in Tamreil, used with zinc or tin to make brass and bronze.  Must be smelted down in order to create useful ingots.</description>
+		<graphicData>
+		  <texPath>Things/Item/Resource/Ores/Copper</texPath>
+		  <graphicClass>Graphic_StackCount</graphicClass>
+		  <drawSize>0.70</drawSize>
+		</graphicData>
+		<resourceReadoutPriority>Middle</resourceReadoutPriority>
+		<soundInteract>Metal_Drop</soundInteract>
+		<soundDrop>Metal_Drop</soundDrop>
+		<stackLimit>150</stackLimit>
+		<useHitPoints>true</useHitPoints>
+		<statBases>
+		  <MarketValue>0.2</MarketValue>
+		  <Mass>.3</Mass>
+		  <Flammability>0</Flammability>
+		</statBases>
+		<thingCategories>
+		  <li>Items</li>
+		</thingCategories>
+		<techLevel>Medieval</techLevel>
+		<tradeTags>
+		  <!-- <li>ESCP_Resources_Raw</li> -->
+		</tradeTags>
+	</ThingDef>
+
+	<!-- Copper Ingots -->
+
+  <ThingDef ParentName="ResourceBase">
+    <defName>ESCP_Resource_Copper_Ingot</defName>
+    <label>Copper Ingot</label>
+    <description>An Ingot made from Copper ore.</description>
+    <graphicData>
+      <texPath>Things/Item/Resource/Ingots/Copper</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <soundInteract>Metal_Drop</soundInteract>
+    <soundDrop>Metal_Drop</soundDrop>
+    <statBases>
+      <MarketValue>0.6</MarketValue>
+      <Mass>0.65</Mass>
+      <StuffPower_Armor_Sharp>0.32</StuffPower_Armor_Sharp>
+      <StuffPower_Armor_Blunt>0.38</StuffPower_Armor_Blunt>
+      <StuffPower_Armor_Heat>0.20</StuffPower_Armor_Heat>
+      <StuffPower_Insulation_Cold>3</StuffPower_Insulation_Cold>
+      <StuffPower_Insulation_Heat>0</StuffPower_Insulation_Heat>
+      <SharpDamageMultiplier>0.38</SharpDamageMultiplier>
+      <BluntDamageMultiplier>0.50</BluntDamageMultiplier>
+    </statBases>
+    <useHitPoints>false</useHitPoints>
+    <healthAffectsPrice>false</healthAffectsPrice>
+    <thingCategories>
+      <!-- <li>ESCP_Resources_Raw</li> -->
+    </thingCategories>
+    <burnableByRecipe>false</burnableByRecipe>
+    <smeltable>true</smeltable>
+    <stuffProps>
+      <color>(171,80,45)</color>
+      <categories>
+        <li>Metallic</li>
+      </categories>
+      <appearance>Metal</appearance>
+      <constructEffect>ConstructMetal</constructEffect>
+      <soundImpactStuff>BulletImpact_Metal</soundImpactStuff>
+      <soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
+      <soundMeleeHitBlunt>MeleeHit_Metal_Blunt</soundMeleeHitBlunt>
+      <statFactors>
+        <MaxHitPoints>0.6</MaxHitPoints>
+        <Beauty>1</Beauty>
+        <Flammability>0</Flammability>
+      </statFactors>
+      <canSuggestUseDefaultStuff>false</canSuggestUseDefaultStuff>
+    </stuffProps>
+    <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+    <allowedArchonexusCount>80</allowedArchonexusCount>
+  </ThingDef>
+
+	<!--_____ Corundum _____-->
+
+	<!-- Corundum Mineable Base -->
+
+	  <ThingDef ParentName="RockBase">
+    <defName>ESCP_Mineable_Corundum</defName>
+    <label>Corundum Cluster</label>
+    <description>Rock containing a cluster of Corundum.</description>
+    <graphicData>
+      <texPath>Things/Building/Linked/RockFlecked_Atlas</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <color>(53,58,32)</color>
+      <colorTwo>(122,92,63)</colorTwo>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>1500</MaxHitPoints>
+    </statBases>
+    <building>
+      <isResourceRock>true</isResourceRock>
+      <mineableThing>ESCP_Raw_Corundum_Ore</mineableThing>
+      <mineableYield>9</mineableYield>
+      <mineableScatterCommonality>0.06</mineableScatterCommonality>
+      <mineableScatterLumpSizeRange>1~5</mineableScatterLumpSizeRange>
+    </building>
+  </ThingDef>
+
+	<!-- Corundum Ore -->
+
+	<ThingDef ParentName="ResourceBase">
+		<defName>ESCP_Raw_Corundum_Ore</defName>
+		<label>Corundum Ore</label>
+		<description>An ore that comes common in Tamreil, used with iron to make steel.  Must be smelted down in order to create useful ingots.</description>
+		<graphicData>
+		  <texPath>Things/Item/Resource/Ores/Corundum</texPath>
+		  <graphicClass>Graphic_StackCount</graphicClass>
+		  <drawSize>0.70</drawSize>
+		</graphicData>
+		<resourceReadoutPriority>Middle</resourceReadoutPriority>
+		<soundInteract>Metal_Drop</soundInteract>
+		<soundDrop>Metal_Drop</soundDrop>
+		<stackLimit>150</stackLimit>
+		<useHitPoints>true</useHitPoints>
+		<statBases>
+		  <MarketValue>0.25</MarketValue>
+		  <Mass>.3</Mass>
+		  <Flammability>0</Flammability>
+		</statBases>
+		<thingCategories>
+		  <!-- <li>ESCP_Items</li> -->
+		  <li>Items</li>
+		</thingCategories>
+		<techLevel>Medieval</techLevel>
+		<tradeTags>
+		  <!-- <li>ESCP_Resources_Raw</li> -->
+		</tradeTags>
+	</ThingDef>
+
+	<!-- Corundum Ingots -->
+
+  <ThingDef ParentName="ResourceBase">
+    <defName>ESCP_Resource_Corundum_Ingot</defName>
+    <label>Corundum Ingot</label>
+    <description>An Ingot made from Corundum ore.</description>
+    <graphicData>
+      <texPath>Things/Item/Resource/Ingots/Corundum</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <soundInteract>Metal_Drop</soundInteract>
+    <soundDrop>Metal_Drop</soundDrop>
+    <statBases>
+      <MarketValue>0.75</MarketValue>
+      <Mass>0.65</Mass>
+      <StuffPower_Armor_Sharp>0.35</StuffPower_Armor_Sharp>
+      <StuffPower_Armor_Blunt>0.30</StuffPower_Armor_Blunt>
+      <StuffPower_Armor_Heat>0.38</StuffPower_Armor_Heat>
+      <StuffPower_Insulation_Cold>3</StuffPower_Insulation_Cold>
+      <StuffPower_Insulation_Heat>0</StuffPower_Insulation_Heat>
+      <SharpDamageMultiplier>0.35</SharpDamageMultiplier>
+      <BluntDamageMultiplier>0.55</BluntDamageMultiplier>
+    </statBases>
+    <useHitPoints>false</useHitPoints>
+    <healthAffectsPrice>false</healthAffectsPrice>
+    <thingCategories>
+      <!-- <li>ESCP_Resources_Raw</li> -->
+    </thingCategories>
+    <burnableByRecipe>false</burnableByRecipe>
+    <smeltable>true</smeltable>
+    <stuffProps>
+      <color>(165,119,86)</color>
+      <categories>
+        <li>Metallic</li>
+      </categories>
+      <appearance>Metal</appearance>
+      <constructEffect>ConstructMetal</constructEffect>
+      <soundImpactStuff>BulletImpact_Metal</soundImpactStuff>
+      <soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
+      <soundMeleeHitBlunt>MeleeHit_Metal_Blunt</soundMeleeHitBlunt>
+      <statFactors>
+        <MaxHitPoints>0.7</MaxHitPoints>
+        <Beauty>1</Beauty>
+        <Flammability>0</Flammability>
+      </statFactors>
+      <canSuggestUseDefaultStuff>false</canSuggestUseDefaultStuff>
+    </stuffProps>
+    <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+    <allowedArchonexusCount>80</allowedArchonexusCount>
+  </ThingDef>
+
+	<!--__________ Ebony __________-->
+
+  <!-- Ebony Mineable -->
+
+	<ThingDef ParentName="RockBase">
+		<defName>ESCP_Mineable_Ebony</defName>
+		<label>Ebony Cluster</label>
+		<description>Rock containing a cluster of Ebony.</description>
+		<graphicData>
+			<texPath>Things/Building/Linked/RockFlecked_Atlas</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<color>(62,52,66)</color>
+			<colorTwo>(122,92,63)</colorTwo>
+		</graphicData>
+		<statBases>
+			<MaxHitPoints>1500</MaxHitPoints>
+		</statBases>
+		<building>
+			<isResourceRock>true</isResourceRock>
+			<mineableThing>ESCP_Raw_Ebony_Ore</mineableThing>
+			<mineableYield>6</mineableYield>
+			<mineableScatterCommonality>0.06</mineableScatterCommonality>
+			<mineableScatterLumpSizeRange>1~5</mineableScatterLumpSizeRange>
+		</building>
+  	</ThingDef>
+
+	<!-- Ebony Ore -->
+
+	<ThingDef ParentName="ResourceBase">
+		<defName>ESCP_Raw_Ebony_Ore</defName>
+		<label>Ebony Ore</label>
+		<description>An ore that comes common in Tamreil.  Must be smelted down in order to create useful ingots.</description>
+		<graphicData>
+		  <texPath>Things/Item/Resource/Ores/Ebony</texPath>
+		  <graphicClass>Graphic_StackCount</graphicClass>
+		  <drawSize>0.70</drawSize>
+		</graphicData>
+		<resourceReadoutPriority>Middle</resourceReadoutPriority>
+		<soundInteract>Metal_Drop</soundInteract>
+		<soundDrop>Metal_Drop</soundDrop>
+		<stackLimit>150</stackLimit>
+		<useHitPoints>true</useHitPoints>
+		<statBases>
+		  <MarketValue>4</MarketValue>
+		  <Mass>.3</Mass>
+		  <Flammability>0</Flammability>
+		</statBases>
+		<thingCategories>
+		  <li>Items</li>
+		</thingCategories>
+		<techLevel>Medieval</techLevel>
+		<tradeTags>
+		  <!-- <li>ESCP_Resources_Raw</li> -->
+		</tradeTags>
+	</ThingDef>
+
+	<!-- Ebony Ingots -->
+
+  <ThingDef ParentName="ResourceBase">
+    <defName>ESCP_Resource_Ebony_Ingot</defName>
+    <label>Ebony Ingot</label>
+    <description>An Ingot made from ebony ore.</description>
+    <graphicData>
+      <texPath>Things/Item/Resource/Ingots/Ebony</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <soundInteract>Metal_Drop</soundInteract>
+    <soundDrop>Metal_Drop</soundDrop>
+    <statBases>
+      <MarketValue>12</MarketValue>
+      <Mass>0.65</Mass>
+      <StuffPower_Armor_Sharp>1.18</StuffPower_Armor_Sharp>
+      <StuffPower_Armor_Blunt>1.05</StuffPower_Armor_Blunt>
+      <StuffPower_Armor_Heat>0.75</StuffPower_Armor_Heat>
+      <StuffPower_Insulation_Cold>3</StuffPower_Insulation_Cold>
+      <StuffPower_Insulation_Heat>0</StuffPower_Insulation_Heat>
+      <SharpDamageMultiplier>1.18</SharpDamageMultiplier>
+      <BluntDamageMultiplier>1.38</BluntDamageMultiplier>
+    </statBases>
+    <useHitPoints>false</useHitPoints>
+    <healthAffectsPrice>false</healthAffectsPrice>
+    <thingCategories>
+      <!-- <li>ESCP_Resources_Raw</li> -->
+    </thingCategories>
+    <burnableByRecipe>false</burnableByRecipe>
+    <smeltable>true</smeltable>
+    <stuffProps>
+      <color>(60,45,67)</color>
+      <categories>
+        <li>Metallic</li>
+      </categories>
+      <appearance>Metal</appearance>
+      <constructEffect>ConstructMetal</constructEffect>
+      <soundImpactStuff>BulletImpact_Metal</soundImpactStuff>
+      <soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
+      <soundMeleeHitBlunt>MeleeHit_Metal_Blunt</soundMeleeHitBlunt>
+      <statFactors>
+        <MaxHitPoints>2.7</MaxHitPoints>
+        <Beauty>3</Beauty>
+        <Flammability>0</Flammability>
+      </statFactors>
+      <canSuggestUseDefaultStuff>false</canSuggestUseDefaultStuff>
+    </stuffProps>
+    <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+    <allowedArchonexusCount>80</allowedArchonexusCount>
+  </ThingDef>
+
+	<!--__________ Volcanic Glass __________-->
+
+	<!-- Volcanic Glass Mineable -->
+
+	<ThingDef ParentName="RockBase">
+		<defName>ESCP_Mineable_Volcanic_Glass</defName>
+		<label>Volcanic Glass Cluster</label>
+		<description>Rock containing a cluster of volcanic glass.</description>
+		<graphicData>
+			<texPath>Things/Building/Linked/RockFlecked_Atlas</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<color>(158,244,156)</color>
+			<colorTwo>(122,92,63)</colorTwo>
+		</graphicData>
+		<statBases>
+			<MaxHitPoints>1500</MaxHitPoints>
+		</statBases>
+		<building>
+			<isResourceRock>true</isResourceRock>
+			<mineableThing>ESCP_Raw_Volcanic_Glass_Ore</mineableThing>
+			<mineableYield>6</mineableYield>
+			<mineableScatterCommonality>0.06</mineableScatterCommonality>
+			<mineableScatterLumpSizeRange>1~5</mineableScatterLumpSizeRange>
+		</building>
+ 	</ThingDef>
+
+	<!-- Volcanic Glass Ore -->
+
+	<ThingDef ParentName="ResourceBase">
+		<defName>ESCP_Raw_Volcanic_Glass_Ore</defName>
+		<label>Volcanic Glass Ore</label>
+		<description>An ore that comes common in Tamreil.  Must be smelted down in order to create useful ingots.</description>
+		<graphicData>
+		  <texPath>Things/Item/Resource/Ores/Glass</texPath>
+		  <graphicClass>Graphic_StackCount</graphicClass>
+		  <drawSize>0.70</drawSize>
+		</graphicData>
+		<resourceReadoutPriority>Middle</resourceReadoutPriority>
+		<soundInteract>Metal_Drop</soundInteract>
+		<soundDrop>Metal_Drop</soundDrop>
+		<stackLimit>150</stackLimit>
+		<useHitPoints>true</useHitPoints>
+		<statBases>
+		  <MarketValue>3</MarketValue>
+		  <Mass>.3</Mass>
+		  <Flammability>0</Flammability>
+		</statBases>
+		<thingCategories>
+		  <li>Items</li>
+		</thingCategories>
+		<techLevel>Medieval</techLevel>
+		<tradeTags>
+		  <!-- <li>ESCP_Resources_Raw</li> -->
+		</tradeTags>
+	</ThingDef>
+
+	<!-- Volcanic Glass Ingots -->
+
+  <ThingDef ParentName="ResourceBase">
+    <defName>ESCP_Resource_Volcanic_Glass_Ingot</defName>
+    <label>Volcanic Glass Ingot</label>
+    <description>An Ingot made from volcanic glass ore.</description>
+    <graphicData>
+      <texPath>Things/Item/Resource/Ingots/Glass</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <soundInteract>Metal_Drop</soundInteract>
+    <soundDrop>Metal_Drop</soundDrop>
+    <statBases>
+      <MarketValue>9</MarketValue>
+      <Mass>0.65</Mass>
+      <StuffPower_Armor_Sharp>1</StuffPower_Armor_Sharp>
+      <StuffPower_Armor_Blunt>0.85</StuffPower_Armor_Blunt>
+      <StuffPower_Armor_Heat>1.2</StuffPower_Armor_Heat>
+      <StuffPower_Insulation_Cold>3</StuffPower_Insulation_Cold>
+      <StuffPower_Insulation_Heat>0</StuffPower_Insulation_Heat>
+      <SharpDamageMultiplier>1.2</SharpDamageMultiplier>
+      <BluntDamageMultiplier>1</BluntDamageMultiplier>
+    </statBases>
+    <useHitPoints>false</useHitPoints>
+    <healthAffectsPrice>false</healthAffectsPrice>
+    <thingCategories>
+      <!-- <li>ESCP_Resources_Raw</li> -->
+    </thingCategories>
+    <burnableByRecipe>false</burnableByRecipe>
+    <smeltable>true</smeltable>
+    <stuffProps>
+      <color>(149,233,147)</color>
+      <categories>
+        <li>Metallic</li>
+      </categories>
+      <appearance>Metal</appearance>
+      <constructEffect>ConstructMetal</constructEffect>
+      <soundImpactStuff>BulletImpact_Metal</soundImpactStuff>
+      <soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
+      <soundMeleeHitBlunt>MeleeHit_Metal_Blunt</soundMeleeHitBlunt>
+      <statFactors>
+        <MaxHitPoints>0.7</MaxHitPoints>
+        <Beauty>4</Beauty>
+        <Flammability>0</Flammability>
+      </statFactors>
+      <canSuggestUseDefaultStuff>false</canSuggestUseDefaultStuff>
+    </stuffProps>
+    <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+    <allowedArchonexusCount>80</allowedArchonexusCount>
+  </ThingDef>
+
+	<!--__________ Gold __________-->
+
+	<!-- Gold Mineable -->
+
+	  <ThingDef ParentName="RockBase">
+    <defName>ESCP_Mineable_Gold</defName>
+    <label>Gold Cluster</label>
+    <description>Rock containing a cluster of Gold.</description>
+    <graphicData>
+      <texPath>Things/Building/Linked/RockFlecked_Atlas</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <color>(242,206,142)</color>
+      <colorTwo>(122,92,63)</colorTwo>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>1500</MaxHitPoints>
+    </statBases>
+    <building>
+      <isResourceRock>true</isResourceRock>
+      <mineableThing>ESCP_Raw_Gold_Ore</mineableThing>
+      <mineableYield>6</mineableYield>
+      <mineableScatterCommonality>0.06</mineableScatterCommonality>
+      <mineableScatterLumpSizeRange>1~5</mineableScatterLumpSizeRange>
+    </building>
+  </ThingDef>
+
+	<!-- Gold Ore -->
+
+	<ThingDef ParentName="ResourceBase">
+		<defName>ESCP_Raw_Gold_Ore</defName>
+		<label>Gold Ore</label>
+		<description>An ore that comes common in Tamreil, used mainly with jewlry and gems or as currency.  Must be smelted down in order to create useful ingots.</description>
+		<graphicData>
+		  <texPath>Things/Item/Resource/Ores/Gold</texPath>
+		  <graphicClass>Graphic_StackCount</graphicClass>
+		  <drawSize>0.70</drawSize>
+		</graphicData>
+		<resourceReadoutPriority>Middle</resourceReadoutPriority>
+		<soundInteract>Metal_Drop</soundInteract>
+		<soundDrop>Metal_Drop</soundDrop>
+		<stackLimit>150</stackLimit>
+		<useHitPoints>true</useHitPoints>
+		<statBases>
+		  <MarketValue>3.25</MarketValue>
+		  <Mass>.3</Mass>
+		  <Flammability>0</Flammability>
+		</statBases>
+		<thingCategories>
+		  <li>Items</li>
+		</thingCategories>
+		<techLevel>Medieval</techLevel>
+		<tradeTags>
+		  <!-- <li>ESCP_Resources_Raw</li> -->
+		</tradeTags>
+	</ThingDef>
+
+	<!-- Gold Ingots -->
+
+  <ThingDef ParentName="ResourceBase">
+    <defName>ESCP_Resource_Gold_Ingot</defName>
+    <label>Gold Ingot</label>
+    <description>An Ingot made from gold ore.</description>
+    <graphicData>
+      <texPath>Things/Item/Resource/Ingots/Gold</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <soundInteract>Metal_Drop</soundInteract>
+    <soundDrop>Metal_Drop</soundDrop>
+    <statBases>
+      <MarketValue>10</MarketValue>
+      <Mass>0.65</Mass>
+      <StuffPower_Armor_Sharp>0.22</StuffPower_Armor_Sharp>
+      <StuffPower_Armor_Blunt>0.30</StuffPower_Armor_Blunt>
+      <StuffPower_Armor_Heat>0.17</StuffPower_Armor_Heat>
+      <StuffPower_Insulation_Cold>3</StuffPower_Insulation_Cold>
+      <StuffPower_Insulation_Heat>0</StuffPower_Insulation_Heat>
+      <SharpDamageMultiplier>0.3</SharpDamageMultiplier>
+      <BluntDamageMultiplier>0.55</BluntDamageMultiplier>
+    </statBases>
+    <useHitPoints>false</useHitPoints>
+    <healthAffectsPrice>false</healthAffectsPrice>
+    <thingCategories>
+      <!-- <li>ESCP_Resources_Raw</li> -->
+    </thingCategories>
+    <burnableByRecipe>false</burnableByRecipe>
+    <smeltable>true</smeltable>
+    <stuffProps>
+      <color>(242,206,142)</color>
+      <categories>
+        <li>Metallic</li>
+      </categories>
+      <appearance>Metal</appearance>
+      <constructEffect>ConstructMetal</constructEffect>
+      <soundImpactStuff>BulletImpact_Metal</soundImpactStuff>
+      <soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
+      <soundMeleeHitBlunt>MeleeHit_Metal_Blunt</soundMeleeHitBlunt>
+      <statFactors>
+        <MaxHitPoints>0.6</MaxHitPoints>
+        <Beauty>20</Beauty>
+        <Flammability>0</Flammability>
+      </statFactors>
+      <canSuggestUseDefaultStuff>false</canSuggestUseDefaultStuff>
+    </stuffProps>
+    <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+    <allowedArchonexusCount>80</allowedArchonexusCount>
+  </ThingDef>
+
+	<!--__________ Iron __________-->
+
+  <!-- Iron Mineable -->
+
+	  <ThingDef ParentName="RockBase">
+    <defName>ESCP_Mineable_Iron</defName>
+    <label>Iron Cluster</label>
+    <description>Rock containing a cluster of Iron.</description>
+    <graphicData>
+      <texPath>Things/Building/Linked/RockFlecked_Atlas</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <color>(61,50,51)</color>
+      <colorTwo>(122,92,63)</colorTwo>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>1500</MaxHitPoints>
+    </statBases>
+    <building>
+      <isResourceRock>true</isResourceRock>
+      <mineableThing>ESCP_Raw_Iron_Ore</mineableThing>
+      <mineableYield>6</mineableYield>
+      <mineableScatterCommonality>1.5</mineableScatterCommonality>
+      <mineableScatterLumpSizeRange>1~5</mineableScatterLumpSizeRange>
+    </building>
+  </ThingDef>
+
+	<!-- Iron Ore -->
+
+	<ThingDef ParentName="ResourceBase">
+		<defName>ESCP_Raw_Iron_Ore</defName>
+		<label>Iron Ore</label>
+		<description>An ore that comes common in Tamreil, used in most metal making. Must be smelted down in order to create useful ingots.</description>
+		<graphicData>
+		  <texPath>Things/Item/Resource/Ores/Iron</texPath>
+		  <graphicClass>Graphic_StackCount</graphicClass>
+		  <drawSize>0.70</drawSize>
+		</graphicData>
+		<resourceReadoutPriority>Middle</resourceReadoutPriority>
+		<soundInteract>Metal_Drop</soundInteract>
+		<soundDrop>Metal_Drop</soundDrop>
+		<stackLimit>150</stackLimit>
+		<useHitPoints>true</useHitPoints>
+		<statBases>
+		  <MarketValue>0.33</MarketValue>
+		  <Mass>.3</Mass>
+		  <Flammability>0</Flammability>
+		</statBases>
+		<thingCategories>
+		  <li>Items</li>
+		</thingCategories>
+		<techLevel>Medieval</techLevel>
+		<tradeTags>
+		  <!-- <li>ESCP_Resources_Raw</li> -->
+		</tradeTags>
+	</ThingDef>
+
+	<!-- Iron Ingots -->
+
+  <ThingDef ParentName="ResourceBase">
+    <defName>ESCP_Resource_Iron_Ingot</defName>
+    <label>Iron Ingot</label>
+    <description>An Ingot made from iron ore.</description>
+    <graphicData>
+      <texPath>Things/Item/Resource/Ingots/Iron</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <soundInteract>Metal_Drop</soundInteract>
+    <soundDrop>Metal_Drop</soundDrop>
+    <statBases>
+      <MarketValue>15</MarketValue>
+      <Mass>0.65</Mass>
+      <StuffPower_Armor_Sharp>0.75</StuffPower_Armor_Sharp>
+      <StuffPower_Armor_Blunt>0.40</StuffPower_Armor_Blunt>
+      <StuffPower_Armor_Heat>0.60</StuffPower_Armor_Heat>
+      <StuffPower_Insulation_Cold>3</StuffPower_Insulation_Cold>
+      <StuffPower_Insulation_Heat>0</StuffPower_Insulation_Heat>
+      <SharpDamageMultiplier>0.80</SharpDamageMultiplier>
+      <BluntDamageMultiplier>0.75</BluntDamageMultiplier>
+    </statBases>
+    <useHitPoints>false</useHitPoints>
+    <healthAffectsPrice>false</healthAffectsPrice>
+    <thingCategories>
+      <!-- <li>ESCP_Resources_Raw</li> -->
+    </thingCategories>
+    <burnableByRecipe>false</burnableByRecipe>
+    <smeltable>true</smeltable>
+    <stuffProps>
+      <color>(142,136,125)</color>
+      <categories>
+        <li>Metallic</li>
+      </categories>
+      <appearance>Metal</appearance>
+      <constructEffect>ConstructMetal</constructEffect>
+      <soundImpactStuff>BulletImpact_Metal</soundImpactStuff>
+      <soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
+      <soundMeleeHitBlunt>MeleeHit_Metal_Blunt</soundMeleeHitBlunt>
+      <statFactors>
+        <MaxHitPoints>0.8</MaxHitPoints>
+        <Beauty>0</Beauty>
+        <Flammability>0</Flammability>
+      </statFactors>
+      <canSuggestUseDefaultStuff>false</canSuggestUseDefaultStuff>
+    </stuffProps>
+    <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+    <allowedArchonexusCount>80</allowedArchonexusCount>
+  </ThingDef>
+
+  	<!--__________ Heart Stone __________-->
+
+	<!-- Heart Stone Mineable Base -->
+
+  <ThingDef ParentName="RockBase">
+    <defName>ESCP_Resource_MineableHeartStone</defName>
+    <label>heart stone cluster</label>
+    <description>Rock containing a cluster of heart stones.</description>
+    <graphicData>
+      <texPath>Things/Building/Linked/RockFlecked_Atlas</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <color>(43,29,27)</color>
+      <colorTwo>(102,30,17)</colorTwo>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>1500</MaxHitPoints>
+    </statBases>
+    <building>
+      <isResourceRock>true</isResourceRock>
+      <mineableThing>ESCP_Resource_HeartStone</mineableThing>
+      <mineableYield>3</mineableYield>
+      <mineableScatterCommonality>0.04</mineableScatterCommonality>
+      <mineableScatterLumpSizeRange>1~3</mineableScatterLumpSizeRange>
+    </building>
+  </ThingDef>
+
+	<!-- Heart Stone -->
+
+	<ThingDef ParentName="ResourceBase">
+		<defName>ESCP_Resource_HeartStone</defName>
+		<label>heart stone</label>
+		<description>A peculiar stone mined from volcanic debris, said to be a shard of the Heart of Lorkhan. It's warm to the touch, and seems to radiate with energy.</description>
+		<graphicData>
+		  <texPath>Things/Item/Resource/Ores/Heart_Stone/ESCP_ESCP_Resource_HeartStone</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		  <drawSize>0.70</drawSize>
+		</graphicData>
+		<resourceReadoutPriority>Middle</resourceReadoutPriority>
+		<soundInteract>Metal_Drop</soundInteract>
+		<soundDrop>Metal_Drop</soundDrop>
+		<stackLimit>25</stackLimit>
+		<useHitPoints>true</useHitPoints>
+		<statBases>
+		  <MarketValue>200</MarketValue>
+		  <MaxHitPoints>100</MaxHitPoints>
+		  <Mass>2</Mass>
+		  <Flammability>0.2</Flammability>
+		</statBases>
+		<thingCategories>
+		  <li>Items</li>
+		</thingCategories>
+		<techLevel>Medieval</techLevel>
+		<tradeTags>
+		  <li>TelvanniExotic</li>
+		  <li>AshlandExotic</li>
+		  <li>ExoticMisc</li>
+		</tradeTags>
+		<butcherProducts>
+		  <Dagoth_AshSalts>5</Dagoth_AshSalts>
+		  <ESCP_Resource_FireSalts>5</ESCP_Resource_FireSalts>
+		  <ESCP_Resource_FerrousSalts>5</ESCP_Resource_FerrousSalts>
+		</butcherProducts>
+	</ThingDef>
+
+	<!--__________ Madness Ore __________-->
+
+	<!-- Madness Ore Mineable -->
+
+
+
+	<!-- Madness Ore Ore -->
+
+
+
+	<!-- Madness Ore Ingots -->
+
+
+
+	<!--__________ Meteoric Iron __________-->
+
+	<!-- Meteoric Iron Mineable Base -->
+
+	  <ThingDef ParentName="RockBase">
+    <defName>ESCP_Mineable_Meteoric_Iron</defName>
+    <label>Meteoric Iron Cluster</label>
+    <description>Rock containing a cluster of Meteoric Iron.</description>
+    <graphicData>
+      <texPath>Things/Building/Linked/RockFlecked_Atlas</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <color>(95,59,48)</color>
+      <colorTwo>(149,120,112)</colorTwo>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>1500</MaxHitPoints>
+    </statBases>
+    <building>
+      <isResourceRock>true</isResourceRock>
+      <mineableThing>ESCP_Raw_Meteoric_Iron_Ore</mineableThing>
+      <mineableYield>4</mineableYield>
+      <mineableScatterCommonality>0</mineableScatterCommonality>
+      <mineableScatterLumpSizeRange>1~3</mineableScatterLumpSizeRange>
+    </building>
+  </ThingDef>
+
+	<!-- Meteoric Iron Ore -->
+
+	<ThingDef ParentName="ResourceBase">
+		<defName>ESCP_Raw_Meteoric_Iron_Ore</defName>
+		<label>Meteoric Iron Ore</label>
+		<description>An ore that comes only from meteors that crash into the planet, used by the Akaviri in thier smithing styles. Must be smelted down in order to create useful ingots.</description>
+		<graphicData>
+		  <texPath>Things/Item/Resource/Ores/Meteoric_Iron</texPath>
+		  <graphicClass>Graphic_StackCount</graphicClass>
+		  <drawSize>0.70</drawSize>
+		</graphicData>
+		<resourceReadoutPriority>Middle</resourceReadoutPriority>
+		<soundInteract>Metal_Drop</soundInteract>
+		<soundDrop>Metal_Drop</soundDrop>
+		<stackLimit>150</stackLimit>
+		<useHitPoints>true</useHitPoints>
+		<statBases>
+		  <MarketValue>2</MarketValue>
+		  <Mass>2</Mass>
+		  <Flammability>0</Flammability>
+		</statBases>
+		<thingCategories>
+		  <!-- <li>ESCP_Items</li> -->
+		  <li>Items</li>
+		</thingCategories>
+	    <burnableByRecipe>false</burnableByRecipe>
+    	<smeltable>false</smeltable>
+		<techLevel>Medieval</techLevel>
+		<tradeTags>
+		  <!-- <li>ESCP_Resources_Raw</li> -->
+		</tradeTags>
+	</ThingDef>
+
+	<!-- Meteoric Iron Ingots -->
+
+  <ThingDef ParentName="ResourceBase">
+    <defName>ESCP_Resource_Meteoric_Iron_Ingot</defName>
+    <label>Meteoric Iron Ingot</label>
+    <description>An Ingot made from ore that comes only from meteors that crash into the planet, used by the Akaviri in thier smithing styles.</description>
+    <graphicData>
+      <texPath>Things/Item/Resource/Ingots/Meteoric_Iron</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <soundInteract>Metal_Drop</soundInteract>
+    <soundDrop>Metal_Drop</soundDrop>
+    <statBases>
+      <MarketValue>6</MarketValue>
+      <Mass>0.65</Mass>
+      <StuffPower_Armor_Sharp>0.80</StuffPower_Armor_Sharp>
+      <StuffPower_Armor_Blunt>0.40</StuffPower_Armor_Blunt>
+      <StuffPower_Armor_Heat>0.75</StuffPower_Armor_Heat>
+      <StuffPower_Insulation_Cold>3</StuffPower_Insulation_Cold>
+      <StuffPower_Insulation_Heat>0</StuffPower_Insulation_Heat>
+      <SharpDamageMultiplier>1.25</SharpDamageMultiplier>
+      <BluntDamageMultiplier>0.9</BluntDamageMultiplier>
+    </statBases>
+    <useHitPoints>false</useHitPoints>
+    <healthAffectsPrice>false</healthAffectsPrice>
+    <thingCategories>
+      <!-- <li>ESCP_Resources_Raw</li> -->
+    </thingCategories>
+    <burnableByRecipe>false</burnableByRecipe>
+    <smeltable>false</smeltable>
+    <stuffProps>
+      <color>(134,95,89)</color>
+      <categories>
+        <li>Metallic</li>
+      </categories>
+      <appearance>Metal</appearance>
+      <constructEffect>ConstructMetal</constructEffect>
+      <soundImpactStuff>BulletImpact_Metal</soundImpactStuff>
+      <soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
+      <soundMeleeHitBlunt>MeleeHit_Metal_Blunt</soundMeleeHitBlunt>
+      <statFactors>
+        <MaxHitPoints>1.5</MaxHitPoints>
+        <Beauty>2</Beauty>
+        <Flammability>0</Flammability>
+      </statFactors>
+      <canSuggestUseDefaultStuff>false</canSuggestUseDefaultStuff>
+    </stuffProps>
+    <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+    <allowedArchonexusCount>80</allowedArchonexusCount>
+  </ThingDef>
+
+	<!--__________ Mithril __________-->
+
+	<!-- Mithril Ore -->
+
+	<ThingDef ParentName="ResourceBase">
+		<defName>ESCP_Raw_Mithril_Ore</defName>
+		<label>Mithril Ore</label>
+		<description>An ore that comes common in Tamreil. Must be smelted down in order to create useful ingots.</description>
+		<graphicData>
+		  <texPath>Things/Item/Resource/Ores/Mithril</texPath>
+		  <graphicClass>Graphic_StackCount</graphicClass>
+		  <drawSize>0.70</drawSize>
+		</graphicData>
+		<resourceReadoutPriority>Middle</resourceReadoutPriority>
+		<soundInteract>Metal_Drop</soundInteract>
+		<soundDrop>Metal_Drop</soundDrop>
+		<stackLimit>150</stackLimit>
+		<useHitPoints>true</useHitPoints>
+		<statBases>
+		  <MarketValue>3</MarketValue>
+		  <Mass>.3</Mass>
+		  <Flammability>0</Flammability>
+		</statBases>
+		<thingCategories>
+		  <li>Items</li>
+		</thingCategories>
+		<techLevel>Medieval</techLevel>
+		<tradeTags>
+		  <!-- <li>ESCP_Resources_Raw</li> -->
+		</tradeTags>
+	</ThingDef>
+
+	<!-- Mithril Ingots -->
+
+  <ThingDef ParentName="ResourceBase">
+    <defName>ESCP_Resource_Mithril_Ingot</defName>
+    <label>Mithril Ingot</label>
+    <description>An Ingot made from mithril ore.</description>
+    <graphicData>
+      <texPath>Things/Item/Resource/Ingots/Mithril</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <soundInteract>Metal_Drop</soundInteract>
+    <soundDrop>Metal_Drop</soundDrop>
+    <statBases>
+      <MarketValue>9</MarketValue>
+      <Mass>0.65</Mass>
+      <StuffPower_Armor_Sharp>1.2</StuffPower_Armor_Sharp>
+      <StuffPower_Armor_Blunt>1</StuffPower_Armor_Blunt>
+      <StuffPower_Armor_Heat>0.9</StuffPower_Armor_Heat>
+      <StuffPower_Insulation_Cold>3</StuffPower_Insulation_Cold>
+      <StuffPower_Insulation_Heat>0</StuffPower_Insulation_Heat>
+      <SharpDamageMultiplier>1.2</SharpDamageMultiplier>
+      <BluntDamageMultiplier>1</BluntDamageMultiplier>
+    </statBases>
+    <useHitPoints>false</useHitPoints>
+    <healthAffectsPrice>false</healthAffectsPrice>
+    <thingCategories>
+      <!-- <li>ESCP_Resources_Raw</li> -->
+    </thingCategories>
+    <burnableByRecipe>false</burnableByRecipe>
+    <smeltable>true</smeltable>
+    <stuffProps>
+      <color>(134,98,89)</color>
+      <categories>
+        <li>Metallic</li>
+      </categories>
+      <appearance>Metal</appearance>
+      <constructEffect>ConstructMetal</constructEffect>
+      <soundImpactStuff>BulletImpact_Metal</soundImpactStuff>
+      <soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
+      <soundMeleeHitBlunt>MeleeHit_Metal_Blunt</soundMeleeHitBlunt>
+      <statFactors>
+        <MaxHitPoints>1.3</MaxHitPoints>
+        <Beauty>3</Beauty>
+        <Flammability>0</Flammability>
+      </statFactors>
+      <canSuggestUseDefaultStuff>false</canSuggestUseDefaultStuff>
+    </stuffProps>
+    <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+    <allowedArchonexusCount>80</allowedArchonexusCount>
+  </ThingDef>
+
+	<!--__________ Moonstone __________-->
+
+	<!-- Mineable Moonestone -->
+
+	  <ThingDef ParentName="RockBase">
+    <defName>ESCP_Mineable_Moonstone</defName>
+    <label>Moonstone Cluster</label>
+    <description>Rock containing a cluster of moonstone.</description>
+    <graphicData>
+      <texPath>Things/Building/Linked/RockFlecked_Atlas</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <color>(222,189,129)</color>
+      <colorTwo>(122,92,63)</colorTwo>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>1500</MaxHitPoints>
+    </statBases>
+    <building>
+      <isResourceRock>true</isResourceRock>
+      <mineableThing>ESCP_Raw_Moonstone_Ore</mineableThing>
+      <mineableYield>9</mineableYield>
+      <mineableScatterCommonality>0.07</mineableScatterCommonality>
+      <mineableScatterLumpSizeRange>1~5</mineableScatterLumpSizeRange>
+    </building>
+  </ThingDef>
+
+	<!-- Moonstone Ore -->
+
+	<ThingDef ParentName="ResourceBase">
+		<defName>ESCP_Raw_Moonstone_Ore</defName>
+		<label>Moonstone Ore</label>
+		<description>An ore that comes common in Tamreil, typically used by the Altmer. Must be smelted down in order to create useful ingots.</description>
+		<graphicData>
+		  <texPath>Things/Item/Resource/Ores/Moonstone</texPath>
+		  <graphicClass>Graphic_StackCount</graphicClass>
+		  <drawSize>0.70</drawSize>
+		</graphicData>
+		<resourceReadoutPriority>Middle</resourceReadoutPriority>
+		<soundInteract>Metal_Drop</soundInteract>
+		<soundDrop>Metal_Drop</soundDrop>
+		<stackLimit>150</stackLimit>
+		<useHitPoints>true</useHitPoints>
+		<statBases>
+		  <MarketValue>2.5</MarketValue>
+		  <Mass>.3</Mass>
+		  <Flammability>0</Flammability>
+		</statBases>
+		<thingCategories>
+		  <li>Items</li>
+		</thingCategories>
+		<techLevel>Medieval</techLevel>
+		<tradeTags>
+		  <!-- <li>ESCP_Resources_Raw</li> -->
+		</tradeTags>
+	</ThingDef>
+
+	<!-- Moonstone Ingots -->
+
+  <ThingDef ParentName="ResourceBase">
+    <defName>ESCP_Resource_Moonstone_Ingot</defName>
+    <label>Moonstone Ingot</label>
+    <description>An Ingot made from moonstone ore.</description>
+    <graphicData>
+      <texPath>Things/Item/Resource/Ingots/Moonstone</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <soundInteract>Metal_Drop</soundInteract>
+    <soundDrop>Metal_Drop</soundDrop>
+    <statBases>
+      <MarketValue>7.5</MarketValue>
+      <Mass>0.65</Mass>
+      <StuffPower_Armor_Sharp>0.82</StuffPower_Armor_Sharp>
+      <StuffPower_Armor_Blunt>0.50</StuffPower_Armor_Blunt>
+      <StuffPower_Armor_Heat>0.38</StuffPower_Armor_Heat>
+      <StuffPower_Insulation_Cold>3</StuffPower_Insulation_Cold>
+      <StuffPower_Insulation_Heat>0</StuffPower_Insulation_Heat>
+      <SharpDamageMultiplier>1.20</SharpDamageMultiplier>
+      <BluntDamageMultiplier>1.25</BluntDamageMultiplier>
+    </statBases>
+    <useHitPoints>false</useHitPoints>
+    <healthAffectsPrice>false</healthAffectsPrice>
+    <thingCategories>
+      <!-- <li>ESCP_Resources_Raw</li> -->
+    </thingCategories>
+    <burnableByRecipe>false</burnableByRecipe>
+    <smeltable>true</smeltable>
+    <stuffProps>
+      <color>(228,202,135)</color>
+      <categories>
+        <li>Metallic</li>
+      </categories>
+      <appearance>Metal</appearance>
+      <constructEffect>ConstructMetal</constructEffect>
+      <soundImpactStuff>BulletImpact_Metal</soundImpactStuff>
+      <soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
+      <soundMeleeHitBlunt>MeleeHit_Metal_Blunt</soundMeleeHitBlunt>
+      <statFactors>
+        <MaxHitPoints>0.6</MaxHitPoints>
+        <Beauty>3</Beauty>
+        <Flammability>0</Flammability>
+      </statFactors>
+      <canSuggestUseDefaultStuff>false</canSuggestUseDefaultStuff>
+    </stuffProps>
+    <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+    <allowedArchonexusCount>80</allowedArchonexusCount>
+  </ThingDef>
+
+	<!--__________ Nickel __________-->
+
+	<!-- Nickel Ore -->
+
+	<ThingDef ParentName="ResourceBase">
+		<defName>ESCP_Raw_Nickel_Ore</defName>
+		<label>Nickel Ore</label>
+		<description>An ore that comes common in Tamreil, used mainly by the Imperials. Must be smelted down in order to create useful ingots.</description>
+		<graphicData>
+		  <texPath>Things/Item/Resource/Ores/Nickel</texPath>
+		  <graphicClass>Graphic_StackCount</graphicClass>
+		  <drawSize>0.70</drawSize>
+		</graphicData>
+		<resourceReadoutPriority>Middle</resourceReadoutPriority>
+		<soundInteract>Metal_Drop</soundInteract>
+		<soundDrop>Metal_Drop</soundDrop>
+		<stackLimit>150</stackLimit>
+		<useHitPoints>true</useHitPoints>
+		<statBases>
+		  <MarketValue>0.2</MarketValue>
+		  <Mass>.3</Mass>
+		  <Flammability>0</Flammability>
+		</statBases>
+		<thingCategories>
+		  <li>Items</li>
+		</thingCategories>
+		<techLevel>Medieval</techLevel>
+		<tradeTags>
+		  <!-- <li>ESCP_Resources_Raw</li> -->
+		</tradeTags>
+	</ThingDef>
+
+	<!-- Nickel Ingots -->
+
+  <ThingDef ParentName="ResourceBase">
+    <defName>ESCP_Resource_Nickel_Ingot</defName>
+    <label>Nickel Ingot</label>
+    <description>An Ingot made from nickel ore.</description>
+    <graphicData>
+      <texPath>Things/Item/Resource/Ingots/Nickel</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <soundInteract>Metal_Drop</soundInteract>
+    <soundDrop>Metal_Drop</soundDrop>
+    <statBases>
+      <MarketValue>0.6</MarketValue>
+      <Mass>0.65</Mass>
+      <StuffPower_Armor_Sharp>0.80</StuffPower_Armor_Sharp>
+      <StuffPower_Armor_Blunt>0.35</StuffPower_Armor_Blunt>
+      <StuffPower_Armor_Heat>0.50</StuffPower_Armor_Heat>
+      <StuffPower_Insulation_Cold>3</StuffPower_Insulation_Cold>
+      <StuffPower_Insulation_Heat>0</StuffPower_Insulation_Heat>
+      <SharpDamageMultiplier>0.85</SharpDamageMultiplier>
+      <BluntDamageMultiplier>0.65</BluntDamageMultiplier>
+    </statBases>
+    <useHitPoints>false</useHitPoints>
+    <healthAffectsPrice>false</healthAffectsPrice>
+    <thingCategories>
+      <!-- <li>ESCP_Resources_Raw</li> -->
+    </thingCategories>
+    <burnableByRecipe>false</burnableByRecipe>
+    <smeltable>true</smeltable>
+    <stuffProps>
+      <color>(185,186,167)</color>
+      <categories>
+        <li>Metallic</li>
+      </categories>
+      <appearance>Metal</appearance>
+      <constructEffect>ConstructMetal</constructEffect>
+      <soundImpactStuff>BulletImpact_Metal</soundImpactStuff>
+      <soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
+      <soundMeleeHitBlunt>MeleeHit_Metal_Blunt</soundMeleeHitBlunt>
+      <statFactors>
+        <MaxHitPoints>0.9</MaxHitPoints>
+        <Beauty>2</Beauty>
+        <Flammability>0</Flammability>
+      </statFactors>
+      <canSuggestUseDefaultStuff>false</canSuggestUseDefaultStuff>
+    </stuffProps>
+    <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+    <allowedArchonexusCount>80</allowedArchonexusCount>
+  </ThingDef>
+
+	<!--__________ Orgnium __________-->
+
+	<!-- Orgnium Ore -->
+
+	<ThingDef ParentName="ResourceBase">
+		<defName>ESCP_Raw_Orgnium_Ore</defName>
+		<label>Orgnium Ore</label>
+		<description>An ore that comes common in Tamreil , used by maoromer smiths. Must be smelted down in order to create useful ingots.</description>
+		<graphicData>
+		  <texPath>Things/Item/Resource/Ores/Orgnium</texPath>
+		  <graphicClass>Graphic_StackCount</graphicClass>
+		  <drawSize>0.70</drawSize>
+		</graphicData>
+		<resourceReadoutPriority>Middle</resourceReadoutPriority>
+		<soundInteract>Metal_Drop</soundInteract>
+		<soundDrop>Metal_Drop</soundDrop>
+		<stackLimit>150</stackLimit>
+		<useHitPoints>true</useHitPoints>
+		<statBases>
+		  <MarketValue>0.2</MarketValue>
+		  <Mass>.3</Mass>
+		  <Flammability>0</Flammability>
+		</statBases>
+		<thingCategories>
+		  <li>Items</li>
+		</thingCategories>
+		<techLevel>Medieval</techLevel>
+		<tradeTags>
+		  <!-- <li>ESCP_Resources_Raw</li> -->
+		</tradeTags>
+	</ThingDef>
+
+	<!-- Orgnium Ingots -->
+
+  <ThingDef ParentName="ResourceBase">
+    <defName>ESCP_Resource_Orgnium_Ingot</defName>
+    <label>Orgnium Ingot</label>
+    <description>An Ingot made from orgnium ore.</description>
+    <graphicData>
+      <texPath>Things/Item/Resource/Ingots/Orgnium</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <soundInteract>Metal_Drop</soundInteract>
+    <soundDrop>Metal_Drop</soundDrop>
+    <statBases>
+      <MarketValue>0.6</MarketValue>
+      <Mass>0.65</Mass>
+      <StuffPower_Armor_Sharp>1.22</StuffPower_Armor_Sharp>
+      <StuffPower_Armor_Blunt>0.50</StuffPower_Armor_Blunt>
+      <StuffPower_Armor_Heat>0.20</StuffPower_Armor_Heat>
+      <StuffPower_Insulation_Cold>3</StuffPower_Insulation_Cold>
+      <StuffPower_Insulation_Heat>0</StuffPower_Insulation_Heat>
+      <SharpDamageMultiplier>1.28</SharpDamageMultiplier>
+      <BluntDamageMultiplier>1.09</BluntDamageMultiplier>
+    </statBases>
+    <useHitPoints>false</useHitPoints>
+    <healthAffectsPrice>false</healthAffectsPrice>
+    <thingCategories>
+      <!-- <li>ESCP_Resources_Raw</li> -->
+    </thingCategories>
+    <burnableByRecipe>false</burnableByRecipe>
+    <smeltable>true</smeltable>
+    <stuffProps>
+      <color>(90,100,137)</color>
+      <categories>
+        <li>Metallic</li>
+      </categories>
+      <appearance>Metal</appearance>
+      <constructEffect>ConstructMetal</constructEffect>
+      <soundImpactStuff>BulletImpact_Metal</soundImpactStuff>
+      <soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
+      <soundMeleeHitBlunt>MeleeHit_Metal_Blunt</soundMeleeHitBlunt>
+      <statFactors>
+        <MaxHitPoints>1</MaxHitPoints>
+        <Beauty>1.02</Beauty>
+        <Flammability>0</Flammability>
+      </statFactors>
+      <canSuggestUseDefaultStuff>false</canSuggestUseDefaultStuff>
+    </stuffProps>
+    <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+    <allowedArchonexusCount>80</allowedArchonexusCount>
+  </ThingDef>
+
+	<!--__________ Orichalcum __________-->
+
+	<!-- Mineable Orichalcum -->
+
+	  <ThingDef ParentName="RockBase">
+    <defName>ESCP_Mineable_Orichalcum</defName>
+    <label>Orichalcum Cluster</label>
+    <description>Rock containing a cluster of orichalcum.</description>
+    <graphicData>
+      <texPath>Things/Building/Linked/RockFlecked_Atlas</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <color>(57,81,69)</color>
+      <colorTwo>(122,92,63)</colorTwo>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>1500</MaxHitPoints>
+    </statBases>
+    <building>
+      <isResourceRock>true</isResourceRock>
+      <mineableThing>ESCP_Raw_Orichalcum_Ore</mineableThing>
+      <mineableYield>6</mineableYield>
+      <mineableScatterCommonality>0.065</mineableScatterCommonality>
+      <mineableScatterLumpSizeRange>1~5</mineableScatterLumpSizeRange>
+    </building>
+  </ThingDef>
+
+	<!-- Orichalcum Ore -->
+
+	<ThingDef ParentName="ResourceBase">
+		<defName>ESCP_Raw_Orichalcum_Ore</defName>
+		<label>Orichalcum Ore</label>
+		<description>An ore that comes orichalcum common in Tamreil, used by the master smith Orsimer. Must be smelted down in order to create useful ingots.</description>
+		<graphicData>
+		  <texPath>Things/Item/Resource/Ores/Orichalcum</texPath>
+		  <graphicClass>Graphic_StackCount</graphicClass>
+		  <drawSize>0.70</drawSize>
+		</graphicData>
+		<resourceReadoutPriority>Middle</resourceReadoutPriority>
+		<soundInteract>Metal_Drop</soundInteract>
+		<soundDrop>Metal_Drop</soundDrop>
+		<stackLimit>150</stackLimit>
+		<useHitPoints>true</useHitPoints>
+		<statBases>
+		  <MarketValue>2.8</MarketValue>
+		  <Mass>.3</Mass>
+		  <Flammability>0</Flammability>
+		</statBases>
+		<thingCategories>
+		  <li>Items</li>
+		</thingCategories>
+		<techLevel>Medieval</techLevel>
+		<tradeTags>
+		  <!-- <li>ESCP_Resources_Raw</li> -->
+		</tradeTags>
+	</ThingDef>
+
+	<!-- Orichalcum Ingots -->
+
+  <ThingDef ParentName="ResourceBase">
+    <defName>ESCP_Resource_Orichalcum_Ingot</defName>
+    <label>Orichalcum Ingot</label>
+    <description>An Ingot made from orichalcum ore.</description>
+    <graphicData>
+      <texPath>Things/Item/Resource/Ingots/Orichalcum</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <soundInteract>Metal_Drop</soundInteract>
+    <soundDrop>Metal_Drop</soundDrop>
+    <statBases>
+      <MarketValue>7.8</MarketValue>
+      <Mass>0.65</Mass>
+      <StuffPower_Armor_Sharp>0.80</StuffPower_Armor_Sharp>
+      <StuffPower_Armor_Blunt>1.20</StuffPower_Armor_Blunt>
+      <StuffPower_Armor_Heat>1.20</StuffPower_Armor_Heat>
+      <StuffPower_Insulation_Cold>3</StuffPower_Insulation_Cold>
+      <StuffPower_Insulation_Heat>0</StuffPower_Insulation_Heat>
+      <SharpDamageMultiplier>0.8</SharpDamageMultiplier>
+      <BluntDamageMultiplier>1.35</BluntDamageMultiplier>
+    </statBases>
+    <useHitPoints>false</useHitPoints>
+    <healthAffectsPrice>false</healthAffectsPrice>
+    <thingCategories>
+      <!-- <li>ESCP_Resources_Raw</li> -->
+    </thingCategories>
+    <burnableByRecipe>false</burnableByRecipe>
+    <smeltable>true</smeltable>
+    <stuffProps>
+      <color>(59,84,71)</color>
+      <categories>
+        <li>Metallic</li>
+      </categories>
+      <appearance>Metal</appearance>
+      <constructEffect>ConstructMetal</constructEffect>
+      <soundImpactStuff>BulletImpact_Metal</soundImpactStuff>
+      <soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
+      <soundMeleeHitBlunt>MeleeHit_Metal_Blunt</soundMeleeHitBlunt>
+      <statFactors>
+        <MaxHitPoints>2</MaxHitPoints>
+        <Beauty>-1</Beauty>
+        <Flammability>0</Flammability>
+      </statFactors>
+      <canSuggestUseDefaultStuff>false</canSuggestUseDefaultStuff>
+    </stuffProps>
+    <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+    <allowedArchonexusCount>80</allowedArchonexusCount>
+  </ThingDef>
+
+	<!--__________ Palladium __________-->
+
+	<!-- Palladium Ore -->
+
+	<ThingDef ParentName="ResourceBase">
+		<defName>ESCP_Raw_Palladium_Ore</defName>
+		<label>Palladium Ore</label>
+		<description>An ore that comes common in Tamreil, used by ancient Ayleids. Must be smelted down in order to create useful ingots.</description>
+		<graphicData>
+		  <texPath>Things/Item/Resource/Ores/Palladium</texPath>
+		  <graphicClass>Graphic_StackCount</graphicClass>
+		  <drawSize>0.70</drawSize>
+		</graphicData>
+		<resourceReadoutPriority>Middle</resourceReadoutPriority>
+		<soundInteract>Metal_Drop</soundInteract>
+		<soundDrop>Metal_Drop</soundDrop>
+		<stackLimit>150</stackLimit>
+		<useHitPoints>true</useHitPoints>
+		<statBases>
+		  <MarketValue>0.2</MarketValue>
+		  <Mass>.3</Mass>
+		  <Flammability>0</Flammability>
+		</statBases>
+		<thingCategories>
+		  <li>Items</li>
+		</thingCategories>
+		<techLevel>Medieval</techLevel>
+		<tradeTags>
+		  <!-- <li>ESCP_Resources_Raw</li> -->
+		</tradeTags>
+	</ThingDef>
+
+	<!-- Palladium Ingots -->
+
+  <ThingDef ParentName="ResourceBase">
+    <defName>ESCP_Resource_Palladium_Ingot</defName>
+    <label>Palladium Ingot</label>
+    <description>An Ingot made from palladium ore.</description>
+    <graphicData>
+      <texPath>Things/Item/Resource/Ingots/Palladium</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <soundInteract>Metal_Drop</soundInteract>
+    <soundDrop>Metal_Drop</soundDrop>
+    <statBases>
+      <MarketValue>0.6</MarketValue>
+      <Mass>0.65</Mass>
+      <StuffPower_Armor_Sharp>1.20</StuffPower_Armor_Sharp>
+      <StuffPower_Armor_Blunt>0.76</StuffPower_Armor_Blunt>
+      <StuffPower_Armor_Heat>0.35</StuffPower_Armor_Heat>
+      <StuffPower_Insulation_Cold>3</StuffPower_Insulation_Cold>
+      <StuffPower_Insulation_Heat>0</StuffPower_Insulation_Heat>
+      <SharpDamageMultiplier>1.25</SharpDamageMultiplier>
+      <BluntDamageMultiplier>1.2</BluntDamageMultiplier>
+    </statBases>
+    <useHitPoints>false</useHitPoints>
+    <healthAffectsPrice>false</healthAffectsPrice>
+    <thingCategories>
+      <!-- <li>ESCP_Resources_Raw</li> -->
+    </thingCategories>
+    <burnableByRecipe>false</burnableByRecipe>
+    <smeltable>true</smeltable>
+    <stuffProps>
+      <color>(172,194,192)</color>
+      <categories>
+        <li>Metallic</li>
+      </categories>
+      <appearance>Metal</appearance>
+      <constructEffect>ConstructMetal</constructEffect>
+      <soundImpactStuff>BulletImpact_Metal</soundImpactStuff>
+      <soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
+      <soundMeleeHitBlunt>MeleeHit_Metal_Blunt</soundMeleeHitBlunt>
+      <statFactors>
+        <MaxHitPoints>0.8</MaxHitPoints>
+        <Beauty>2</Beauty>
+        <Flammability>0</Flammability>
+      </statFactors>
+      <canSuggestUseDefaultStuff>false</canSuggestUseDefaultStuff>
+    </stuffProps>
+    <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+    <allowedArchonexusCount>80</allowedArchonexusCount>
+  </ThingDef>
+
+	<!--__________ Quicksilver __________-->
+
+	<!-- Quicksilver Mineable -->
+
+	  <ThingDef ParentName="RockBase">
+    <defName>ESCP_Mineable_Quicksilver</defName>
+    <label>Quicksilver Cluster</label>
+    <description>Rock containing a cluster of quicksilver.</description>
+    <graphicData>
+      <texPath>Things/Building/Linked/RockFlecked_Atlas</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <color>(122,123,116)</color>
+      <colorTwo>(122,92,63)</colorTwo>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>1500</MaxHitPoints>
+    </statBases>
+    <building>
+      <isResourceRock>true</isResourceRock>
+      <mineableThing>ESCP_Raw_Quicksilver_Ore</mineableThing>
+      <mineableYield>6</mineableYield>
+      <mineableScatterCommonality>0.055</mineableScatterCommonality>
+      <mineableScatterLumpSizeRange>1~5</mineableScatterLumpSizeRange>
+    </building>
+  </ThingDef>
+
+	<!-- Quicksilver Ore -->
+
+	<ThingDef ParentName="ResourceBase">
+		<defName>ESCP_Raw_Quicksilver_Ore</defName>
+		<label>Quicksilver Ore</label>
+		<description>An ore that comes common in Tamreil. Must be smelted down in order to create useful ingots.</description>
+		<graphicData>
+		  <texPath>Things/Item/Resource/Ores/Quicksilver</texPath>
+		  <graphicClass>Graphic_StackCount</graphicClass>
+		  <drawSize>0.70</drawSize>
+		</graphicData>
+		<resourceReadoutPriority>Middle</resourceReadoutPriority>
+		<soundInteract>Metal_Drop</soundInteract>
+		<soundDrop>Metal_Drop</soundDrop>
+		<stackLimit>150</stackLimit>
+		<useHitPoints>true</useHitPoints>
+		<statBases>
+		  <MarketValue>1.5</MarketValue>
+		  <Mass>.3</Mass>
+		  <Flammability>0</Flammability>
+		</statBases>
+		<thingCategories>
+		  <li>Items</li>
+		</thingCategories>
+		<techLevel>Medieval</techLevel>
+		<tradeTags>
+		  <!-- <li>ESCP_Resources_Raw</li> -->
+		</tradeTags>
+	</ThingDef>
+
+	<!-- Quicksilver Ingots -->
+
+  <ThingDef ParentName="ResourceBase">
+    <defName>ESCP_Resource_Quicksilver_Ingot</defName>
+    <label>Quicksilver Ingot</label>
+    <description>An Ingot made from quicksilver ore.</description>
+    <graphicData>
+      <texPath>Things/Item/Resource/Ingots/Quicksilver</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <soundInteract>Metal_Drop</soundInteract>
+    <soundDrop>Metal_Drop</soundDrop>
+    <statBases>
+      <MarketValue>4.5</MarketValue>
+      <Mass>0.65</Mass>
+      <StuffPower_Armor_Sharp>1.20</StuffPower_Armor_Sharp>
+      <StuffPower_Armor_Blunt>0.55</StuffPower_Armor_Blunt>
+      <StuffPower_Armor_Heat>0.65</StuffPower_Armor_Heat>
+      <StuffPower_Insulation_Cold>3</StuffPower_Insulation_Cold>
+      <StuffPower_Insulation_Heat>0</StuffPower_Insulation_Heat>
+      <SharpDamageMultiplier>0.75</SharpDamageMultiplier>
+      <BluntDamageMultiplier>0.70</BluntDamageMultiplier>
+    </statBases>
+    <useHitPoints>false</useHitPoints>
+    <healthAffectsPrice>false</healthAffectsPrice>
+    <thingCategories>
+      <!-- <li>ESCP_Resources_Raw</li> -->
+    </thingCategories>
+    <burnableByRecipe>false</burnableByRecipe>
+    <smeltable>true</smeltable>
+    <stuffProps>
+      <color>(136,136,127)</color>
+      <categories>
+        <li>Metallic</li>
+      </categories>
+      <appearance>Metal</appearance>
+      <constructEffect>ConstructMetal</constructEffect>
+      <soundImpactStuff>BulletImpact_Metal</soundImpactStuff>
+      <soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
+      <soundMeleeHitBlunt>MeleeHit_Metal_Blunt</soundMeleeHitBlunt>
+      <statFactors>
+        <MaxHitPoints>0.8</MaxHitPoints>
+        <Beauty>1</Beauty>
+        <Flammability>0</Flammability>
+      </statFactors>
+      <canSuggestUseDefaultStuff>false</canSuggestUseDefaultStuff>
+    </stuffProps>
+    <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+    <allowedArchonexusCount>80</allowedArchonexusCount>
+  </ThingDef>
+
+	<!--__________ Rubedite __________-->
+
+	<!-- Rubedite Ore -->
+
+	<ThingDef ParentName="ResourceBase">
+		<defName>ESCP_Raw_Rubedite_Ore</defName>
+		<label>Rubedite Ore</label>
+		<description>An ore that comes common in Tamreil. Must be smelted down in order to create useful ingots.</description>
+		<graphicData>
+		  <texPath>Things/Item/Resource/Ores/Rubedite</texPath>
+		  <graphicClass>Graphic_StackCount</graphicClass>
+		  <drawSize>0.70</drawSize>
+		</graphicData>
+		<resourceReadoutPriority>Middle</resourceReadoutPriority>
+		<soundInteract>Metal_Drop</soundInteract>
+		<soundDrop>Metal_Drop</soundDrop>
+		<stackLimit>150</stackLimit>
+		<useHitPoints>true</useHitPoints>
+		<statBases>
+		  <MarketValue>4.5</MarketValue>
+		  <Mass>.3</Mass>
+		  <Flammability>0</Flammability>
+		</statBases>
+		<thingCategories>
+		  <li>Items</li>
+		</thingCategories>
+		<techLevel>Medieval</techLevel>
+		<tradeTags>
+		  <!-- <li>ESCP_Resources_Raw</li> -->
+		</tradeTags>
+	</ThingDef>
+
+	<!--__________ Silver __________-->
+
+  <!-- Silver Mineable -->
+
+	  <ThingDef ParentName="RockBase">
+    <defName>ESCP_Mineable_Silver</defName>
+    <label>Silver Cluster</label>
+    <description>Rock containing a cluster of silver.</description>
+    <graphicData>
+      <texPath>Things/Building/Linked/RockFlecked_Atlas</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <color>(53,58,32)</color>
+      <colorTwo>(122,92,63)</colorTwo>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>1500</MaxHitPoints>
+    </statBases>
+    <building>
+      <isResourceRock>true</isResourceRock>
+      <mineableThing>ESCP_Raw_Silver_Ore</mineableThing>
+      <mineableYield>6</mineableYield>
+      <mineableScatterCommonality>0.06</mineableScatterCommonality>
+      <mineableScatterLumpSizeRange>1~5</mineableScatterLumpSizeRange>
+    </building>
+  </ThingDef>
+
+	<!-- Silver Ore -->
+
+	<ThingDef ParentName="ResourceBase">
+		<defName>ESCP_Raw_Silver_Ore</defName>
+		<label>Silver Ore</label>
+		<description>An ore that comes silver common in Tamreil, used for jewlry and currency as well as being strong against certain creatures. Must be smelted down in order to create useful ingots.</description>
+		<graphicData>
+		  <texPath>Things/Item/Resource/Ores/Silver</texPath>
+		  <graphicClass>Graphic_StackCount</graphicClass>
+		  <drawSize>0.70</drawSize>
+		</graphicData>
+		<resourceReadoutPriority>Middle</resourceReadoutPriority>
+		<soundInteract>Metal_Drop</soundInteract>
+		<soundDrop>Metal_Drop</soundDrop>
+		<stackLimit>150</stackLimit>
+		<useHitPoints>true</useHitPoints>
+		<statBases>
+		  <MarketValue>0.3</MarketValue>
+		  <Mass>.3</Mass>
+		  <Flammability>0</Flammability>
+		</statBases>
+		<thingCategories>
+		  <li>Items</li>
+		</thingCategories>
+		<techLevel>Medieval</techLevel>
+		<tradeTags>
+		  <!-- <li>ESCP_Resources_Raw</li> -->
+		</tradeTags>
+	</ThingDef>
+
+	<!-- Silver Ingots -->
+
+  <ThingDef ParentName="ResourceBase">
+    <defName>ESCP_Resource_Silver_Ingot</defName>
+    <label>Silver Ingot</label>
+    <description>An Ingot made from silver ore.</description>
+    <graphicData>
+      <texPath>Things/Item/Resource/Ingots/Silver</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <soundInteract>Metal_Drop</soundInteract>
+    <soundDrop>Metal_Drop</soundDrop>
+    <statBases>
+      <MarketValue>1</MarketValue>
+      <Mass>0.65</Mass>
+      <StuffPower_Armor_Sharp>0.38</StuffPower_Armor_Sharp>
+      <StuffPower_Armor_Blunt>0.20</StuffPower_Armor_Blunt>
+      <StuffPower_Armor_Heat>0.35</StuffPower_Armor_Heat>
+      <StuffPower_Insulation_Cold>3</StuffPower_Insulation_Cold>
+      <StuffPower_Insulation_Heat>0</StuffPower_Insulation_Heat>
+      <SharpDamageMultiplier>0.35</SharpDamageMultiplier>
+      <BluntDamageMultiplier>0.60</BluntDamageMultiplier>
+    </statBases>
+    <useHitPoints>false</useHitPoints>
+    <healthAffectsPrice>false</healthAffectsPrice>
+    <thingCategories>
+      <!-- <li>ESCP_Resources_Raw</li> -->
+    </thingCategories>
+    <burnableByRecipe>false</burnableByRecipe>
+    <smeltable>true</smeltable>
+    <stuffProps>
+      <color>(190,190,190)</color>
+      <categories>
+        <li>Metallic</li>
+      </categories>
+      <appearance>Metal</appearance>
+      <constructEffect>ConstructMetal</constructEffect>
+      <soundImpactStuff>BulletImpact_Metal</soundImpactStuff>
+      <soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
+      <soundMeleeHitBlunt>MeleeHit_Metal_Blunt</soundMeleeHitBlunt>
+      <statFactors>
+        <MaxHitPoints>0.7</MaxHitPoints>
+        <Beauty>6</Beauty>
+        <Flammability>0</Flammability>
+      </statFactors>
+      <canSuggestUseDefaultStuff>false</canSuggestUseDefaultStuff>
+    </stuffProps>
+    <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+    <allowedArchonexusCount>80</allowedArchonexusCount>
+  </ThingDef>
+
+	<!--__________ Stalhrim __________-->
+
+	<!-- Stalhrim Ore -->
+
+	<ThingDef ParentName="ResourceBase">
+		<defName>ESCP_Raw_Stalhrim_Ore</defName>
+		<label>Stalhrim Ore</label>
+		<description>Enchanted ice found in anchient barrows.</description>
+		<graphicData>
+		  <texPath>Things/Item/Resource/Ores/Stalhrim</texPath>
+		  <graphicClass>Graphic_StackCount</graphicClass>
+		  <drawSize>0.70</drawSize>
+		</graphicData>
+		<resourceReadoutPriority>Middle</resourceReadoutPriority>
+		<soundInteract>Metal_Drop</soundInteract>
+		<soundDrop>Metal_Drop</soundDrop>
+		<stackLimit>150</stackLimit>
+		<useHitPoints>true</useHitPoints>
+		<statBases>
+		  <MarketValue>10.5</MarketValue>
+		  <Mass>.3</Mass>
+		  <Flammability>0</Flammability>
+		</statBases>
+		<thingCategories>
+		  <li>Items</li>
+		</thingCategories>
+		<techLevel>Medieval</techLevel>
+		<tradeTags>
+		  <!-- <li>ESCP_Resources_Raw</li> -->
+		</tradeTags>
+	</ThingDef>
+
+	<!--__________ Starmetal __________-->
+
+	<!-- Starmetal Ore -->
+
+	<ThingDef ParentName="ResourceBase">
+		<defName>ESCP_Raw_Starmetal_Ore</defName>
+		<label>Starmetal Ore</label>
+		<description>An ore that comes common in Tamreil, used by redgards for crafting.  Must be smelted down in order to create useful ingots.</description>
+		<graphicData>
+		  <texPath>Things/Item/Resource/Ores/Starmetal</texPath>
+		  <graphicClass>Graphic_StackCount</graphicClass>
+		  <drawSize>0.70</drawSize>
+		</graphicData>
+		<resourceReadoutPriority>Middle</resourceReadoutPriority>
+		<soundInteract>Metal_Drop</soundInteract>
+		<soundDrop>Metal_Drop</soundDrop>
+		<stackLimit>150</stackLimit>
+		<useHitPoints>true</useHitPoints>
+		<statBases>
+		  <MarketValue>0.6</MarketValue>
+		  <Mass>.3</Mass>
+		  <Flammability>0</Flammability>
+		</statBases>
+		<thingCategories>
+		  <li>Items</li>
+		</thingCategories>
+		<techLevel>Medieval</techLevel>
+		<tradeTags>
+		  <!-- <li>ESCP_Resources_Raw</li> -->
+		</tradeTags>
+	</ThingDef>
+
+	<!--__________ Tin __________-->
+
+	<!-- Tin Ore -->
+
+	<ThingDef ParentName="ResourceBase">
+		<defName>ESCP_Raw_Tin_Ore</defName>
+		<label>Tin Ore</label>
+		<description>An ore that comes common in Tamreil. Must be smelted down in order to create useful ingots.</description>
+		<graphicData>
+		  <texPath>Things/Item/Resource/Ores/Tin</texPath>
+		  <graphicClass>Graphic_StackCount</graphicClass>
+		  <drawSize>0.70</drawSize>
+		</graphicData>
+		<resourceReadoutPriority>Middle</resourceReadoutPriority>
+		<soundInteract>Metal_Drop</soundInteract>
+		<soundDrop>Metal_Drop</soundDrop>
+		<stackLimit>150</stackLimit>
+		<useHitPoints>true</useHitPoints>
+		<statBases>
+		  <MarketValue>0.1</MarketValue>
+		  <Mass>.3</Mass>
+		  <Flammability>0</Flammability>
+		</statBases>
+		<thingCategories>
+		  <li>Items</li>
+		</thingCategories>
+		<techLevel>Medieval</techLevel>
+		<tradeTags>
+		  <!-- <li>ESCP_Resources_Raw</li> -->
+		</tradeTags>
+	</ThingDef>
+
+	<!-- Tin Ingots -->
+
+  <ThingDef ParentName="ResourceBase">
+    <defName>ESCP_Resource_Tin_Ingot</defName>
+    <label>Tin Ingot</label>
+    <description>An Ingot made from tin ore.</description>
+    <graphicData>
+      <texPath>Things/Item/Resource/Ingots/Tin</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <soundInteract>Metal_Drop</soundInteract>
+    <soundDrop>Metal_Drop</soundDrop>
+    <statBases>
+      <MarketValue>0.3</MarketValue>
+      <Mass>0.65</Mass>
+      <StuffPower_Armor_Sharp>0.28</StuffPower_Armor_Sharp>
+      <StuffPower_Armor_Blunt>0.30</StuffPower_Armor_Blunt>
+      <StuffPower_Armor_Heat>0.20</StuffPower_Armor_Heat>
+      <StuffPower_Insulation_Cold>3</StuffPower_Insulation_Cold>
+      <StuffPower_Insulation_Heat>0</StuffPower_Insulation_Heat>
+      <SharpDamageMultiplier>0.38</SharpDamageMultiplier>
+      <BluntDamageMultiplier>0.50</BluntDamageMultiplier>
+    </statBases>
+    <useHitPoints>false</useHitPoints>
+    <healthAffectsPrice>false</healthAffectsPrice>
+    <thingCategories>
+      <!-- <li>ESCP_Resources_Raw</li> -->
+    </thingCategories>
+    <burnableByRecipe>false</burnableByRecipe>
+    <smeltable>true</smeltable>
+    <stuffProps>
+      <color>(190,185,192)</color>
+      <categories>
+        <li>Metallic</li>
+      </categories>
+      <appearance>Metal</appearance>
+      <constructEffect>ConstructMetal</constructEffect>
+      <soundImpactStuff>BulletImpact_Metal</soundImpactStuff>
+      <soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
+      <soundMeleeHitBlunt>MeleeHit_Metal_Blunt</soundMeleeHitBlunt>
+      <statFactors>
+        <MaxHitPoints>0.6</MaxHitPoints>
+        <Beauty>1</Beauty>
+        <Flammability>0</Flammability>
+      </statFactors>
+      <canSuggestUseDefaultStuff>false</canSuggestUseDefaultStuff>
+    </stuffProps>
+    <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+    <allowedArchonexusCount>80</allowedArchonexusCount>
+  </ThingDef>
+
+	<!--__________ Zinc __________-->
+
+	<!-- Zinc Ore -->
+
+	<ThingDef ParentName="ResourceBase">
+		<defName>ESCP_Raw_Zinc_Ore</defName>
+		<label>Copper Ore</label>
+		<description>An ore that comes common in Tamreil. Must be smelted down in order to create useful ingots.</description>
+		<graphicData>
+		  <texPath>Things/Item/Resource/Ores/Zinc</texPath>
+		  <graphicClass>Graphic_StackCount</graphicClass>
+		  <drawSize>0.70</drawSize>
+		</graphicData>
+		<resourceReadoutPriority>Middle</resourceReadoutPriority>
+		<soundInteract>Metal_Drop</soundInteract>
+		<soundDrop>Metal_Drop</soundDrop>
+		<stackLimit>150</stackLimit>
+		<useHitPoints>true</useHitPoints>
+		<statBases>
+		  <MarketValue>0.1</MarketValue>
+		  <Mass>.3</Mass>
+		  <Flammability>0</Flammability>
+		</statBases>
+		<thingCategories>
+		  <li>Items</li>
+		</thingCategories>
+		<techLevel>Medieval</techLevel>
+		<tradeTags>
+		  <!-- <li>ESCP_Resources_Raw</li> -->
+		</tradeTags>
+	</ThingDef>
+
+	<!-- Zinc Ingots -->
+
+  <ThingDef ParentName="ResourceBase">
+    <defName>ESCP_Resource_Zinc_Ingot</defName>
+    <label>Zinc Ingot</label>
+    <description>An Ingot made from zinc ore.</description>
+    <graphicData>
+      <texPath>Things/Item/Resource/Ingots/Zinc</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <soundInteract>Metal_Drop</soundInteract>
+    <soundDrop>Metal_Drop</soundDrop>
+    <statBases>
+      <MarketValue>0.3</MarketValue>
+      <Mass>0.65</Mass>
+      <StuffPower_Armor_Sharp>0.25</StuffPower_Armor_Sharp>
+      <StuffPower_Armor_Blunt>0.38</StuffPower_Armor_Blunt>
+      <StuffPower_Armor_Heat>0.25</StuffPower_Armor_Heat>
+      <StuffPower_Insulation_Cold>3</StuffPower_Insulation_Cold>
+      <StuffPower_Insulation_Heat>0</StuffPower_Insulation_Heat>
+      <SharpDamageMultiplier>0.30</SharpDamageMultiplier>
+      <BluntDamageMultiplier>0.65</BluntDamageMultiplier>
+    </statBases>
+    <useHitPoints>false</useHitPoints>
+    <healthAffectsPrice>false</healthAffectsPrice>
+    <thingCategories>
+      <!-- <li>ESCP_Resources_Raw</li> -->
+    </thingCategories>
+    <burnableByRecipe>false</burnableByRecipe>
+    <smeltable>true</smeltable>
+    <stuffProps>
+      <color>(212,222,196)</color>
+      <categories>
+        <li>Metallic</li>
+      </categories>
+      <appearance>Metal</appearance>
+      <constructEffect>ConstructMetal</constructEffect>
+      <soundImpactStuff>BulletImpact_Metal</soundImpactStuff>
+      <soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
+      <soundMeleeHitBlunt>MeleeHit_Metal_Blunt</soundMeleeHitBlunt>
+      <statFactors>
+        <MaxHitPoints>0.60</MaxHitPoints>
+        <Beauty>1</Beauty>
+        <Flammability>0</Flammability>
+      </statFactors>
+      <canSuggestUseDefaultStuff>false</canSuggestUseDefaultStuff>
+    </stuffProps>
+    <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+    <allowedArchonexusCount>80</allowedArchonexusCount>
+  </ThingDef>
+
+</Defs>

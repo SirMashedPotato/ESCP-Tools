@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Ideology Expanded - Memes and Structures</li>
+		</mods> 
+				
+		<match Class="PatchOperationSequence">
+			<operations>
+			
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs</xpath>
+					<value>
+
+						<TerrainDef ParentName="VME_CorporateFineStoneTiles">
+							<defName>ESCP_CorporateFineTileBonemoldBlock</defName>
+							<label>corporate fine bonemold block tile</label>
+							<color>(137,116,75)</color>
+							<costList>
+								<ESCP_BlocksBonemold>20</ESCP_BlocksBonemold>
+							</costList>
+						</TerrainDef>
+						
+						<TerrainDef ParentName="VME_ShintaoFineStoneTiles">
+							<defName>ESCP_ShintaoFineTileBonemoldBlock</defName>
+							<label>shintao fine bonemold block tile</label>
+							<color>(137,116,75)</color>
+							<costList>
+								<ESCP_BlocksBonemold>20</ESCP_BlocksBonemold>
+							</costList>
+						</TerrainDef>
+
+					</value>
+				</li>
+				
+			</operations>
+		</match>
+	</Operation>
+	
+</Patch>
+
