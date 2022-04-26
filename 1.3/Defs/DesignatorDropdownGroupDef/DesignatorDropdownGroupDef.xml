@@ -9,4 +9,8 @@
     <defName>ESCP_Floor_PolishedChitinTile</defName>
   </DesignatorDropdownGroupDef>
 
+  <DesignatorDropdownGroupDef>
+    <defName>ESCP_IronLantern</defName>
+  </DesignatorDropdownGroupDef>
+
 </Defs>

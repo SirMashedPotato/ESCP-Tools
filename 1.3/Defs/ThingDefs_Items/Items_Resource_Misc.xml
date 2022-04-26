@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!--__________ Misc Items __________-->
+
+  <!-- Bones -->
+
+  <ThingDef ParentName="ResourceBase">
+    <defName>ESCP_Item_Bone</defName>
+    <label>Bones</label>
+    <description>Common bones found within most organic creatures.</description>
+    <graphicData>
+      <texPath>Things/Item/Resource/Misc/Bones/ESCP_Bones</texPath>
+    </graphicData>
+    <statBases>
+      <MarketValue>0.2</MarketValue> <!-- Can be used like meat in recipes -->
+      <Mass>0.095</Mass>
+      <MaxHitPoints>65</MaxHitPoints>
+      <Flammability>0.2</Flammability>
+    </statBases>
+    <thingCategories>
+      <li>ResourcesRaw</li>
+    </thingCategories>
+  </ThingDef>
+
+  <!-- Fat -->
+
+  <ThingDef ParentName="ResourceBase">
+    <defName>ESCP_Item_Fat</defName>
+    <label>Fat</label>
+    <description>Common fat found within most organic creatures.</description>
+    <graphicData>
+      <texPath>Things/Item/Resource/Misc/Fat/ESCP_Fat</texPath>
+    </graphicData>
+    <statBases>
+      <MarketValue>0.3</MarketValue>
+      <Mass>0.025</Mass>
+      <MaxHitPoints>50</MaxHitPoints>
+      <Flammability>0.6</Flammability>
+    </statBases>
+    <thingCategories>
+      <li>ResourcesRaw</li>
+    </thingCategories>
+  </ThingDef>
+
+</Defs>

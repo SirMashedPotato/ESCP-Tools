@@ -51,7 +51,7 @@
 		<workType>Smithing</workType>
 		<priorityInType>115</priorityInType>
 		<fixedBillGiverDefs>
-			<li>ESCP_Prodution_Forge</li>
+			<li>ESCP_Production_Forge</li>
 		</fixedBillGiverDefs>
 		<verb>smith</verb>
 		<gerund>smithing at</gerund>

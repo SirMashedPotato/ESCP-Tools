@@ -6,7 +6,7 @@
     <!-- Forge -->
 
   <ThingDef ParentName="BenchBase">
-    <defName>ESCP_Prodution_Forge</defName>
+    <defName>ESCP_Production_Forge</defName>
     <label>Forge</label>
     <description>A hand fueled station for smithing weapons and tools.</description>
     <thingClass>Building_WorkTable</thingClass>
