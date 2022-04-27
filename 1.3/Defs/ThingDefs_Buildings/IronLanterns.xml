@@ -45,6 +45,7 @@
 		</placeWorkers>
 		<drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
 		<comps>
+		  <li Class="CompProperties_Styleable" />
 		  <li Class="CompProperties_Refuelable">
 			<fuelConsumptionRate>1.0</fuelConsumptionRate>	<!-- half as fast as a vanilla torch -->
 			<fuelCapacity>20.0</fuelCapacity>
@@ -87,6 +88,7 @@
 				  <li>ESCP_IronLantern_Blue</li>
 				  <li>ESCP_IronLantern_Green</li>
 				  <li>ESCP_IronLantern_Red</li>
+				  <li MayRequire="Ludeon.RimWorld.Ideology">ESCP_IronLantern_Dark</li>
 				</defs>
 				<offsetPerBuilding>0.01</offsetPerBuilding>
 				<radius>9.9</radius>
@@ -131,7 +133,7 @@
 	
 	<ThingDef ParentName="ESCP_IronTableLantern_Base">
 		<defName>ESCP_IronLantern_Blue</defName>
-		<label>iron table lantern (blue)</label>
+		<label>iron lantern (blue)</label>
 		<description>An iron lantern, with blue tinted glass. Can be automatically refuelled with fat. Produces a small amount of heat.</description>
 		<graphicData>
 		  <texPath>Things/Buildings/Furniture/ESCP_IronLantern/ESCP_IronLantern_Blue</texPath>
@@ -146,7 +148,7 @@
 	
 	<ThingDef ParentName="ESCP_IronTableLantern_Base">
 		<defName>ESCP_IronLantern_Green</defName>
-		<label>iron table lantern (green)</label>
+		<label>iron lantern (green)</label>
 		<description>An iron lantern, with green tinted glass. Can be automatically refuelled with fat. Produces a small amount of heat.</description>
 		<graphicData>
 		  <texPath>Things/Buildings/Furniture/ESCP_IronLantern/ESCP_IronLantern_Green</texPath>
@@ -161,7 +163,7 @@
 	
 	<ThingDef ParentName="ESCP_IronTableLantern_Base">
 		<defName>ESCP_IronLantern_Red</defName>
-		<label>iron table lantern (red)</label>
+		<label>iron lantern (red)</label>
 		<description>An iron lantern, with red tinted glass. Can be automatically refuelled with fat. Produces a small amount of heat.</description>
 		<graphicData>
 		  <texPath>Things/Buildings/Furniture/ESCP_IronLantern/ESCP_IronLantern_Red</texPath>
@@ -178,7 +180,7 @@
 	
 	<ThingDef MayRequire="Ludeon.RimWorld.Ideology" ParentName="ESCP_IronTableLantern_Base">
 		<defName>ESCP_IronLantern_Dark</defName>
-		<label>iron table lantern (darklight)</label>
+		<label>iron lantern (darklight)</label>
 		<description>An iron lantern, with special tinted glass. Can be automatically refuelled with fat. Produces a small amount of heat.</description>
 		<graphicData>
 		  <texPath>Things/Buildings/Furniture/ESCP_IronLantern/ESCP_IronLantern_Dark</texPath>
