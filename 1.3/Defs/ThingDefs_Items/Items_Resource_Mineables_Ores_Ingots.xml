@@ -367,7 +367,7 @@
 
 	<ThingDef ParentName="ResourceBase">
 		<defName>ESCP_Raw_Cobalt_Ore</defName>
-		<label>Coblat Ore</label>
+		<label>Cobalt Ore</label>
 		<description>An ore that is commonly found in Tamriel. Must be smelted down in order to create useful ingots.</description>
 		<graphicData>
 		  <texPath>Things/Item/Resource/Ores/Cobalt</texPath>
