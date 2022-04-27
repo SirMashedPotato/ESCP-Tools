@@ -1,0 +1,6 @@
+J:\Modding\Github\ESCP-Tools\1.3\Source\ESCP_ThingCatching\ESCP_ThingCatching\ESCP_ThingCatching\bin\Debug\ESCP_ThingCatching.dll
+J:\Modding\Github\ESCP-Tools\1.3\Source\ESCP_ThingCatching\ESCP_ThingCatching\ESCP_ThingCatching\bin\Debug\ESCP_ThingCatching.pdb
+J:\Modding\Github\ESCP-Tools\1.3\Source\ESCP_ThingCatching\ESCP_ThingCatching\ESCP_ThingCatching\obj\Debug\ESCP_ThingCatching.csprojAssemblyReference.cache
+J:\Modding\Github\ESCP-Tools\1.3\Source\ESCP_ThingCatching\ESCP_ThingCatching\ESCP_ThingCatching\obj\Debug\ESCP_ThingCatching.csproj.CoreCompileInputs.cache
+J:\Modding\Github\ESCP-Tools\1.3\Source\ESCP_ThingCatching\ESCP_ThingCatching\ESCP_ThingCatching\obj\Debug\ESCP_ThingCatching.dll
+J:\Modding\Github\ESCP-Tools\1.3\Assemblies\ESCP_ThingCatching.dll

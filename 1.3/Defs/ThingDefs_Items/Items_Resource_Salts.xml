@@ -20,7 +20,8 @@
 		  <li>Manufactured</li>
 		</thingCategories>
 		<tradeTags>
-		  <li>TelvanniSalt</li>
+		  <li>ESCP_TelvanniCommon</li>
+		  <li>ESCP_ElementalSalts</li>
 		</tradeTags>
 	</ThingDef>
 	
@@ -87,7 +88,7 @@
 	<ThingDef ParentName="Telvanni_SaltsBase">
 		<defName>ESCP_Resource_AshSalts</defName>
 		<label>ash salts</label>
-		<description>Grey salts harvested from servants of Dagoth Ur. The salts accumulate within their body, likely a mixture of dormant ash blights and environmental ash.</description>
+		<description>Grey crystaline salts, the product of several years worth of ash. Often harvested from the bodies of those who call the volcanic wastelands around Red Mountain their home.</description>
 		<graphicData>
 			<texPath>Things/Item/Resource/Salts/Ash_Salts</texPath>
 		</graphicData>

@@ -1,25 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
-  <packageId>Rick.ESCPTools</packageId>
-  <author>Rick, SirMashedPotato, PPHHYY</author>
-  <name>ESCP Tools</name>
-  <description>The Elder Scrolls Collaboration Project Presents: ESCP Tools, this will be the core required modgoing forward for all ESCP mods. This has everything from materials and production chains and buildings to alchemy and enchanting ingredients.</description>
-  <supportedVersions>
-      <li>1.3</li>
-  </supportedVersions>
-<incompatibleWith>
-    <li>SirMashedPotato.InsectsHaveChitin</li>
-    <li>SirMashedPotato.MorrowRim.SimpleBonemold</li>
-</incompatibleWith>
-<modDependencies>
-      <li>
-        <packageId>brrainz.harmony</packageId>
-        <displayName>Harmony</displayName>
-        <steamWorkshopUrl>steam://url/CommunityFilePage/2009463077</steamWorkshopUrl>
-        <downloadUrl>https://github.com/pardeike/HarmonyRimWorld/releases/latest</downloadUrl>
-      </li>
-  </modDependencies>
-  <loadAfter>
-      <li>brrainz.harmony</li>
-  </loadAfter>
+	<packageId>Rick.ESCPTools</packageId>
+	<author>Rick, SirMashedPotato, PPHHYY</author>
+	<name>ESCP Tools</name>
+	<description>The Elder Scrolls Collaboration Project Presents: ESCP Tools, this will be the core required modgoing forward for all ESCP mods. This has everything from materials and production chains and buildings to alchemy and enchanting ingredients.</description>
+	<supportedVersions>
+		<li>1.3</li>
+	</supportedVersions>
+	<modDependencies>
+		<li>
+			<packageId>brrainz.harmony</packageId>
+			<displayName>Harmony</displayName>
+			<steamWorkshopUrl>steam://url/CommunityFilePage/2009463077</steamWorkshopUrl>
+			<downloadUrl>https://github.com/pardeike/HarmonyRimWorld/releases/latest</downloadUrl>
+		</li>
+	</modDependencies>
+	<loadAfter>
+		<li>brrainz.harmony</li>
+		<li>Ludeon.RimWorld</li>
+		<li>Ludeon.RimWorld.Ideology</li>
+		<li>Ludeon.RimWorld.Royalty</li>
+		<li>SirMashedPotato.ESCP.RaceTools</li>
+		<li>erdelf.HumanoidAlienRaces</li>
+		<li>OskarPotocki.VanillaFactionsExpanded.Core</li>
+		<li>vanillaexpanded.achievements</li>
+	</loadAfter>
+	<incompatibleWith>
+		<li>SirMashedPotato.InsectsHaveChitin</li>
+		<li>SirMashedPotato.MorrowRim.SimpleBonemold</li>
+	</incompatibleWith>
 </ModMetaData>

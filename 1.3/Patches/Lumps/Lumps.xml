@@ -4,14 +4,9 @@
 	<Operation Class="PatchOperationAdd">
 		<xpath>/Defs/GenStepDef[defName = "PreciousLump"]/genStep/mineables</xpath>
 		<value>
-			<li>MorrowRim_MineableHeartStone</li>
-		</value>
-	</Operation>
-
-	<Operation Class="PatchOperationAdd">
-		<xpath>/Defs/GenStepDef[defName = "PreciousLump"]/genStep/mineables</xpath>
-		<value>
+			<li>ESCP_Resource_MineableHeartStone</li>
 			<li>ESCP_Mineable_Meteoric_Iron</li>
+			<li>ESCP_Mineable_Moonstone</li>
 		</value>
 	</Operation>
 

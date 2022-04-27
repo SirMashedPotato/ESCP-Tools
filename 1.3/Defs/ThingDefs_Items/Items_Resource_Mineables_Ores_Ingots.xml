@@ -9,7 +9,7 @@
 	<ThingDef ParentName="ResourceBase">
 		<defName>ESCP_Raw_Adamantite_Ore</defName>
 		<label>Adamantite Ore</label>
-		<description>An ore that comes common in Tamreil.  Must be smelted down in order to create useful ingots.</description>
+		<description>An ore that is commonly found in Tamriel. Must be smelted down in order to create useful ingots.</description>
 		<graphicData>
 		  <texPath>Things/Item/Resource/Ores/Adamantite</texPath>
 		  <graphicClass>Graphic_StackCount</graphicClass>
@@ -26,11 +26,11 @@
 		  <Flammability>0</Flammability>
 		</statBases>
 		<thingCategories>
-		  <li>Items</li>
+		  <li>ESCP_Resources_Raw</li>
 		</thingCategories>
 		<techLevel>Medieval</techLevel>
 		<tradeTags>
-		  <!-- <li>ESCP_Resources_Raw</li> -->
+		  <li>ESCP_Resources_Raw</li>
 		</tradeTags>
 	</ThingDef>
 
@@ -39,7 +39,7 @@
   <ThingDef ParentName="ResourceBase">
     <defName>ESCP_Resource_Adamantite_Ingot</defName>
     <label>Adamantite Ingot</label>
-    <description>An Ingot made from Adamantite ore.</description>
+    <description>An Ingot smelted from Adamantite ore.</description>
     <graphicData>
       <texPath>Things/Item/Resource/Ingots/Copper</texPath>
       <graphicClass>Graphic_StackCount</graphicClass>
@@ -60,11 +60,12 @@
     <useHitPoints>false</useHitPoints>
     <healthAffectsPrice>false</healthAffectsPrice>
     <thingCategories>
-      <!-- <li>ESCP_Resources_Raw</li> -->
+      <li>ESCP_Resources_Raw</li>
     </thingCategories>
     <burnableByRecipe>false</burnableByRecipe>
     <smeltable>true</smeltable>
     <stuffProps>
+	  <stuffAdjective>adamantite</stuffAdjective>
       <color>(171,178,126)</color>
       <categories>
         <li>Metallic</li>
@@ -92,7 +93,7 @@
 	<ThingDef ParentName="ResourceBase">
 		<defName>ESCP_Raw_Adamantium_Ore</defName>
 		<label>Adamantium Ore</label>
-		<description>An ore that comes common in Tamreil. Must be smelted down in order to create useful ingots.</description>
+		<description>An ore that is commonly found in Tamriel. Must be smelted down in order to create useful ingots.</description>
 		<graphicData>
 		  <texPath>Things/Item/Resource/Ores/Adamantium</texPath>
 		  <graphicClass>Graphic_StackCount</graphicClass>
@@ -109,11 +110,11 @@
 		  <Flammability>0</Flammability>
 		</statBases>
 		<thingCategories>
-		  <li>Items</li>
+		  <li>ESCP_Resources_Raw</li>
 		</thingCategories>
 		<techLevel>Medieval</techLevel>
 		<tradeTags>
-		  <!-- <li>ESCP_Resources_Raw</li> -->
+		  <li>ESCP_Resources_Raw</li>
 		</tradeTags>
 	</ThingDef>
 
@@ -121,8 +122,8 @@
 
   <ThingDef ParentName="ResourceBase">
     <defName>ESCP_Resource_Adamantium_Ingot</defName>
-    <label>Copper Ingot</label>
-    <description>An Ingot made from Adamantium ore.</description>
+    <label>Adamantium Ingot</label>
+    <description>An Ingot smelted from Adamantium ore.</description>
     <graphicData>
       <texPath>Things/Item/Resource/Ingots/Adamantium</texPath>
       <graphicClass>Graphic_StackCount</graphicClass>
@@ -143,11 +144,12 @@
     <useHitPoints>false</useHitPoints>
     <healthAffectsPrice>false</healthAffectsPrice>
     <thingCategories>
-      <!-- <li>ESCP_Resources_Raw</li> -->
+      <li>ESCP_Resources_Raw</li>
     </thingCategories>
     <burnableByRecipe>false</burnableByRecipe>
     <smeltable>true</smeltable>
     <stuffProps>
+	  <stuffAdjective>adamantium</stuffAdjective>
       <color>(172,174,183)</color>
       <categories>
         <li>Metallic</li>
@@ -192,7 +194,7 @@
 		  <Flammability>0</Flammability>
 		</statBases>
 		<thingCategories>
-		  <li>Items</li>
+		  <li>ESCP_Resources_Raw</li>
 		</thingCategories>
 		<techLevel>Medieval</techLevel>
 		<tradeTags>
@@ -205,7 +207,7 @@
   <ThingDef ParentName="ResourceBase">
     <defName>ESCP_Resource_Buoyant_Steel_Ingot</defName>
     <label>Buoyant Steel Ingot</label>
-    <description>An Ingot made from buoyant steel scraps.</description>
+    <description>An Ingot smelted from buoyant steel scraps.</description>
     <graphicData>
       <texPath>Things/Item/Resource/Ingots/Buoyant_Steel</texPath>
       <graphicClass>Graphic_StackCount</graphicClass>
@@ -231,6 +233,7 @@
     <burnableByRecipe>false</burnableByRecipe>
     <smeltable>true</smeltable>
     <stuffProps>
+	  <stuffAdjective>buoyant steel</stuffAdjective>
       <categories>
         <li>Metallic</li>
       </categories>
@@ -257,7 +260,7 @@
   <ThingDef ParentName="ResourceBase">
     <defName>ESCP_Resource_Brass_Ingot</defName>
     <label>Brass Ingot</label>
-    <description>An Ingot made from copper and zinc. Smelt copper and zinc in order to make useful ingots.</description>
+    <description>An alloy made from copper and zinc.</description>
     <graphicData>
       <texPath>Things/Item/Resource/Ingots/Brass</texPath>
       <graphicClass>Graphic_StackCount</graphicClass>
@@ -278,11 +281,12 @@
     <useHitPoints>false</useHitPoints>
     <healthAffectsPrice>false</healthAffectsPrice>
     <thingCategories>
-      <!-- <li>ESCP_Resources_Raw</li> -->
+      <li>ESCP_Resources_Raw</li>
     </thingCategories>
     <burnableByRecipe>false</burnableByRecipe>
     <smeltable>true</smeltable>
     <stuffProps>
+	  <stuffAdjective>brass</stuffAdjective>
       <color>(222,189,129)</color>
       <categories>
         <li>Metallic</li>
@@ -310,7 +314,7 @@
   <ThingDef ParentName="ResourceBase">
     <defName>ESCP_Resource_Bronze_Ingot</defName>
     <label>Bronze Ingot</label>
-    <description>An Ingot made from copper and tin. Smelt copper and zinc in order to make useful ingots.</description>
+    <description>An alloy made from copper and tin.</description>
     <graphicData>
       <texPath>Things/Item/Resource/Ingots/Bronze</texPath>
       <graphicClass>Graphic_StackCount</graphicClass>
@@ -331,11 +335,12 @@
     <useHitPoints>false</useHitPoints>
     <healthAffectsPrice>false</healthAffectsPrice>
     <thingCategories>
-      <!-- <li>ESCP_Resources_Raw</li> -->
+      <li>ESCP_Resources_Raw</li>
     </thingCategories>
     <burnableByRecipe>false</burnableByRecipe>
     <smeltable>true</smeltable>
     <stuffProps>
+	  <stuffAdjective>bronze</stuffAdjective>
       <color>(229,166,132)</color>
       <categories>
         <li>Metallic</li>
@@ -363,7 +368,7 @@
 	<ThingDef ParentName="ResourceBase">
 		<defName>ESCP_Raw_Cobalt_Ore</defName>
 		<label>Coblat Ore</label>
-		<description>An ore that comes common in Tamreil. Must be smelted down in order to create useful ingots.</description>
+		<description>An ore that is commonly found in Tamriel. Must be smelted down in order to create useful ingots.</description>
 		<graphicData>
 		  <texPath>Things/Item/Resource/Ores/Cobalt</texPath>
 		  <graphicClass>Graphic_StackCount</graphicClass>
@@ -380,11 +385,11 @@
 		  <Flammability>0</Flammability>
 		</statBases>
 		<thingCategories>
-		  <li>Items</li>
+		  <li>ESCP_Resources_Raw</li>
 		</thingCategories>
 		<techLevel>Medieval</techLevel>
 		<tradeTags>
-		  <!-- <li>ESCP_Resources_Raw</li> -->
+		  <li>ESCP_Resources_Raw</li>
 		</tradeTags>
 	</ThingDef>
 
@@ -393,7 +398,7 @@
   <ThingDef ParentName="ResourceBase">
     <defName>ESCP_Resource_Cobalt_Ingot</defName>
     <label>Cobalt Ingot</label>
-    <description>An Ingot made from cobalt ore.</description>
+    <description>An Ingot smelted from cobalt ore.</description>
     <graphicData>
       <texPath>Things/Item/Resource/Ingots/Cobalt</texPath>
       <graphicClass>Graphic_StackCount</graphicClass>
@@ -414,11 +419,12 @@
     <useHitPoints>false</useHitPoints>
     <healthAffectsPrice>false</healthAffectsPrice>
     <thingCategories>
-      <!-- <li>ESCP_Resources_Raw</li> -->
+      <li>ESCP_Resources_Raw</li>
     </thingCategories>
     <burnableByRecipe>false</burnableByRecipe>
     <smeltable>true</smeltable>
     <stuffProps>
+	  <stuffAdjective>cobalt</stuffAdjective>
       <color>(61,150,197)</color>
       <categories>
         <li>Metallic</li>
@@ -446,7 +452,7 @@
 	<ThingDef ParentName="ResourceBase">
 		<defName>ESCP_Raw_Copper_Ore</defName>
 		<label>Copper Ore</label>
-		<description>An ore that comes common in Tamreil, used with zinc or tin to make brass and bronze.  Must be smelted down in order to create useful ingots.</description>
+		<description>An ore that is commonly found in Tamriel. Can be alloyed with either zinc or tin, to produce brass or bronze respectively. Must be smelted down in order to create useful ingots.</description>
 		<graphicData>
 		  <texPath>Things/Item/Resource/Ores/Copper</texPath>
 		  <graphicClass>Graphic_StackCount</graphicClass>
@@ -463,11 +469,11 @@
 		  <Flammability>0</Flammability>
 		</statBases>
 		<thingCategories>
-		  <li>Items</li>
+		  <li>ESCP_Resources_Raw</li>
 		</thingCategories>
 		<techLevel>Medieval</techLevel>
 		<tradeTags>
-		  <!-- <li>ESCP_Resources_Raw</li> -->
+		  <li>ESCP_Resources_Raw</li>
 		</tradeTags>
 	</ThingDef>
 
@@ -476,7 +482,7 @@
   <ThingDef ParentName="ResourceBase">
     <defName>ESCP_Resource_Copper_Ingot</defName>
     <label>Copper Ingot</label>
-    <description>An Ingot made from Copper ore.</description>
+    <description>An Ingot smelted from Copper ore.</description>
     <graphicData>
       <texPath>Things/Item/Resource/Ingots/Copper</texPath>
       <graphicClass>Graphic_StackCount</graphicClass>
@@ -497,11 +503,12 @@
     <useHitPoints>false</useHitPoints>
     <healthAffectsPrice>false</healthAffectsPrice>
     <thingCategories>
-      <!-- <li>ESCP_Resources_Raw</li> -->
+      <li>ESCP_Resources_Raw</li>
     </thingCategories>
     <burnableByRecipe>false</burnableByRecipe>
     <smeltable>true</smeltable>
     <stuffProps>
+	  <stuffAdjective>copper</stuffAdjective>
       <color>(171,80,45)</color>
       <categories>
         <li>Metallic</li>
@@ -554,7 +561,7 @@
 	<ThingDef ParentName="ResourceBase">
 		<defName>ESCP_Raw_Corundum_Ore</defName>
 		<label>Corundum Ore</label>
-		<description>An ore that comes common in Tamreil, used with iron to make steel.  Must be smelted down in order to create useful ingots.</description>
+		<description>An ore that is commonly found in Tamriel, can be alloyed with iron to make steel. Must be smelted down in order to create useful ingots.</description>
 		<graphicData>
 		  <texPath>Things/Item/Resource/Ores/Corundum</texPath>
 		  <graphicClass>Graphic_StackCount</graphicClass>
@@ -572,11 +579,11 @@
 		</statBases>
 		<thingCategories>
 		  <!-- <li>ESCP_Items</li> -->
-		  <li>Items</li>
+		  <li>ESCP_Resources_Raw</li>
 		</thingCategories>
 		<techLevel>Medieval</techLevel>
 		<tradeTags>
-		  <!-- <li>ESCP_Resources_Raw</li> -->
+		  <li>ESCP_Resources_Raw</li>
 		</tradeTags>
 	</ThingDef>
 
@@ -585,7 +592,7 @@
   <ThingDef ParentName="ResourceBase">
     <defName>ESCP_Resource_Corundum_Ingot</defName>
     <label>Corundum Ingot</label>
-    <description>An Ingot made from Corundum ore.</description>
+    <description>An Ingot smelted from Corundum ore.</description>
     <graphicData>
       <texPath>Things/Item/Resource/Ingots/Corundum</texPath>
       <graphicClass>Graphic_StackCount</graphicClass>
@@ -606,11 +613,12 @@
     <useHitPoints>false</useHitPoints>
     <healthAffectsPrice>false</healthAffectsPrice>
     <thingCategories>
-      <!-- <li>ESCP_Resources_Raw</li> -->
+      <li>ESCP_Resources_Raw</li>
     </thingCategories>
     <burnableByRecipe>false</burnableByRecipe>
     <smeltable>true</smeltable>
     <stuffProps>
+	  <stuffAdjective>corundum</stuffAdjective>
       <color>(165,119,86)</color>
       <categories>
         <li>Metallic</li>
@@ -663,7 +671,7 @@
 	<ThingDef ParentName="ResourceBase">
 		<defName>ESCP_Raw_Ebony_Ore</defName>
 		<label>Ebony Ore</label>
-		<description>An ore that comes common in Tamreil.  Must be smelted down in order to create useful ingots.</description>
+		<description>A type of volcanic glass, thought to be the blood of Lorkhan. Must be smelted down in order to create useful ingots.</description>
 		<graphicData>
 		  <texPath>Things/Item/Resource/Ores/Ebony</texPath>
 		  <graphicClass>Graphic_StackCount</graphicClass>
@@ -680,11 +688,11 @@
 		  <Flammability>0</Flammability>
 		</statBases>
 		<thingCategories>
-		  <li>Items</li>
+		  <li>ESCP_Resources_Raw</li>
 		</thingCategories>
 		<techLevel>Medieval</techLevel>
 		<tradeTags>
-		  <!-- <li>ESCP_Resources_Raw</li> -->
+		  <li>ESCP_Resources_Raw</li>
 		</tradeTags>
 	</ThingDef>
 
@@ -693,7 +701,7 @@
   <ThingDef ParentName="ResourceBase">
     <defName>ESCP_Resource_Ebony_Ingot</defName>
     <label>Ebony Ingot</label>
-    <description>An Ingot made from ebony ore.</description>
+    <description>An Ingot smelted from ebony ore.</description>
     <graphicData>
       <texPath>Things/Item/Resource/Ingots/Ebony</texPath>
       <graphicClass>Graphic_StackCount</graphicClass>
@@ -714,11 +722,12 @@
     <useHitPoints>false</useHitPoints>
     <healthAffectsPrice>false</healthAffectsPrice>
     <thingCategories>
-      <!-- <li>ESCP_Resources_Raw</li> -->
+      <li>ESCP_Resources_Raw</li>
     </thingCategories>
     <burnableByRecipe>false</burnableByRecipe>
     <smeltable>true</smeltable>
     <stuffProps>
+	  <stuffAdjective>ebony</stuffAdjective>
       <color>(60,45,67)</color>
       <categories>
         <li>Metallic</li>
@@ -770,8 +779,8 @@
 
 	<ThingDef ParentName="ResourceBase">
 		<defName>ESCP_Raw_Volcanic_Glass_Ore</defName>
-		<label>Volcanic Glass Ore</label>
-		<description>An ore that comes common in Tamreil.  Must be smelted down in order to create useful ingots.</description>
+		<label>Volcanic Glass</label>
+		<description>A type of volcanic glass, commonly found in volcanically active regions. Must be smelted down in order to create useful ingots.</description>
 		<graphicData>
 		  <texPath>Things/Item/Resource/Ores/Glass</texPath>
 		  <graphicClass>Graphic_StackCount</graphicClass>
@@ -788,11 +797,11 @@
 		  <Flammability>0</Flammability>
 		</statBases>
 		<thingCategories>
-		  <li>Items</li>
+		  <li>ESCP_Resources_Raw</li>
 		</thingCategories>
 		<techLevel>Medieval</techLevel>
 		<tradeTags>
-		  <!-- <li>ESCP_Resources_Raw</li> -->
+		  <li>ESCP_Resources_Raw</li>
 		</tradeTags>
 	</ThingDef>
 
@@ -800,8 +809,8 @@
 
   <ThingDef ParentName="ResourceBase">
     <defName>ESCP_Resource_Volcanic_Glass_Ingot</defName>
-    <label>Volcanic Glass Ingot</label>
-    <description>An Ingot made from volcanic glass ore.</description>
+    <label>Malachite Ingot</label>
+    <description>An Ingot smelted from volcanic glass.</description>
     <graphicData>
       <texPath>Things/Item/Resource/Ingots/Glass</texPath>
       <graphicClass>Graphic_StackCount</graphicClass>
@@ -822,11 +831,12 @@
     <useHitPoints>false</useHitPoints>
     <healthAffectsPrice>false</healthAffectsPrice>
     <thingCategories>
-      <!-- <li>ESCP_Resources_Raw</li> -->
+      <li>ESCP_Resources_Raw</li>
     </thingCategories>
     <burnableByRecipe>false</burnableByRecipe>
     <smeltable>true</smeltable>
     <stuffProps>
+	  <stuffAdjective>malachite</stuffAdjective>
       <color>(149,233,147)</color>
       <categories>
         <li>Metallic</li>
@@ -851,7 +861,7 @@
 
 	<!-- Gold Mineable -->
 
-	  <ThingDef ParentName="RockBase">
+  <ThingDef ParentName="RockBase">
     <defName>ESCP_Mineable_Gold</defName>
     <label>Gold Cluster</label>
     <description>Rock containing a cluster of Gold.</description>
@@ -879,7 +889,7 @@
 	<ThingDef ParentName="ResourceBase">
 		<defName>ESCP_Raw_Gold_Ore</defName>
 		<label>Gold Ore</label>
-		<description>An ore that comes common in Tamreil, used mainly with jewlry and gems or as currency.  Must be smelted down in order to create useful ingots.</description>
+		<description>An ore that is commonly found in Tamriel, mostly used to create jewelery, or as a form of currency. Must be smelted down in order to create useful ingots.</description>
 		<graphicData>
 		  <texPath>Things/Item/Resource/Ores/Gold</texPath>
 		  <graphicClass>Graphic_StackCount</graphicClass>
@@ -896,11 +906,11 @@
 		  <Flammability>0</Flammability>
 		</statBases>
 		<thingCategories>
-		  <li>Items</li>
+		  <li>ESCP_Resources_Raw</li>
 		</thingCategories>
 		<techLevel>Medieval</techLevel>
 		<tradeTags>
-		  <!-- <li>ESCP_Resources_Raw</li> -->
+		  <li>ESCP_Resources_Raw</li>
 		</tradeTags>
 	</ThingDef>
 
@@ -909,7 +919,7 @@
   <ThingDef ParentName="ResourceBase">
     <defName>ESCP_Resource_Gold_Ingot</defName>
     <label>Gold Ingot</label>
-    <description>An Ingot made from gold ore.</description>
+    <description>An Ingot smelted from gold ore.</description>
     <graphicData>
       <texPath>Things/Item/Resource/Ingots/Gold</texPath>
       <graphicClass>Graphic_StackCount</graphicClass>
@@ -930,11 +940,12 @@
     <useHitPoints>false</useHitPoints>
     <healthAffectsPrice>false</healthAffectsPrice>
     <thingCategories>
-      <!-- <li>ESCP_Resources_Raw</li> -->
+      <li>ESCP_Resources_Raw</li>
     </thingCategories>
     <burnableByRecipe>false</burnableByRecipe>
     <smeltable>true</smeltable>
     <stuffProps>
+	  <stuffAdjective>gold</stuffAdjective>
       <color>(242,206,142)</color>
       <categories>
         <li>Metallic</li>
@@ -959,7 +970,7 @@
 
   <!-- Iron Mineable -->
 
-	  <ThingDef ParentName="RockBase">
+  <ThingDef ParentName="RockBase">
     <defName>ESCP_Mineable_Iron</defName>
     <label>Iron Cluster</label>
     <description>Rock containing a cluster of Iron.</description>
@@ -987,7 +998,7 @@
 	<ThingDef ParentName="ResourceBase">
 		<defName>ESCP_Raw_Iron_Ore</defName>
 		<label>Iron Ore</label>
-		<description>An ore that comes common in Tamreil, used in most metal making. Must be smelted down in order to create useful ingots.</description>
+		<description>An ore that is commonly found in Tamriel, one of the most widely used metals. Must be smelted down in order to create useful ingots.</description>
 		<graphicData>
 		  <texPath>Things/Item/Resource/Ores/Iron</texPath>
 		  <graphicClass>Graphic_StackCount</graphicClass>
@@ -1004,11 +1015,11 @@
 		  <Flammability>0</Flammability>
 		</statBases>
 		<thingCategories>
-		  <li>Items</li>
+		  <li>ESCP_Resources_Raw</li>
 		</thingCategories>
 		<techLevel>Medieval</techLevel>
 		<tradeTags>
-		  <!-- <li>ESCP_Resources_Raw</li> -->
+		  <li>ESCP_Resources_Raw</li>
 		</tradeTags>
 	</ThingDef>
 
@@ -1017,7 +1028,7 @@
   <ThingDef ParentName="ResourceBase">
     <defName>ESCP_Resource_Iron_Ingot</defName>
     <label>Iron Ingot</label>
-    <description>An Ingot made from iron ore.</description>
+    <description>An Ingot smelted from iron ore.</description>
     <graphicData>
       <texPath>Things/Item/Resource/Ingots/Iron</texPath>
       <graphicClass>Graphic_StackCount</graphicClass>
@@ -1038,11 +1049,12 @@
     <useHitPoints>false</useHitPoints>
     <healthAffectsPrice>false</healthAffectsPrice>
     <thingCategories>
-      <!-- <li>ESCP_Resources_Raw</li> -->
+      <li>ESCP_Resources_Raw</li>
     </thingCategories>
     <burnableByRecipe>false</burnableByRecipe>
     <smeltable>true</smeltable>
     <stuffProps>
+	  <stuffAdjective>iron</stuffAdjective>
       <color>(142,136,125)</color>
       <categories>
         <li>Metallic</li>
@@ -1095,9 +1107,9 @@
 	<ThingDef ParentName="ResourceBase">
 		<defName>ESCP_Resource_HeartStone</defName>
 		<label>heart stone</label>
-		<description>A peculiar stone mined from volcanic debris, said to be a shard of the Heart of Lorkhan. It's warm to the touch, and seems to radiate with energy.</description>
+		<description>A peculiar stone mined from volcanic debris, believed to have originated from within Red Mountain. It's warm to the touch, and seems to radiate with energy.</description>
 		<graphicData>
-		  <texPath>Things/Item/Resource/Ores/Heart_Stone/ESCP_ESCP_Resource_HeartStone</texPath>
+		  <texPath>Things/Item/Resource/Misc/ESCP_Resource_HeartStone</texPath>
 		  <graphicClass>Graphic_Single</graphicClass>
 		  <drawSize>0.70</drawSize>
 		</graphicData>
@@ -1113,16 +1125,16 @@
 		  <Flammability>0.2</Flammability>
 		</statBases>
 		<thingCategories>
-		  <li>Items</li>
+		  <li>ESCP_Resources_Raw</li>
 		</thingCategories>
 		<techLevel>Medieval</techLevel>
 		<tradeTags>
-		  <li>TelvanniExotic</li>
+		  <li>ESCP_TelvanniExotic</li>
 		  <li>AshlandExotic</li>
 		  <li>ExoticMisc</li>
 		</tradeTags>
 		<butcherProducts>
-		  <Dagoth_AshSalts>5</Dagoth_AshSalts>
+		  <ESCP_Resource_AshSalts>5</ESCP_Resource_AshSalts>
 		  <ESCP_Resource_FireSalts>5</ESCP_Resource_FireSalts>
 		  <ESCP_Resource_FerrousSalts>5</ESCP_Resource_FerrousSalts>
 		</butcherProducts>
@@ -1174,7 +1186,7 @@
 	<ThingDef ParentName="ResourceBase">
 		<defName>ESCP_Raw_Meteoric_Iron_Ore</defName>
 		<label>Meteoric Iron Ore</label>
-		<description>An ore that comes only from meteors that crash into the planet, used by the Akaviri in thier smithing styles. Must be smelted down in order to create useful ingots.</description>
+		<description>An ore that comes only from meteors, used by the Akaviri in their smithing styles. Must be smelted down in order to create useful ingots.</description>
 		<graphicData>
 		  <texPath>Things/Item/Resource/Ores/Meteoric_Iron</texPath>
 		  <graphicClass>Graphic_StackCount</graphicClass>
@@ -1192,13 +1204,13 @@
 		</statBases>
 		<thingCategories>
 		  <!-- <li>ESCP_Items</li> -->
-		  <li>Items</li>
+		  <li>ESCP_Resources_Raw</li>
 		</thingCategories>
 	    <burnableByRecipe>false</burnableByRecipe>
     	<smeltable>false</smeltable>
 		<techLevel>Medieval</techLevel>
 		<tradeTags>
-		  <!-- <li>ESCP_Resources_Raw</li> -->
+		  <li>ESCP_Resources_Raw</li>
 		</tradeTags>
 	</ThingDef>
 
@@ -1207,7 +1219,7 @@
   <ThingDef ParentName="ResourceBase">
     <defName>ESCP_Resource_Meteoric_Iron_Ingot</defName>
     <label>Meteoric Iron Ingot</label>
-    <description>An Ingot made from ore that comes only from meteors that crash into the planet, used by the Akaviri in thier smithing styles.</description>
+    <description>An Ingot smelted from meteoric iron, used by the Akaviri in their smithing styles.</description>
     <graphicData>
       <texPath>Things/Item/Resource/Ingots/Meteoric_Iron</texPath>
       <graphicClass>Graphic_StackCount</graphicClass>
@@ -1228,11 +1240,12 @@
     <useHitPoints>false</useHitPoints>
     <healthAffectsPrice>false</healthAffectsPrice>
     <thingCategories>
-      <!-- <li>ESCP_Resources_Raw</li> -->
+      <li>ESCP_Resources_Raw</li>
     </thingCategories>
     <burnableByRecipe>false</burnableByRecipe>
     <smeltable>false</smeltable>
     <stuffProps>
+	  <stuffAdjective>meteoric</stuffAdjective>
       <color>(134,95,89)</color>
       <categories>
         <li>Metallic</li>
@@ -1260,7 +1273,7 @@
 	<ThingDef ParentName="ResourceBase">
 		<defName>ESCP_Raw_Mithril_Ore</defName>
 		<label>Mithril Ore</label>
-		<description>An ore that comes common in Tamreil. Must be smelted down in order to create useful ingots.</description>
+		<description>An ore that is commonly found in Tamriel. Must be smelted down in order to create useful ingots.</description>
 		<graphicData>
 		  <texPath>Things/Item/Resource/Ores/Mithril</texPath>
 		  <graphicClass>Graphic_StackCount</graphicClass>
@@ -1277,11 +1290,11 @@
 		  <Flammability>0</Flammability>
 		</statBases>
 		<thingCategories>
-		  <li>Items</li>
+		  <li>ESCP_Resources_Raw</li>
 		</thingCategories>
 		<techLevel>Medieval</techLevel>
 		<tradeTags>
-		  <!-- <li>ESCP_Resources_Raw</li> -->
+		  <li>ESCP_Resources_Raw</li>
 		</tradeTags>
 	</ThingDef>
 
@@ -1290,7 +1303,7 @@
   <ThingDef ParentName="ResourceBase">
     <defName>ESCP_Resource_Mithril_Ingot</defName>
     <label>Mithril Ingot</label>
-    <description>An Ingot made from mithril ore.</description>
+    <description>An Ingot smelted from mithril ore.</description>
     <graphicData>
       <texPath>Things/Item/Resource/Ingots/Mithril</texPath>
       <graphicClass>Graphic_StackCount</graphicClass>
@@ -1311,11 +1324,12 @@
     <useHitPoints>false</useHitPoints>
     <healthAffectsPrice>false</healthAffectsPrice>
     <thingCategories>
-      <!-- <li>ESCP_Resources_Raw</li> -->
+      <li>ESCP_Resources_Raw</li>
     </thingCategories>
     <burnableByRecipe>false</burnableByRecipe>
     <smeltable>true</smeltable>
     <stuffProps>
+	  <stuffAdjective>mithril</stuffAdjective>
       <color>(134,98,89)</color>
       <categories>
         <li>Metallic</li>
@@ -1368,7 +1382,7 @@
 	<ThingDef ParentName="ResourceBase">
 		<defName>ESCP_Raw_Moonstone_Ore</defName>
 		<label>Moonstone Ore</label>
-		<description>An ore that comes common in Tamreil, typically used by the Altmer. Must be smelted down in order to create useful ingots.</description>
+		<description>An ore that is commonly found in Tamriel. While typically used by the Altmer, the Bosmer and Khajiit are also known to make great use of it. Must be smelted down in order to create useful ingots.</description>
 		<graphicData>
 		  <texPath>Things/Item/Resource/Ores/Moonstone</texPath>
 		  <graphicClass>Graphic_StackCount</graphicClass>
@@ -1385,11 +1399,11 @@
 		  <Flammability>0</Flammability>
 		</statBases>
 		<thingCategories>
-		  <li>Items</li>
+		  <li>ESCP_Resources_Raw</li>
 		</thingCategories>
 		<techLevel>Medieval</techLevel>
 		<tradeTags>
-		  <!-- <li>ESCP_Resources_Raw</li> -->
+		  <li>ESCP_Resources_Raw</li>
 		</tradeTags>
 	</ThingDef>
 
@@ -1398,7 +1412,7 @@
   <ThingDef ParentName="ResourceBase">
     <defName>ESCP_Resource_Moonstone_Ingot</defName>
     <label>Moonstone Ingot</label>
-    <description>An Ingot made from moonstone ore.</description>
+    <description>An Ingot smelted from moonstone ore.</description>
     <graphicData>
       <texPath>Things/Item/Resource/Ingots/Moonstone</texPath>
       <graphicClass>Graphic_StackCount</graphicClass>
@@ -1419,11 +1433,12 @@
     <useHitPoints>false</useHitPoints>
     <healthAffectsPrice>false</healthAffectsPrice>
     <thingCategories>
-      <!-- <li>ESCP_Resources_Raw</li> -->
+      <li>ESCP_Resources_Raw</li>
     </thingCategories>
     <burnableByRecipe>false</burnableByRecipe>
     <smeltable>true</smeltable>
     <stuffProps>
+	  <stuffAdjective>moonstone</stuffAdjective>
       <color>(228,202,135)</color>
       <categories>
         <li>Metallic</li>
@@ -1451,7 +1466,7 @@
 	<ThingDef ParentName="ResourceBase">
 		<defName>ESCP_Raw_Nickel_Ore</defName>
 		<label>Nickel Ore</label>
-		<description>An ore that comes common in Tamreil, used mainly by the Imperials. Must be smelted down in order to create useful ingots.</description>
+		<description>An ore that is commonly found in Tamriel, mainly used by the Imperials. Must be smelted down in order to create useful ingots.</description>
 		<graphicData>
 		  <texPath>Things/Item/Resource/Ores/Nickel</texPath>
 		  <graphicClass>Graphic_StackCount</graphicClass>
@@ -1468,11 +1483,11 @@
 		  <Flammability>0</Flammability>
 		</statBases>
 		<thingCategories>
-		  <li>Items</li>
+		  <li>ESCP_Resources_Raw</li>
 		</thingCategories>
 		<techLevel>Medieval</techLevel>
 		<tradeTags>
-		  <!-- <li>ESCP_Resources_Raw</li> -->
+		  <li>ESCP_Resources_Raw</li>
 		</tradeTags>
 	</ThingDef>
 
@@ -1481,7 +1496,7 @@
   <ThingDef ParentName="ResourceBase">
     <defName>ESCP_Resource_Nickel_Ingot</defName>
     <label>Nickel Ingot</label>
-    <description>An Ingot made from nickel ore.</description>
+    <description>An Ingot smelted from nickel ore.</description>
     <graphicData>
       <texPath>Things/Item/Resource/Ingots/Nickel</texPath>
       <graphicClass>Graphic_StackCount</graphicClass>
@@ -1502,11 +1517,12 @@
     <useHitPoints>false</useHitPoints>
     <healthAffectsPrice>false</healthAffectsPrice>
     <thingCategories>
-      <!-- <li>ESCP_Resources_Raw</li> -->
+      <li>ESCP_Resources_Raw</li>
     </thingCategories>
     <burnableByRecipe>false</burnableByRecipe>
     <smeltable>true</smeltable>
     <stuffProps>
+	  <stuffAdjective>nickel</stuffAdjective>
       <color>(185,186,167)</color>
       <categories>
         <li>Metallic</li>
@@ -1534,7 +1550,7 @@
 	<ThingDef ParentName="ResourceBase">
 		<defName>ESCP_Raw_Orgnium_Ore</defName>
 		<label>Orgnium Ore</label>
-		<description>An ore that comes common in Tamreil , used by maoromer smiths. Must be smelted down in order to create useful ingots.</description>
+		<description>An ore that is commonly found in Tamriel, commonly used by Maormer, and named after King Orgnum. Must be smelted down in order to create useful ingots.</description>
 		<graphicData>
 		  <texPath>Things/Item/Resource/Ores/Orgnium</texPath>
 		  <graphicClass>Graphic_StackCount</graphicClass>
@@ -1551,11 +1567,11 @@
 		  <Flammability>0</Flammability>
 		</statBases>
 		<thingCategories>
-		  <li>Items</li>
+		  <li>ESCP_Resources_Raw</li>
 		</thingCategories>
 		<techLevel>Medieval</techLevel>
 		<tradeTags>
-		  <!-- <li>ESCP_Resources_Raw</li> -->
+		  <li>ESCP_Resources_Raw</li>
 		</tradeTags>
 	</ThingDef>
 
@@ -1564,7 +1580,7 @@
   <ThingDef ParentName="ResourceBase">
     <defName>ESCP_Resource_Orgnium_Ingot</defName>
     <label>Orgnium Ingot</label>
-    <description>An Ingot made from orgnium ore.</description>
+    <description>An Ingot smelted from orgnium ore.</description>
     <graphicData>
       <texPath>Things/Item/Resource/Ingots/Orgnium</texPath>
       <graphicClass>Graphic_StackCount</graphicClass>
@@ -1585,11 +1601,12 @@
     <useHitPoints>false</useHitPoints>
     <healthAffectsPrice>false</healthAffectsPrice>
     <thingCategories>
-      <!-- <li>ESCP_Resources_Raw</li> -->
+      <li>ESCP_Resources_Raw</li>
     </thingCategories>
     <burnableByRecipe>false</burnableByRecipe>
     <smeltable>true</smeltable>
     <stuffProps>
+	  <stuffAdjective>orgnium</stuffAdjective>
       <color>(90,100,137)</color>
       <categories>
         <li>Metallic</li>
@@ -1642,7 +1659,7 @@
 	<ThingDef ParentName="ResourceBase">
 		<defName>ESCP_Raw_Orichalcum_Ore</defName>
 		<label>Orichalcum Ore</label>
-		<description>An ore that comes orichalcum common in Tamreil, used by the master smith Orsimer. Must be smelted down in order to create useful ingots.</description>
+		<description>An ore that comes orichalcum common in Tamriel, used by the Orsimer, who are considerd to be amongst the best smiths in Tamriel. Must be smelted down in order to create useful ingots.</description>
 		<graphicData>
 		  <texPath>Things/Item/Resource/Ores/Orichalcum</texPath>
 		  <graphicClass>Graphic_StackCount</graphicClass>
@@ -1659,11 +1676,11 @@
 		  <Flammability>0</Flammability>
 		</statBases>
 		<thingCategories>
-		  <li>Items</li>
+		  <li>ESCP_Resources_Raw</li>
 		</thingCategories>
 		<techLevel>Medieval</techLevel>
 		<tradeTags>
-		  <!-- <li>ESCP_Resources_Raw</li> -->
+		  <li>ESCP_Resources_Raw</li>
 		</tradeTags>
 	</ThingDef>
 
@@ -1672,7 +1689,7 @@
   <ThingDef ParentName="ResourceBase">
     <defName>ESCP_Resource_Orichalcum_Ingot</defName>
     <label>Orichalcum Ingot</label>
-    <description>An Ingot made from orichalcum ore.</description>
+    <description>An Ingot smelted from orichalcum ore.</description>
     <graphicData>
       <texPath>Things/Item/Resource/Ingots/Orichalcum</texPath>
       <graphicClass>Graphic_StackCount</graphicClass>
@@ -1693,11 +1710,12 @@
     <useHitPoints>false</useHitPoints>
     <healthAffectsPrice>false</healthAffectsPrice>
     <thingCategories>
-      <!-- <li>ESCP_Resources_Raw</li> -->
+      <li>ESCP_Resources_Raw</li>
     </thingCategories>
     <burnableByRecipe>false</burnableByRecipe>
     <smeltable>true</smeltable>
     <stuffProps>
+	  <stuffAdjective>orichalcum</stuffAdjective>
       <color>(59,84,71)</color>
       <categories>
         <li>Metallic</li>
@@ -1725,7 +1743,7 @@
 	<ThingDef ParentName="ResourceBase">
 		<defName>ESCP_Raw_Palladium_Ore</defName>
 		<label>Palladium Ore</label>
-		<description>An ore that comes common in Tamreil, used by ancient Ayleids. Must be smelted down in order to create useful ingots.</description>
+		<description>An ore that is commonly found in Tamriel, used by ancient Ayleids. Must be smelted down in order to create useful ingots.</description>
 		<graphicData>
 		  <texPath>Things/Item/Resource/Ores/Palladium</texPath>
 		  <graphicClass>Graphic_StackCount</graphicClass>
@@ -1742,11 +1760,11 @@
 		  <Flammability>0</Flammability>
 		</statBases>
 		<thingCategories>
-		  <li>Items</li>
+		  <li>ESCP_Resources_Raw</li>
 		</thingCategories>
 		<techLevel>Medieval</techLevel>
 		<tradeTags>
-		  <!-- <li>ESCP_Resources_Raw</li> -->
+		  <li>ESCP_Resources_Raw</li>
 		</tradeTags>
 	</ThingDef>
 
@@ -1755,7 +1773,7 @@
   <ThingDef ParentName="ResourceBase">
     <defName>ESCP_Resource_Palladium_Ingot</defName>
     <label>Palladium Ingot</label>
-    <description>An Ingot made from palladium ore.</description>
+    <description>An Ingot smelted from palladium ore.</description>
     <graphicData>
       <texPath>Things/Item/Resource/Ingots/Palladium</texPath>
       <graphicClass>Graphic_StackCount</graphicClass>
@@ -1776,11 +1794,12 @@
     <useHitPoints>false</useHitPoints>
     <healthAffectsPrice>false</healthAffectsPrice>
     <thingCategories>
-      <!-- <li>ESCP_Resources_Raw</li> -->
+      <li>ESCP_Resources_Raw</li>
     </thingCategories>
     <burnableByRecipe>false</burnableByRecipe>
     <smeltable>true</smeltable>
     <stuffProps>
+	  <stuffAdjective>palladium</stuffAdjective>
       <color>(172,194,192)</color>
       <categories>
         <li>Metallic</li>
@@ -1833,7 +1852,7 @@
 	<ThingDef ParentName="ResourceBase">
 		<defName>ESCP_Raw_Quicksilver_Ore</defName>
 		<label>Quicksilver Ore</label>
-		<description>An ore that comes common in Tamreil. Must be smelted down in order to create useful ingots.</description>
+		<description>An ore that is commonly found in Tamriel. Must be smelted down in order to create useful ingots.</description>
 		<graphicData>
 		  <texPath>Things/Item/Resource/Ores/Quicksilver</texPath>
 		  <graphicClass>Graphic_StackCount</graphicClass>
@@ -1850,11 +1869,11 @@
 		  <Flammability>0</Flammability>
 		</statBases>
 		<thingCategories>
-		  <li>Items</li>
+		  <li>ESCP_Resources_Raw</li>
 		</thingCategories>
 		<techLevel>Medieval</techLevel>
 		<tradeTags>
-		  <!-- <li>ESCP_Resources_Raw</li> -->
+		  <li>ESCP_Resources_Raw</li>
 		</tradeTags>
 	</ThingDef>
 
@@ -1863,7 +1882,7 @@
   <ThingDef ParentName="ResourceBase">
     <defName>ESCP_Resource_Quicksilver_Ingot</defName>
     <label>Quicksilver Ingot</label>
-    <description>An Ingot made from quicksilver ore.</description>
+    <description>An Ingot smelted from quicksilver ore.</description>
     <graphicData>
       <texPath>Things/Item/Resource/Ingots/Quicksilver</texPath>
       <graphicClass>Graphic_StackCount</graphicClass>
@@ -1884,11 +1903,12 @@
     <useHitPoints>false</useHitPoints>
     <healthAffectsPrice>false</healthAffectsPrice>
     <thingCategories>
-      <!-- <li>ESCP_Resources_Raw</li> -->
+      <li>ESCP_Resources_Raw</li>
     </thingCategories>
     <burnableByRecipe>false</burnableByRecipe>
     <smeltable>true</smeltable>
     <stuffProps>
+	  <stuffAdjective>quicksilver</stuffAdjective>
       <color>(136,136,127)</color>
       <categories>
         <li>Metallic</li>
@@ -1916,7 +1936,7 @@
 	<ThingDef ParentName="ResourceBase">
 		<defName>ESCP_Raw_Rubedite_Ore</defName>
 		<label>Rubedite Ore</label>
-		<description>An ore that comes common in Tamreil. Must be smelted down in order to create useful ingots.</description>
+		<description>An ore that is commonly found in Tamriel. Mostly used to coat armour intended for high ranking officials and soldiers.</description>
 		<graphicData>
 		  <texPath>Things/Item/Resource/Ores/Rubedite</texPath>
 		  <graphicClass>Graphic_StackCount</graphicClass>
@@ -1933,11 +1953,11 @@
 		  <Flammability>0</Flammability>
 		</statBases>
 		<thingCategories>
-		  <li>Items</li>
+		  <li>ESCP_Resources_Raw</li>
 		</thingCategories>
 		<techLevel>Medieval</techLevel>
 		<tradeTags>
-		  <!-- <li>ESCP_Resources_Raw</li> -->
+		  <li>ESCP_Resources_Raw</li>
 		</tradeTags>
 	</ThingDef>
 
@@ -1973,7 +1993,7 @@
 	<ThingDef ParentName="ResourceBase">
 		<defName>ESCP_Raw_Silver_Ore</defName>
 		<label>Silver Ore</label>
-		<description>An ore that comes silver common in Tamreil, used for jewlry and currency as well as being strong against certain creatures. Must be smelted down in order to create useful ingots.</description>
+		<description>An ore that comes silver common in Tamriel, often used to craft jewlry, or as a form of currency. Weapons made of silver are known to be highly effective against certain creatures. Must be smelted down in order to create useful ingots.</description>
 		<graphicData>
 		  <texPath>Things/Item/Resource/Ores/Silver</texPath>
 		  <graphicClass>Graphic_StackCount</graphicClass>
@@ -1990,11 +2010,11 @@
 		  <Flammability>0</Flammability>
 		</statBases>
 		<thingCategories>
-		  <li>Items</li>
+		  <li>ESCP_Resources_Raw</li>
 		</thingCategories>
 		<techLevel>Medieval</techLevel>
 		<tradeTags>
-		  <!-- <li>ESCP_Resources_Raw</li> -->
+		  <li>ESCP_Resources_Raw</li>
 		</tradeTags>
 	</ThingDef>
 
@@ -2003,7 +2023,7 @@
   <ThingDef ParentName="ResourceBase">
     <defName>ESCP_Resource_Silver_Ingot</defName>
     <label>Silver Ingot</label>
-    <description>An Ingot made from silver ore.</description>
+    <description>An Ingot smelted from silver ore.</description>
     <graphicData>
       <texPath>Things/Item/Resource/Ingots/Silver</texPath>
       <graphicClass>Graphic_StackCount</graphicClass>
@@ -2024,11 +2044,12 @@
     <useHitPoints>false</useHitPoints>
     <healthAffectsPrice>false</healthAffectsPrice>
     <thingCategories>
-      <!-- <li>ESCP_Resources_Raw</li> -->
+      <li>ESCP_Resources_Raw</li>
     </thingCategories>
     <burnableByRecipe>false</burnableByRecipe>
     <smeltable>true</smeltable>
     <stuffProps>
+	  <stuffAdjective>silver</stuffAdjective>
       <color>(190,190,190)</color>
       <categories>
         <li>Metallic</li>
@@ -2056,7 +2077,7 @@
 	<ThingDef ParentName="ResourceBase">
 		<defName>ESCP_Raw_Stalhrim_Ore</defName>
 		<label>Stalhrim Ore</label>
-		<description>Enchanted ice found in anchient barrows.</description>
+		<description>Enchanted ice found in ancient Nordic barrows. Most often used to entomb the dead, protecting in death.</description>
 		<graphicData>
 		  <texPath>Things/Item/Resource/Ores/Stalhrim</texPath>
 		  <graphicClass>Graphic_StackCount</graphicClass>
@@ -2073,11 +2094,11 @@
 		  <Flammability>0</Flammability>
 		</statBases>
 		<thingCategories>
-		  <li>Items</li>
+		  <li>ESCP_Resources_Raw</li>
 		</thingCategories>
 		<techLevel>Medieval</techLevel>
 		<tradeTags>
-		  <!-- <li>ESCP_Resources_Raw</li> -->
+		  <li>ESCP_Resources_Raw</li>
 		</tradeTags>
 	</ThingDef>
 
@@ -2088,7 +2109,7 @@
 	<ThingDef ParentName="ResourceBase">
 		<defName>ESCP_Raw_Starmetal_Ore</defName>
 		<label>Starmetal Ore</label>
-		<description>An ore that comes common in Tamreil, used by redgards for crafting.  Must be smelted down in order to create useful ingots.</description>
+		<description>An ore that is commonly found in Tamriel, used by Redguards for crafting. Must be smelted down in order to create useful ingots.</description>
 		<graphicData>
 		  <texPath>Things/Item/Resource/Ores/Starmetal</texPath>
 		  <graphicClass>Graphic_StackCount</graphicClass>
@@ -2105,11 +2126,11 @@
 		  <Flammability>0</Flammability>
 		</statBases>
 		<thingCategories>
-		  <li>Items</li>
+		  <li>ESCP_Resources_Raw</li>
 		</thingCategories>
 		<techLevel>Medieval</techLevel>
 		<tradeTags>
-		  <!-- <li>ESCP_Resources_Raw</li> -->
+		  <li>ESCP_Resources_Raw</li>
 		</tradeTags>
 	</ThingDef>
 
@@ -2120,7 +2141,7 @@
 	<ThingDef ParentName="ResourceBase">
 		<defName>ESCP_Raw_Tin_Ore</defName>
 		<label>Tin Ore</label>
-		<description>An ore that comes common in Tamreil. Must be smelted down in order to create useful ingots.</description>
+		<description>An ore that is commonly found in Tamriel. Must be smelted down in order to create useful ingots.</description>
 		<graphicData>
 		  <texPath>Things/Item/Resource/Ores/Tin</texPath>
 		  <graphicClass>Graphic_StackCount</graphicClass>
@@ -2137,11 +2158,11 @@
 		  <Flammability>0</Flammability>
 		</statBases>
 		<thingCategories>
-		  <li>Items</li>
+		  <li>ESCP_Resources_Raw</li>
 		</thingCategories>
 		<techLevel>Medieval</techLevel>
 		<tradeTags>
-		  <!-- <li>ESCP_Resources_Raw</li> -->
+		  <li>ESCP_Resources_Raw</li>
 		</tradeTags>
 	</ThingDef>
 
@@ -2150,7 +2171,7 @@
   <ThingDef ParentName="ResourceBase">
     <defName>ESCP_Resource_Tin_Ingot</defName>
     <label>Tin Ingot</label>
-    <description>An Ingot made from tin ore.</description>
+    <description>An Ingot smelted from tin ore.</description>
     <graphicData>
       <texPath>Things/Item/Resource/Ingots/Tin</texPath>
       <graphicClass>Graphic_StackCount</graphicClass>
@@ -2171,11 +2192,12 @@
     <useHitPoints>false</useHitPoints>
     <healthAffectsPrice>false</healthAffectsPrice>
     <thingCategories>
-      <!-- <li>ESCP_Resources_Raw</li> -->
+      <li>ESCP_Resources_Raw</li>
     </thingCategories>
     <burnableByRecipe>false</burnableByRecipe>
     <smeltable>true</smeltable>
     <stuffProps>
+	  <stuffAdjective>tin</stuffAdjective>
       <color>(190,185,192)</color>
       <categories>
         <li>Metallic</li>
@@ -2203,7 +2225,7 @@
 	<ThingDef ParentName="ResourceBase">
 		<defName>ESCP_Raw_Zinc_Ore</defName>
 		<label>Copper Ore</label>
-		<description>An ore that comes common in Tamreil. Must be smelted down in order to create useful ingots.</description>
+		<description>An ore that is commonly found in Tamriel. Must be smelted down in order to create useful ingots.</description>
 		<graphicData>
 		  <texPath>Things/Item/Resource/Ores/Zinc</texPath>
 		  <graphicClass>Graphic_StackCount</graphicClass>
@@ -2220,11 +2242,11 @@
 		  <Flammability>0</Flammability>
 		</statBases>
 		<thingCategories>
-		  <li>Items</li>
+		  <li>ESCP_Resources_Raw</li>
 		</thingCategories>
 		<techLevel>Medieval</techLevel>
 		<tradeTags>
-		  <!-- <li>ESCP_Resources_Raw</li> -->
+		  <li>ESCP_Resources_Raw</li>
 		</tradeTags>
 	</ThingDef>
 
@@ -2233,7 +2255,7 @@
   <ThingDef ParentName="ResourceBase">
     <defName>ESCP_Resource_Zinc_Ingot</defName>
     <label>Zinc Ingot</label>
-    <description>An Ingot made from zinc ore.</description>
+    <description>An Ingot smelted from zinc ore.</description>
     <graphicData>
       <texPath>Things/Item/Resource/Ingots/Zinc</texPath>
       <graphicClass>Graphic_StackCount</graphicClass>
@@ -2254,11 +2276,12 @@
     <useHitPoints>false</useHitPoints>
     <healthAffectsPrice>false</healthAffectsPrice>
     <thingCategories>
-      <!-- <li>ESCP_Resources_Raw</li> -->
+      <li>ESCP_Resources_Raw</li>
     </thingCategories>
     <burnableByRecipe>false</burnableByRecipe>
     <smeltable>true</smeltable>
     <stuffProps>
+	  <stuffAdjective>zinc</stuffAdjective>
       <color>(212,222,196)</color>
       <categories>
         <li>Metallic</li>

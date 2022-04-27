@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingCategoryDef>
+      <defName>ESCP_Resources_Raw</defName>
+      <label>ESCP raw resources</label>
+      <parent>ResourcesRaw</parent>
+      <resourceReadoutRoot>true</resourceReadoutRoot>
+      <iconPath>Things/Item/Resource/ESCP_BlankCrate</iconPath>
+    </ThingCategoryDef>
+
+</Defs>

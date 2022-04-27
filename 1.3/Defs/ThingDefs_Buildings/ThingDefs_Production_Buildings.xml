@@ -70,7 +70,7 @@
           <thingDefs>
             <!-- <li>ESCP_Fuel_Firewood</li> -->
             <!-- <li>ESCP_Fuel_Charcoal</li> -->
-            <li>MorrowRim_FireSalts</li>
+            <li>ESCP_Resource_FireSalts</li>
             <li>WoodLog</li>
           </thingDefs>
         </fuelFilter>

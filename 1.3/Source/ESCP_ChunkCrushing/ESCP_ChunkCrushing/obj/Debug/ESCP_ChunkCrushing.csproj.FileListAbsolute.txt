@@ -1,0 +1,4 @@
+J:\Modding\Github\ESCP-Tools\1.3\Assemblies\ESCP_ChunkCrushing.dll
+J:\Modding\Github\ESCP-Tools\1.3\Source\ESCP_ChunkCrushing\ESCP_ChunkCrushing\obj\Debug\ESCP_ChunkCrushing.csprojAssemblyReference.cache
+J:\Modding\Github\ESCP-Tools\1.3\Source\ESCP_ChunkCrushing\ESCP_ChunkCrushing\obj\Debug\ESCP_ChunkCrushing.csproj.CoreCompileInputs.cache
+J:\Modding\Github\ESCP-Tools\1.3\Source\ESCP_ChunkCrushing\ESCP_ChunkCrushing\obj\Debug\ESCP_ChunkCrushing.dll

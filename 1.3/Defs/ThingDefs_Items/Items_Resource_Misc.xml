@@ -10,7 +10,8 @@
     <label>Bones</label>
     <description>Common bones found within most organic creatures.</description>
     <graphicData>
-      <texPath>Things/Item/Resource/Misc/Bones/ESCP_Bones</texPath>
+      <texPath>Things/Item/Resource/Misc/Bones</texPath>
+	  <graphicClass>Graphic_StackCount</graphicClass>
     </graphicData>
     <statBases>
       <MarketValue>0.2</MarketValue> <!-- Can be used like meat in recipes -->
@@ -28,9 +29,10 @@
   <ThingDef ParentName="ResourceBase">
     <defName>ESCP_Item_Fat</defName>
     <label>Fat</label>
-    <description>Common fat found within most organic creatures.</description>
+    <description>Common fat found within most organic creatures. Can be used to fuel certain buildings.</description>
     <graphicData>
-      <texPath>Things/Item/Resource/Misc/Fat/ESCP_Fat</texPath>
+      <texPath>Things/Item/Resource/Misc/Fat</texPath>
+	  <graphicClass>Graphic_StackCount</graphicClass>
     </graphicData>
     <statBases>
       <MarketValue>0.3</MarketValue>

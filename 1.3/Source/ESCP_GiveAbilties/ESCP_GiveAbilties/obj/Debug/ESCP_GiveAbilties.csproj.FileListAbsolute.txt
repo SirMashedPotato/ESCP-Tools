@@ -1,0 +1,4 @@
+J:\Modding\Github\ESCP-Tools\1.3\Assemblies\ESCP_GiveAbilties.dll
+J:\Modding\Github\ESCP-Tools\1.3\Source\ESCP_GiveAbilties\ESCP_GiveAbilties\obj\Debug\ESCP_GiveAbilties.csprojAssemblyReference.cache
+J:\Modding\Github\ESCP-Tools\1.3\Source\ESCP_GiveAbilties\ESCP_GiveAbilties\obj\Debug\ESCP_GiveAbilties.csproj.CoreCompileInputs.cache
+J:\Modding\Github\ESCP-Tools\1.3\Source\ESCP_GiveAbilties\ESCP_GiveAbilties\obj\Debug\ESCP_GiveAbilties.dll

@@ -1,0 +1,4 @@
+J:\Modding\Github\ESCP-Tools\1.3\Source\ESCP_BoneChitinFat\ESCP_BoneChitinFat\obj\Debug\ESCP_BoneChitinFat.csprojAssemblyReference.cache
+J:\Modding\Github\ESCP-Tools\1.3\Source\ESCP_BoneChitinFat\ESCP_BoneChitinFat\obj\Debug\ESCP_BoneChitinFat.csproj.CoreCompileInputs.cache
+J:\Modding\Github\ESCP-Tools\1.3\Assemblies\ESCP_BoneChitinFat.dll
+J:\Modding\Github\ESCP-Tools\1.3\Source\ESCP_BoneChitinFat\ESCP_BoneChitinFat\obj\Debug\ESCP_BoneChitinFat.dll

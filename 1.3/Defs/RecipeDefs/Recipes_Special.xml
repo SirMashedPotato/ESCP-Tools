@@ -32,6 +32,40 @@
 	<!--<researchPrerequisite>MorrowRim_DunmerArmory</researchPrerequisite>-->
   </RecipeDef>
   
+  <RecipeDef>
+		<defName>ESCP_CrushHeartStone</defName>
+		<label>crush heart stone</label>
+		<description>Crush a heart stone, obtaining 5 ash salts, 5 fire salts and 5 ferrous salts.</description>
+		<jobString>Crushing heart stone.</jobString>
+		<workAmount>1600</workAmount>
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+		<effectWorking>CutStone</effectWorking>
+		<soundWorking>Recipe_MakeStoneBlocks</soundWorking>
+		<targetCountAdjustment>20</targetCountAdjustment>
+		<recipeUsers>
+		  <li>TableStonecutter</li>
+		</recipeUsers>
+		<researchPrerequisite>Smithing</researchPrerequisite>
+		<ingredients>
+		  <li>
+			<filter>
+			  <thingDefs>
+				<li>ESCP_Resource_HeartStone</li>
+			  </thingDefs>
+			</filter>
+			<count>1</count>
+		  </li>
+		</ingredients>
+		<fixedIngredientFilter>
+		  <thingDefs>
+			<li>ESCP_Resource_HeartStone</li>
+		  </thingDefs>
+		</fixedIngredientFilter>
+		<specialProducts>
+		  <li>Butchery</li>
+		</specialProducts>
+	</RecipeDef>
+  
   <!-- Catching -->
   
   <RecipeDef>

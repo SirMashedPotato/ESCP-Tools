@@ -1,0 +1,4 @@
+J:\Modding\Github\ESCP-Tools\1.3\Assemblies\GenericWandersIn.dll
+J:\Modding\Github\ESCP-Tools\1.3\Source\GenericWandersIn\GenericWandersIn\obj\Debug\GenericWandersIn.csprojAssemblyReference.cache
+J:\Modding\Github\ESCP-Tools\1.3\Source\GenericWandersIn\GenericWandersIn\obj\Debug\GenericWandersIn.csproj.CoreCompileInputs.cache
+J:\Modding\Github\ESCP-Tools\1.3\Source\GenericWandersIn\GenericWandersIn\obj\Debug\GenericWandersIn.dll
