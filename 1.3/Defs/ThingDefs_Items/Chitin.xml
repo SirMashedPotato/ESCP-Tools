@@ -34,9 +34,6 @@
 		<techHediffsTags>
 			<li>Poor</li>
 		</techHediffsTags>
-		<deepCommonality>0.001</deepCommonality>
-		<deepCountPerPortion>35</deepCountPerPortion>
-		<deepLumpSizeRange>20~40</deepLumpSizeRange>
 		<burnableByRecipe>false</burnableByRecipe>
 		<smeltable>false</smeltable>
 		
