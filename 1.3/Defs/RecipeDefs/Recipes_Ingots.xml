@@ -281,10 +281,10 @@
 
     <!-- Buoyant Steel -->
 
-  <!-- <RecipeDef>
+  <RecipeDef>
     <defName>ESCP_Smelt_Buoyant_Steel</defName>
     <label>smelt buoyant steel from ore.</label>
-    <description>Use heat and strong force to extract the purist of material from raw ore.</description>
+    <description>Use heat and strong force to extract the purist of material from raw scrap.</description>
     <jobString>Smelting ingots from ore.</jobString>
     <workAmount>30</workAmount>
     <workSpeedStat>SmeltingSpeed</workSpeedStat>
@@ -308,12 +308,12 @@
         <li>ESCP_Raw_Buoyant_Steel_Scraps</li>
       </thingDefs>
     </fixedIngredientFilter>
-  </RecipeDef> -->
+  </RecipeDef>
 
-  <!-- <RecipeDef>
+ <RecipeDef>
     <defName>ESCP_Smelt_Buoyant_Steel_Bulk</defName>
     <label>Smelt buoyant steel from ore in bulk.</label>
-    <description>Use heat and strong force to extract the purist of material from raw ore.</description>
+    <description>Use heat and strong force to extract the purist of material from raw scrap.</description>
     <jobString>Smelting ingots from ore.</jobString>
     <workAmount>150</workAmount>
     <workSpeedStat>SmeltingSpeed</workSpeedStat>
@@ -337,7 +337,7 @@
         <li>ESCP_Raw_Buoyant_Steel_Scraps</li>
       </thingDefs>
     </fixedIngredientFilter>
-  </RecipeDef> -->
+  </RecipeDef>
 
     <!-- Cobalt -->
 
