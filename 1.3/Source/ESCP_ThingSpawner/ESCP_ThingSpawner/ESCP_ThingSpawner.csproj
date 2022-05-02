@@ -57,6 +57,8 @@
     <Compile Include="ThingSpawner\Building_Trap_PawnSpawner.cs" />
     <Compile Include="ThingSpawner\CreateAtProperties.cs" />
     <Compile Include="ThingSpawner\DeathActionWorker_PawnSpawner.cs" />
+    <Compile Include="ThingSpawner\HediffCompProperties_PawnSpawnerOnDeath.cs" />
+    <Compile Include="ThingSpawner\HediffComp_PawnSpawnerOnDeath.cs" />
     <Compile Include="ThingSpawner\Projectile_PawnSpawner.cs" />
     <Compile Include="ThingSpawner\PawnSpawnerUtility.cs" />
   </ItemGroup>

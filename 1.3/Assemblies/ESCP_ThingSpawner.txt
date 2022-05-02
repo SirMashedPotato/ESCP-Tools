@@ -38,6 +38,19 @@ Traps
 		</modExtensions>
 	</ThingDef>
 	
+Hediffs
+
+		<modExtensions>
+			<li Class="ESCP_ThingSpawner.CreateAtProperties">
+				<kindToSpawn>Rat</kindToSpawn>
+				<numberToSpawn>13</numberToSpawn>
+			</li>
+		</modExtensions>
+		<comps>
+		  <li Class="ESCP_ThingSpawner.HediffCompProperties_PawnSpawnerOnDeath">
+		  </li>
+		</comps>
+
 Full Create At properties
 
 	<kindToSpawn>KINDDEFNAME</kindToSpawn> <!-- Required -->
