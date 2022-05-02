@@ -1,0 +1,4 @@
+J:\Modding\Github\ESCP-Tools\1.3\Assemblies\ESCP_ThingSpawner.dll
+J:\Modding\Github\ESCP-Tools\1.3\Source\ESCP_ThingSpawner\ESCP_ThingSpawner\obj\Debug\ESCP_PawnSpawner.csprojAssemblyReference.cache
+J:\Modding\Github\ESCP-Tools\1.3\Source\ESCP_ThingSpawner\ESCP_ThingSpawner\obj\Debug\ESCP_PawnSpawner.csproj.CoreCompileInputs.cache
+J:\Modding\Github\ESCP-Tools\1.3\Source\ESCP_ThingSpawner\ESCP_ThingSpawner\obj\Debug\ESCP_ThingSpawner.dll

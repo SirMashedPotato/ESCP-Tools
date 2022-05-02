@@ -1,0 +1,49 @@
+ADD THIS TO THE ABOUT.XML
+
+	<loadAfter>
+		<li>Rick.ESCPTools</li>
+    </loadAfter>
+
+Projectiles
+
+	<ThingDef ParentName="BaseGrenadeProjectile">
+		<thingClass>ESCP_ThingSpawner.Projectile_ThingSpawner</thingClass>
+		<graphicData>
+		  <texPath>Things/Projectile/SkyRim_Spider_Thrown</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+		  <explosionRadius>0.1</explosionRadius>
+		  <damageDef>Stun</damageDef>
+		  <!-- Use default damage from explosion def -->
+		  <ai_IsIncendiary>false</ai_IsIncendiary>
+		  <shadowSize>0.6</shadowSize>
+		</projectile>
+		<modExtensions>
+			<li Class="ESCP_ThingSpawner.CreateAtProperties">
+                <kindToSpawn>SkyRim_ElementalSpiderFire</kindToSpawn>
+            </li>
+		</modExtensions>
+	</ThingDef>
+
+Traps
+
+	<ThingDef>
+		<thingClass>ESCP_ThingSpawner.Building_Trap_PawnSpawner</thingClass>
+		<modExtensions>
+			<li Class="ESCP_ThingSpawner.CreateAtProperties">
+				<kindToSpawn>SkyRim_ElementalSpiderFire</kindToSpawn>
+				<numberToSpawn>3</numberToSpawn>
+			</li>
+		</modExtensions>
+	</ThingDef>
+	
+Full Create At properties
+
+	<kindToSpawn>KINDDEFNAME</kindToSpawn> <!-- Required -->
+	<spawnAsPlayerFaction>True/False</spawnAsPlayerFaction> <!-- Whether the spawned pawn is part of the player faction -->
+	<mentalStateDef>MENTALSTATEDEF</mentalStateDef>	<!-- Not required -->
+	<attackTarget>True/False</attackTarget>	<!-- You want this to always be true, of false if you set a mental state def-->
+	<numberToSpawn>THENUMBERTOSPAWN</numberToSpawn>
+	<soundDef>SOUNDDEF</soundDef>	<!-- the sound played upon spawing the pawn -->
+	<recordDef>RECORDDEF</recordDef>	<!-- Increments this record when thrown -->
