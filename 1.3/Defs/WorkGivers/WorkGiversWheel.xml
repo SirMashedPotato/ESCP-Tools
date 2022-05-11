@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+  <WorkGiverDef>
+    <defName>PM_WorkAtPowerMill</defName>
+    <label>generate power</label>
+    <giverClass>PowerMill.WorkGiver_GeneratePower</giverClass>
+    <workType>PM_WorkAtPowerMill</workType>
+    <verb>generate power</verb>
+    <gerund>generating power</gerund>
+    <priorityInType>5</priorityInType>
+    <requiredCapacities>
+      <li>Manipulation</li>
+    </requiredCapacities>
+  </WorkGiverDef>
+  
+</Defs>

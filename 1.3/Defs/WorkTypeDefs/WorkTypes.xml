@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <WorkTypeDef>
+    <defName>PM_WorkAtPowerMill</defName>
+    <labelShort>power mill</labelShort>
+    <pawnLabel>Power mill worker</pawnLabel>
+    <gerundLabel>working at power mill</gerundLabel>
+    <description>Generate power at power mill.</description>
+    <verb>Generate power</verb>
+    <naturalPriority>200</naturalPriority>
+    <alwaysStartActive>true</alwaysStartActive>
+    <requireCapableColonist>true</requireCapableColonist>
+    <workTags>
+      <li>ManualDumb</li>
+      <li>Commoner</li>
+      <li>AllWork</li>
+    </workTags>
+  </WorkTypeDef>
+
+
+</Defs>

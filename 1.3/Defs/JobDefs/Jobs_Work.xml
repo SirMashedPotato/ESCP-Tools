@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <JobDef>
+    <defName>PM_GeneratePower</defName>
+    <driverClass>PowerMill.JobDriver_GeneratePower</driverClass>
+    <reportString>generating power at TargetA.</reportString>
+    <allowOpportunisticPrefix>true</allowOpportunisticPrefix>
+  </JobDef>
+  
+  <JobDef>
+    <defName>PM_RopeAnimalToPowerMill</defName>
+    <driverClass>PowerMill.JobDriver_RopeAnimalToPowerMill</driverClass>
+    <reportString>leading TargetA to power mill.</reportString>
+    <casualInterruptible>false</casualInterruptible>
+    <allowOpportunisticPrefix>true</allowOpportunisticPrefix>
+  </JobDef>
+</Defs>
