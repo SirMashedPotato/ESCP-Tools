@@ -63,13 +63,14 @@
     <recipes>
     </recipes>
     <comps>
+	  <li Class="ESCP_FuelExtension.CompProperties_StoreFuelThing"/>
       <li Class="CompProperties_Refuelable">
         <fuelConsumptionRate>60.0</fuelConsumptionRate>
         <fuelCapacity>50.0</fuelCapacity>
         <fuelFilter>
           <thingDefs>
-            <!-- <li>ESCP_Fuel_Firewood</li> -->
-            <!-- <li>ESCP_Fuel_Charcoal</li> -->
+            <li>ESCP_Fuel_Firewood</li>
+            <!--<li>ESCP_Fuel_Charcoal</li>-->
             <li>ESCP_Resource_FireSalts</li>
             <li>WoodLog</li>
           </thingDefs>
@@ -190,14 +191,15 @@
       <li>ITab_Bills</li>
     </inspectorTabs>
     <comps>
+	  <li Class="ESCP_FuelExtension.CompProperties_StoreFuelThing"/>
       <li Class="CompProperties_Refuelable">
         <fuelConsumptionRate>55.0</fuelConsumptionRate>
         <fuelCapacity>70.0</fuelCapacity>
         <fuelFilter>
           <thingDefs>
-            <!-- <li>ESCP_Fuel_Firewood</li> -->
+            <li>ESCP_Fuel_Firewood</li>
             <!-- <li>ESCP_Fuel_Charcoal</li> -->
-            <!-- <li>ESCP_Item_Fire_Salts</li> -->
+            <li>ESCP_Resource_FireSalts</li>
             <li>WoodLog</li>
           </thingDefs>
         </fuelFilter>

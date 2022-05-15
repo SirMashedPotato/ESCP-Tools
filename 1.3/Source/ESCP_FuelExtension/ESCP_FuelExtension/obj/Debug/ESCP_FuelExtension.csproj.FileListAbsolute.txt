@@ -1,0 +1,4 @@
+J:\Modding\Github\ESCP-Tools\1.3\Assemblies\ESCP_FuelExtension.dll
+J:\Modding\Github\ESCP-Tools\1.3\Source\ESCP_FuelExtension\ESCP_FuelExtension\obj\Debug\ESCP_FuelExtension.csprojAssemblyReference.cache
+J:\Modding\Github\ESCP-Tools\1.3\Source\ESCP_FuelExtension\ESCP_FuelExtension\obj\Debug\ESCP_FuelExtension.csproj.CoreCompileInputs.cache
+J:\Modding\Github\ESCP-Tools\1.3\Source\ESCP_FuelExtension\ESCP_FuelExtension\obj\Debug\ESCP_FuelExtension.dll

@@ -64,6 +64,11 @@
         <thingCategories>
             <li>ResourcesRaw</li>
         </thingCategories>
+		<comps>
+			<li Class="ESCP_FuelExtension.CompProperties_FuelRate">
+			  <rate>3</rate>
+			</li>
+		</comps>
     </ThingDef>
 
 </Defs>

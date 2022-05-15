@@ -30,10 +30,15 @@
 	<ThingDef ParentName="Telvanni_SaltsBase">
 		<defName>ESCP_Resource_FireSalts</defName>
 		<label>fire salts</label>
-		<description>Red salts, imbued with the power of fire. They are warm to the touch, even in the coldest of winters.</description>
+		<description>Red salts, imbued with the power of fire. They are warm to the touch, even in the coldest of winters.\n\nCan be used as a source of fuel.</description>
 		<graphicData>
 			<texPath>Things/Item/Resource/Salts/Fire_Salts</texPath>
 		</graphicData>
+		<comps>
+			<li Class="ESCP_FuelExtension.CompProperties_FuelRate">
+			  <rate>10</rate>
+			</li>
+		</comps>
 	</ThingDef>
 
 	<ThingDef ParentName="Telvanni_SaltsBase">
