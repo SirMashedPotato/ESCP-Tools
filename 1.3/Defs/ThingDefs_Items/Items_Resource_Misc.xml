@@ -50,7 +50,7 @@
     <ThingDef ParentName="ResourceBase">
         <defName>ESCP_Fuel_Firewood</defName>
         <label>Firewood</label>
-        <description>Wood thats been chopped and gatherd for fuel.</description>
+        <description>Wood thats been chopped and gathered for fuel.</description>
         <graphicData>
             <texPath>Things/Item/Resource/Misc/Firewood</texPath>
             <graphicClass>Graphic_StackCount</graphicClass>
