@@ -24,6 +24,10 @@
 		<li>erdelf.HumanoidAlienRaces</li>
 		<li>OskarPotocki.VanillaFactionsExpanded.Core</li>
 		<li>vanillaexpanded.achievements</li>
+		<!-- Stuff Rick has 'borrowed' -->
+		<li>odeum.biomeskit</li>
+		<li>biomesteam.biomescore</li>
+		<li>MorphsAssorted.UniqueRareItems</li>
 	</loadAfter>
 	<incompatibleWith>
 		<li>SirMashedPotato.InsectsHaveChitin</li>
