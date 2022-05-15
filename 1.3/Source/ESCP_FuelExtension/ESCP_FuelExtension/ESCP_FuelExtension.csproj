@@ -63,6 +63,7 @@
     <Compile Include="Comps\Properties\CompProperties_StoreFuelThing.cs" />
     <Compile Include="Harmony\Harmony.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Utility.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

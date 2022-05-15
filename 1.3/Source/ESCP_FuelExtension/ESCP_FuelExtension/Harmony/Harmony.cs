@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using HarmonyLib;
 using System.Reflection;
+using Verse.AI;
 
 namespace ESCP_FuelExtension
 {
@@ -19,13 +20,15 @@ namespace ESCP_FuelExtension
         }
     }
 
+    /* Everything below done by AlexisPopcorn */
+
     [HarmonyPatch(typeof(CompRefuelable), nameof(CompRefuelable.Refuel), new Type[] { typeof(List<Thing>) })]
     public class StoreFuel_Patch
     {
         [HarmonyPrefix]
         public static bool StoreFuel(CompRefuelable __instance, List<Thing> fuelThings)
         {
-            if (fuelThings == null || __instance.parent.GetComp<CompStoreFuelThing>() == null)
+            if (fuelThings.NullOrEmpty() || __instance.parent.GetComp<CompStoreFuelThing>() == null)
             {
                 return true;//null check just in case
             }
@@ -55,6 +58,8 @@ namespace ESCP_FuelExtension
             __result = __instance.Props.fuelConsumptionRate / (60000f * multiplier);//vanilla tickrate is 60000f
         }
     }
+
+    /* Everything below done by Mashed */
 
     [HarmonyPatch(typeof(CompRefuelable), nameof(CompRefuelable.CompInspectStringExtra))]
     public class InspecStringPatch
@@ -94,12 +99,42 @@ namespace ESCP_FuelExtension
                     {
                         text += "\n" + "ConfiguredTargetFuelLevel".Translate(__instance.TargetFuelLevel.ToStringDecimalIfSmall());
                     }
-                    __result =  text;
+                    __result = text;
 
                     return false;
                 }
             }
             return true;
+        }
+    }
+
+    [HarmonyPatch(typeof(RefuelWorkGiverUtility), nameof(RefuelWorkGiverUtility.CanRefuel))]
+    public class CanRefuelPatch
+    {
+        [HarmonyPostfix]
+        public static void CanRefuel(Pawn pawn, Thing t, ref bool __result)
+        {
+            if (__result && t is Building)
+            {
+                Building b = t as Building;
+                if (b.GetComp<CompRefuelable>() != null)
+                {
+                    var c = b.GetComp<CompRefuelable>();
+
+                    if (b.GetComp<CompStoreFuelThing>() != null && c.HasFuel)
+                    {
+                        ThingDef fuelUsed = b.GetComp<CompStoreFuelThing>().fuelUsed;
+
+                        /* basically just checks if the pawn can find anymore of the fuel already used */
+
+                        if (Utility.FindSpecificFuel(pawn, fuelUsed) == null)
+                        {
+                            JobFailReason.Is("NoFuelToRefuel".Translate(fuelUsed.label), null);
+                            __result =  false;
+                        }
+                    }
+                }
+            }
         }
     }
 }
