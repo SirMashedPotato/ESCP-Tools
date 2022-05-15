@@ -3,7 +3,7 @@
 	<packageId>Rick.ESCPTools</packageId>
 	<author>Rick, SirMashedPotato, PPHHYY</author>
 	<name>ESCP Tools</name>
-	<description>The Elder Scrolls Collaboration Project Presents: ESCP Tools, this will be the core required modgoing forward for all ESCP mods. This has everything from materials and production chains and buildings to alchemy and enchanting ingredients.</description>
+	<description>The Elder Scrolls Collaboration Project Presents: ESCP Tools, this will be the core required mod going forward for all ESCP mods. This has everything from materials and production chains and buildings to alchemy and enchanting ingredients.</description>
 	<supportedVersions>
 		<li>1.3</li>
 	</supportedVersions>
