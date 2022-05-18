@@ -1,0 +1,4 @@
+J:\Modding\Github\ESCP-Tools\1.3\Assemblies\ESCP_Misc.dll
+J:\Modding\Github\ESCP-Tools\1.3\Source\ESCP_Misc\ESCP_Misc\obj\Debug\ESCP_Misc.csprojAssemblyReference.cache
+J:\Modding\Github\ESCP-Tools\1.3\Source\ESCP_Misc\ESCP_Misc\obj\Debug\ESCP_Misc.csproj.CoreCompileInputs.cache
+J:\Modding\Github\ESCP-Tools\1.3\Source\ESCP_Misc\ESCP_Misc\obj\Debug\ESCP_Misc.dll

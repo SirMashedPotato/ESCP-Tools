@@ -9,7 +9,6 @@
 		<graphicData>
 		  <texPath>Things/Item/Resource/Misc/Chitin</texPath>
 		  <graphicClass>Graphic_StackCount</graphicClass>
-		  <color>(156,148,125)</color>
 		</graphicData>
 		
 		<soundInteract>Wood_Drop</soundInteract>

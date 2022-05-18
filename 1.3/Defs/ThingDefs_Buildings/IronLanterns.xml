@@ -4,6 +4,7 @@
 	<ThingDef ParentName="BuildingBase" Name="ESCP_IronLantern_Base" Abstract="True">
 		<defName>ESCP_IronLantern</defName>
 		<category>Building</category>
+		<minifiedDef>MinifiedThing</minifiedDef>
 		<graphicData>
 		  <texPath>Things/Buildings/Furniture/ESCP_IronLantern/ESCP_IronLantern</texPath>
 		  <graphicClass>Graphic_Single</graphicClass>
@@ -12,6 +13,9 @@
 			<rect>(0.35,0.35,0.3,0.3)</rect>
 		  </damageData>
 		</graphicData>
+		<thingCategories>
+		  <li>BuildingsFurniture</li>
+		</thingCategories>
 		<uiIconScale>0.85</uiIconScale>
 		<rotatable>false</rotatable>
 		<altitudeLayer>Building</altitudeLayer>
@@ -23,6 +27,7 @@
 		<fillPercent>0.15</fillPercent>
 		<statBases>
 		  <MaxHitPoints>75</MaxHitPoints>
+		  <Mass>4</Mass>
 		  <WorkToBuild>100</WorkToBuild>
 		  <Flammability>0</Flammability>
 		  <MeditationFocusStrength>0.0</MeditationFocusStrength>
@@ -31,7 +36,6 @@
 		<selectable>true</selectable>
 		<costList>
 		  <ESCP_Resource_Iron_Ingot>20</ESCP_Resource_Iron_Ingot>
-		  <ESCP_Item_Fat>20</ESCP_Item_Fat>
 		</costList>
 		<building>
 		  <artificialForMeditationPurposes>true</artificialForMeditationPurposes>
@@ -49,13 +53,13 @@
 		  <li Class="CompProperties_Refuelable">
 			<fuelConsumptionRate>1.0</fuelConsumptionRate>	<!-- half as fast as a vanilla torch -->
 			<fuelCapacity>20.0</fuelCapacity>
-			<fuelConsumptionPerTickInRain>0.0006</fuelConsumptionPerTickInRain>	<!-- not actually sure what this does -->
+			<fuelConsumptionPerTickInRain>0.0006</fuelConsumptionPerTickInRain>	<!-- not actually sure what this does, presumably modifies consumption rate in rain -->
 			<fuelFilter>
 			  <thingDefs>
 				<li>ESCP_Item_Fat</li>
 			  </thingDefs>
 			</fuelFilter>
-			<initialFuelPercent>1</initialFuelPercent>
+			<initialFuelPercent>0</initialFuelPercent>
 			<showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
 		  </li>
 		  <li Class="CompProperties_Glower">

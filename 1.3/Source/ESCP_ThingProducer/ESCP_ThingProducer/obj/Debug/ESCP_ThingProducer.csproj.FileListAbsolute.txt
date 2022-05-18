@@ -1,0 +1,4 @@
+J:\Modding\Github\ESCP-Tools\1.3\Assemblies\ESCP_ThingProducer.dll
+J:\Modding\Github\ESCP-Tools\1.3\Source\ESCP_ThingProducer\ESCP_ThingProducer\obj\Debug\ESCP_ThingProducer.csprojAssemblyReference.cache
+J:\Modding\Github\ESCP-Tools\1.3\Source\ESCP_ThingProducer\ESCP_ThingProducer\obj\Debug\ESCP_ThingProducer.csproj.CoreCompileInputs.cache
+J:\Modding\Github\ESCP-Tools\1.3\Source\ESCP_ThingProducer\ESCP_ThingProducer\obj\Debug\ESCP_ThingProducer.dll
