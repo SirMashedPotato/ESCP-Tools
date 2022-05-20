@@ -301,7 +301,7 @@
       </li>
     </ingredients>
     <products>
-      <ESCP_Buoyant_Steel_Ingot>1</ESCP_Buoyant_Steel_Ingot>
+      <ESCP_Resource_Buoyant_Steel_Ingot>1</ESCP_Resource_Buoyant_Steel_Ingot>
     </products>
     <fixedIngredientFilter>
       <thingDefs>
@@ -330,7 +330,7 @@
       </li>
     </ingredients>
     <products>
-      <ESCP_Buoyant_Steel_Ingot>5</ESCP_Buoyant_Steel_Ingot>
+      <ESCP_Resource_Buoyant_Steel_Ingot>5</ESCP_Resource_Buoyant_Steel_Ingot>
     </products>
     <fixedIngredientFilter>
       <thingDefs>
