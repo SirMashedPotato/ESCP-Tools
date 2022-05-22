@@ -40,6 +40,7 @@
 			<li>Stony</li>
 			<li>Woody</li>
 		  </categories>
+		  <commonality>0</commonality>
 		  <color>(137,116,75)</color>
 		  <soundImpactStuff>BulletImpact_Ground</soundImpactStuff>
 		  <soundMeleeHitSharp>MeleeHit_Stone</soundMeleeHitSharp>
@@ -73,6 +74,7 @@
 		</statBases>
 		<stuffProps>
 		  <color>(137,116,75)</color>
+		  <commonality>0.2</commonality>
 		  <soundImpactStuff>BulletImpact_Ground</soundImpactStuff>
 		  <soundMeleeHitSharp>MeleeHit_Stone</soundMeleeHitSharp>
 		  <soundMeleeHitBlunt>MeleeHit_Stone</soundMeleeHitBlunt>
