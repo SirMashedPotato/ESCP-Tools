@@ -27,6 +27,7 @@
       <WorkToMake>6200</WorkToMake>
       <Mass>1.5</Mass>
     </statBases>
+	<equippedAngleOffset>-65</equippedAngleOffset>
     <recipeMaker>
       <!-- <researchPrerequisite>ESCP_Stone_Gathering</researchPrerequisite> -->
       <skillRequirements>
@@ -80,6 +81,7 @@
       <WorkToMake>6000</WorkToMake>
       <Mass>1.5</Mass>
     </statBases>
+	<equippedAngleOffset>-65</equippedAngleOffset>
     <recipeMaker>
       <!-- <researchPrerequisite>ESCP_Wood_Chopping</researchPrerequisite> -->
       <skillRequirements>
