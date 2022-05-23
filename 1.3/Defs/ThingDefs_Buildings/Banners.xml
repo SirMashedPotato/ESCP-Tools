@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- Original by LalaPylon -->
+  
+	<ThingDef ParentName="FurnitureWithQualityBase" Name="ESCP_Banner_Base" Abstract="True">
+		<description>A banner to display ones faction colors and allegience.</description>
+		<designationCategory>Furniture</designationCategory>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<fillPercent>0.25</fillPercent>
+		<pathCost>0</pathCost>
+		<statBases>
+		  <MaxHitPoints>100</MaxHitPoints>
+		  <WorkToBuild>750</WorkToBuild>
+		  <Mass>10</Mass>
+		  <Flammability>1.0</Flammability>
+		  <Beauty>20</Beauty>
+		</statBases>
+	  
+		<holdsRoof>false</holdsRoof>
+		<canOverlapZones>false</canOverlapZones>
+		<rotatable>false</rotatable>
+		<fertility>0</fertility>
+
+		<graphicData>
+		  <drawSize>(2,2)</drawSize>
+		  <drawOffset>(0,0,0.5)</drawOffset>
+		  <graphicClass>Graphic_Single</graphicClass>
+		  <shaderType>CutoutComplex</shaderType>
+		  <shadowData>
+			<volume>(0.3, 0.5, 0.3)</volume>
+			<offset>(0,0,-0.23)</offset>
+		  </shadowData>
+		  <damageData>
+			<rect>(0.2,0.2,0.6,0.6)</rect>
+		  </damageData>
+		</graphicData>
+		<uiIconScale>0.5</uiIconScale>
+	</ThingDef>
+  
+  <!-- [Regular] -->
+  
+	<ThingDef ParentName="ESCP_Banner_Base">
+		<defName>ESCP_Banner_Standard</defName>
+		<label>banner (standard)</label>
+		 <graphicData>
+		  <texPath>Things/Building/Furniture/ESCP_Banner/ESCP_Banner_Standard</texPath>
+		</graphicData>
+		  <stuffCategories>
+		  <li>Metallic</li>
+		  <li>Woody</li>
+		  <li>Stony</li>
+		</stuffCategories>
+		<costStuffCount>20</costStuffCount>
+		<costList>
+		  <Cloth>40</Cloth>
+		</costList>
+	</ThingDef>
+  
+	<ThingDef ParentName="ESCP_Banner_Base">
+		<defName>ESCP_Banner_Dyeable</defName>
+		<label>banner (dyeable)</label>
+		 <graphicData>
+		  <texPath>Things/Building/Furniture/ESCP_Banner/ESCP_Banner_Fabric</texPath>
+		</graphicData>
+		  <stuffCategories>
+		  <li>Fabric</li>
+		</stuffCategories>
+		<costStuffCount>40</costStuffCount>
+		<costList>
+		  <WoodLog>20</WoodLog>
+		</costList>
+	</ThingDef>
+
+</Defs>

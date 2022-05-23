@@ -3,7 +3,7 @@
 
     <!--__________ Production Buildings __________-->
 
-    <!-- Forge -->
+  <!-- Forge -->
 
   <ThingDef ParentName="BenchBase">
     <defName>ESCP_Production_Forge</defName>
@@ -12,8 +12,9 @@
     <thingClass>Building_WorkTable</thingClass>
     <drawerType>MapMeshAndRealTime</drawerType>
     <graphicData>
-      <texPath>Things/Buildings/Forge/ESCP_Forge</texPath>
+      <texPath>Things/Building/Production/Forge/ESCP_Forge</texPath>
       <graphicClass>Graphic_Single</graphicClass>
+	  <shaderType>CutoutComplex</shaderType> <!-- Stops it from being coloured -->
       <drawSize>(5.5,3.5)</drawSize>
       <shadowData>
         <volume>(2.8, 0.35, 0.59)</volume>
@@ -106,8 +107,9 @@
     <description>Extracts usable metal from ore chunks and turns them into ingots.</description>
     <thingClass>Building_WorkTable_HeatPush</thingClass>
     <graphicData>
-      <texPath>Things/Buildings/Smelter/ESCP_Smelter</texPath>
+      <texPath>Things/Building/Production/Smelter/ESCP_Smelter</texPath>
       <graphicClass>Graphic_Multi</graphicClass>
+	  <shaderType>CutoutComplex</shaderType> <!-- Stops it from being coloured -->
       <drawSize>(4,4)</drawSize>
       <damageData>
         <cornerTL>Damage/Corner</cornerTL>
@@ -237,7 +239,7 @@
     <description>Used to chop logs into firewood.</description>
     <thingClass>Building_WorkTable</thingClass>
     <graphicData>
-      <texPath>Things/Buildings/Wood_Chopping_Block/ESCP_Wood_Chopping_Block</texPath>
+      <texPath>Things/Building/Production/Wood_Chopping_Block/ESCP_Wood_Chopping_Block</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(1,1)</drawSize>
     </graphicData>
@@ -283,7 +285,7 @@
     </researchPrerequisites>
   </ThingDef>
 
-    <!-- Power Mill -->
+  <!-- Power Mill -->
 
   <ThingDef ParentName="BuildingBase">
     <defName>PM_PowerMill</defName>
@@ -292,7 +294,7 @@
     <thingClass>Building</thingClass>
     <drawerType>MapMeshAndRealTime</drawerType>
     <graphicData>
-      <texPath>Things/Building/Power/PowerMill/Base_b</texPath>
+      <texPath>Things/Building/Production/Power/PowerMill/Base_b</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(3,3)</drawSize>
       <drawOffset>(0,0,0.5)</drawOffset>
@@ -343,7 +345,7 @@
     <description>A place to gather stone chunks, requires stonet terrain.</description>
     <thingClass>Building_WorkTable</thingClass>
     <graphicData>
-      <texPath>Things/Buildings/ESCP_Stone_Gathering_Spot</texPath>
+      <texPath>Things/Building/Production/ESCP_Stone_Gathering_Spot</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(1,1)</drawSize>
     </graphicData>
@@ -394,7 +396,7 @@
     <description>A place to try and gather fish, requires shallow water.</description>
     <thingClass>Building_WorkTable</thingClass>
     <graphicData>
-      <texPath>Things/Buildings/ESCP_Fishing_Spot</texPath>
+      <texPath>Things/Building/Production/ESCP_Fishing_Spot</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(1,1)</drawSize>
     </graphicData>

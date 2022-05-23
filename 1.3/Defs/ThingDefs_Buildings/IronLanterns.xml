@@ -6,7 +6,7 @@
 		<category>Building</category>
 		<minifiedDef>MinifiedThing</minifiedDef>
 		<graphicData>
-		  <texPath>Things/Buildings/Furniture/ESCP_IronLantern/ESCP_IronLantern</texPath>
+		  <texPath>Things/Building/Furniture/ESCP_IronLantern/ESCP_IronLantern</texPath>
 		  <graphicClass>Graphic_Single</graphicClass>
 		  <drawRotated>false</drawRotated>
 		  <damageData>
@@ -125,7 +125,7 @@
 		<label>iron lantern</label>
 		<description>An iron lantern. Can be automatically refuelled with fat. Produces a small amount of heat.</description>
 		<graphicData>
-		  <texPath>Things/Buildings/Furniture/ESCP_IronLantern/ESCP_IronLantern</texPath>
+		  <texPath>Things/Building/Furniture/ESCP_IronLantern/ESCP_IronLantern</texPath>
 		</graphicData>
 		<comps>
 		  <li Class="CompProperties_Glower">
@@ -140,7 +140,7 @@
 		<label>iron lantern (blue)</label>
 		<description>An iron lantern, with blue tinted glass. Can be automatically refuelled with fat. Produces a small amount of heat.</description>
 		<graphicData>
-		  <texPath>Things/Buildings/Furniture/ESCP_IronLantern/ESCP_IronLantern_Blue</texPath>
+		  <texPath>Things/Building/Furniture/ESCP_IronLantern/ESCP_IronLantern_Blue</texPath>
 		</graphicData>
 		<comps>
 		  <li Class="CompProperties_Glower">
@@ -155,7 +155,7 @@
 		<label>iron lantern (green)</label>
 		<description>An iron lantern, with green tinted glass. Can be automatically refuelled with fat. Produces a small amount of heat.</description>
 		<graphicData>
-		  <texPath>Things/Buildings/Furniture/ESCP_IronLantern/ESCP_IronLantern_Green</texPath>
+		  <texPath>Things/Building/Furniture/ESCP_IronLantern/ESCP_IronLantern_Green</texPath>
 		</graphicData>
 		<comps>
 		  <li Class="CompProperties_Glower">
@@ -170,7 +170,7 @@
 		<label>iron lantern (red)</label>
 		<description>An iron lantern, with red tinted glass. Can be automatically refuelled with fat. Produces a small amount of heat.</description>
 		<graphicData>
-		  <texPath>Things/Buildings/Furniture/ESCP_IronLantern/ESCP_IronLantern_Red</texPath>
+		  <texPath>Things/Building/Furniture/ESCP_IronLantern/ESCP_IronLantern_Red</texPath>
 		</graphicData>
 		<comps>
 		  <li Class="CompProperties_Glower">
@@ -187,7 +187,7 @@
 		<label>iron lantern (darklight)</label>
 		<description>An iron lantern, with special tinted glass. Can be automatically refuelled with fat. Produces a small amount of heat.</description>
 		<graphicData>
-		  <texPath>Things/Buildings/Furniture/ESCP_IronLantern/ESCP_IronLantern_Dark</texPath>
+		  <texPath>Things/Building/Furniture/ESCP_IronLantern/ESCP_IronLantern_Dark</texPath>
 		</graphicData>
 		<comps>
 		  <li Class="CompProperties_Glower">
