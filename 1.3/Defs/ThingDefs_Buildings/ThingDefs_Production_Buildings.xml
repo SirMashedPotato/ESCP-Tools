@@ -294,7 +294,7 @@
     <thingClass>Building</thingClass>
     <drawerType>MapMeshAndRealTime</drawerType>
     <graphicData>
-      <texPath>Things/Building/Production/Power/PowerMill/Base_b</texPath>
+      <texPath>Things/Building/Power/PowerMill/Base_b</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(3,3)</drawSize>
       <drawOffset>(0,0,0.5)</drawOffset>
