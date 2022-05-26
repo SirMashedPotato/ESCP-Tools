@@ -116,6 +116,11 @@
 	        <isEdifice>false</isEdifice>    
 		</building>
 		<altitudeLayer>BuildingOnTop</altitudeLayer>
+		<modExtensions>
+			<li Class="ESCP_Misc.BuildingProperties">
+				<preventDuplicatePlacement>true</preventDuplicatePlacement>
+			</li>
+		</modExtensions>
 	</ThingDef>
 	
 	<!-- [Regular] -->
