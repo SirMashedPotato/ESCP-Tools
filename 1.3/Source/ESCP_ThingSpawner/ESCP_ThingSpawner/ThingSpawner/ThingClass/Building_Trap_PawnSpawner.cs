@@ -8,12 +8,12 @@ namespace ESCP_ThingSpawner
         protected override void SpringSub(Pawn p)
         {
             var props = CreateAtProperties.Get(this.def);
-            if (props != null && props.kindToSpawn != null)
+            if (props != null && props.kindToSpawn != null && Rand.Chance(props.chance))
             {
                 int target = props.numberToSpawn;
                 for (int i = 0; i < target; i++)
                 {
-                    PawnSpawnerUtility.PawnSpawner(props, p, this);
+                    PawnSpawnerUtility.PawnSpawner(props, p, this, this.Map);
                 }
             }
             this.Destroy();

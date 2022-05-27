@@ -50,6 +50,31 @@ Hediffs
 		  <li Class="ESCP_ThingSpawner.HediffCompProperties_PawnSpawnerOnDeath">
 		  </li>
 		</comps>
+		
+ThingComp
+		<modExtensions>
+			<li Class="ESCP_ThingSpawner.CreateAtProperties">
+				<kindToSpawn>MorrowRim_Guar</kindToSpawn>
+				<spawnAsPlayerFaction>false</spawnAsPlayerFaction>
+				<mentalStateDef>Manhunter</mentalStateDef>
+				<attackTarget>false</attackTarget>	<!-- covered by mental state -->
+				<numberToSpawn>1</numberToSpawn>
+				<!-- <soundDef></soundDef> -->
+				<chance>1</chance>	<!-- float, so 0 to 1 -->
+				<message>An angry guar has appeared</message>
+				<messageTypeDef>NegativeEvent</messageTypeDef>
+			</li>
+		</modExtensions>
+		<comps>
+			<li Class="ESCP_ThingSpawner.CompProperties_PawnSpawnerOnDestroy">
+				<!-- the below bools prevent spawning from happening if the last damage taken was of those defs -->
+				<notRot>true</notRot>
+				<notFlame>true</notFlame>
+				<notDeterioration>true</notDeterioration>
+				<!-- prevents spawning if there is currently a toxic fallout condition active -->
+				<notToxicFallout>true</notToxicFallout>
+			</li>
+		</comps>
 
 Full Create At properties
 
@@ -60,3 +85,6 @@ Full Create At properties
 	<numberToSpawn>THENUMBERTOSPAWN</numberToSpawn>
 	<soundDef>SOUNDDEF</soundDef>	<!-- the sound played upon spawing the pawn -->
 	<recordDef>RECORDDEF</recordDef>	<!-- Increments this record when thrown -->
+	<chance>1f</chance>	<!-- the chance anything is spawned. Float so values from 0 to 1 only -->
+	<message>A thing happened</message>	<!-- string used to display a message. If not set, no message is sent -->
+	<messageTypeDef>MESSAGETYPEDEF</messageTypeDef>	<!-- the type def for the message -->

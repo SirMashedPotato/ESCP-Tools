@@ -8,12 +8,12 @@ namespace ESCP_ThingSpawner
         protected override void Impact(Thing hitThing)
         {
             var props = CreateAtProperties.Get(this.def);
-            if (props != null && props.kindToSpawn != null)
+            if (props != null && props.kindToSpawn != null && Rand.Chance(props.chance))
             {
                 int target = props.numberToSpawn;
                 for (int i = 0; i < target; i++)
                 {
-                    PawnSpawnerUtility.PawnSpawner(props, this.intendedTarget.Thing, this);
+                    PawnSpawnerUtility.PawnSpawner(props, this.intendedTarget.Thing, this, this.Map);
                 }
                 if (props.recordDef != null && this.launcher is Pawn p)
                 {

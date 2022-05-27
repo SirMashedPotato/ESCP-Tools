@@ -18,12 +18,12 @@ namespace ESCP_ThingSpawner
         public override void Notify_PawnKilled()
         {
             var props = CreateAtProperties.Get(this.Def);
-            if (props != null && props.kindToSpawn != null)
+            if (props != null && props.kindToSpawn != null && Rand.Chance(props.chance))
             {
                 int target = props.numberToSpawn;
                 for (int i = 0; i < target; i++)
                 {
-                    PawnSpawnerUtility.PawnSpawner(props, null, base.parent.pawn);
+                    PawnSpawnerUtility.PawnSpawner(props, null, base.parent.pawn, base.parent.pawn.Map);
                 }
             }
 

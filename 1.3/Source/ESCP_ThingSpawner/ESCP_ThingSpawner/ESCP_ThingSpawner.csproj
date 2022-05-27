@@ -54,16 +54,16 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="ThingSpawner\Building_Trap_PawnSpawner.cs" />
+    <Compile Include="ThingSpawner\ThingClass\Building_Trap_PawnSpawner.cs" />
     <Compile Include="ThingSpawner\CreateAtProperties.cs" />
-    <Compile Include="ThingSpawner\DeathActionWorker_PawnSpawner.cs" />
-    <Compile Include="ThingSpawner\HediffCompProperties_PawnSpawnerOnDeath.cs" />
-    <Compile Include="ThingSpawner\HediffComp_PawnSpawnerOnDeath.cs" />
-    <Compile Include="ThingSpawner\Projectile_PawnSpawner.cs" />
+    <Compile Include="ThingSpawner\DeathActionWorker\DeathActionWorker_PawnSpawner.cs" />
+    <Compile Include="ThingSpawner\HediffComp\Properties\HediffCompProperties_PawnSpawnerOnDeath.cs" />
+    <Compile Include="ThingSpawner\HediffComp\HediffComp_PawnSpawnerOnDeath.cs" />
+    <Compile Include="ThingSpawner\ThingClass\Projectile_PawnSpawner.cs" />
     <Compile Include="ThingSpawner\PawnSpawnerUtility.cs" />
+    <Compile Include="ThingSpawner\ThingComp\Comp_PawnSpawnerOnDestroy.cs" />
+    <Compile Include="ThingSpawner\ThingComp\Properties\CompProperties_PawnSpawnerOnDestroy.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="DeathActionSpawner\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
